@@ -25,7 +25,6 @@ $(function(){
 		setTimeout(function(){
 			$("#TsecLine").text(alrdyTsecLine);
 		}, 2200);
-	
 	});
 	
 	
