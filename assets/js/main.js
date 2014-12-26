@@ -2,9 +2,6 @@ $(function(){
 ////{//////////////////////////////////////////////////////////////////////////////////////////////////////////////////}////
 ///{/////////////////////////////////....................NOW LET'S BEGING............................/////////////////}///
 //{//////////////////////////////////////////////////////////////////////////////////////////////////////////////////}//
-
-		// GLOBAL VARIABLE TO RESET SECOND PER LINE BECAUSE USING setTimeOut
-		var secondPerLineCode = false;
 		
 		// CODE IN #CODE PRINTER
 		var Codingcode = "<strong>\n\tun gras word\n</strong><?php echo \"Hello word\"";
@@ -37,7 +34,6 @@ $(function(){
 						$("#error").text("0");
 						$("#TsecLine").text("0");
 						$("#nbLine").text("0");
-						secondPerLineCode = true;
 					}, 2000);
 				}
 			}
@@ -73,12 +69,9 @@ $(function(){
 			//second per line of code
 			var alrdyTsecLine = $("#TsecLine").text();
 			var alrdyTsecLine = parseInt(alrdyTsecLine) + 1;
-			if(secondPerLineCode == false){
-				setTimeout(function(){
-					$("#TsecLine").text(alrdyTsecLine);
-				}, 2200);
-				secondPerLineCode = true;
-			}
+			setTimeout(function(){
+				$("#TsecLine").text(alrdyTsecLine);
+			}, 2200);
 		}));
 ////{//////////////////////////////////////////////////////////////////////////////////////////////////////////////////}////
 ///{/////////////////////////////////.................IT IS DONE.. THANK...............................///////////////}///
