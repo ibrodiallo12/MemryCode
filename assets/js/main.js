@@ -32,7 +32,7 @@ $(function(){
 					setTimeout(function(){
 						editor.setValue("");
 						$("#error").text("0");
-						$("#TsecLine").text("0");
+						$("#TsecLine").text("R");
 						$("#nbLine").text("0");
 					}, 2000);
 				}
@@ -69,8 +69,14 @@ $(function(){
 			//second per line of code
 			var alrdyTsecLine = $("#TsecLine").text();
 			var alrdyTsecLine = parseInt(alrdyTsecLine) + 1;
-			setTimeout(function(){
-				$("#TsecLine").text(alrdyTsecLine);
+			TimeTo = setTimeout(function(){
+				if($("#TsecLine").text() == "R"){
+					$("#TsecLine").text("0");
+					clearTimeout(TimeTo);
+				}
+				else{
+					$("#TsecLine").text(alrdyTsecLine);
+				}
 			}, 2200);
 		}));
 ////{//////////////////////////////////////////////////////////////////////////////////////////////////////////////////}////
