@@ -2,18 +2,34 @@ $(function(){
 ////{//////////////////////////////////////////////////////////////////////////////////////////////////////////////////}////
 ///{/////////////////////////////////....................NOW LET'S BEGING............................/////////////////}///
 //{//////////////////////////////////////////////////////////////////////////////////////////////////////////////////}//
+		var myArray = [
+			'<strong>\n\tun gras word\n</strong>',
+			'<?php echo \"Hello word\"; ?>',
+			'head>\n\t<title>Hello world!</title>',
+			'<h1>Welcome</h1>',
+			'<script> alert(Hello!); </script>'
+		];
+		var maxNumber = myArray.length;
+		
+		// FUNCTION RANDOM
+		function rand(maxNumber, min){
+				return Math.floor(Math.random() * (maxNumber - min + 1) + min);
+		}
+		randNumber = rand(maxNumber, 0);
+		alert(myArray[randNumber]);
+		alert(rand(maxNumber, 0));
 		
 		// CODE IN #CODE PRINTER
-		var Codingcode = "<strong>\n\tun gras word\n</strong><?php echo \"Hello word\"; ?>";
-	
+		var Codingcode = myArray[randNumber];
 		// TEXT IN #CODE PRINTER
 		$("#code").text(Codingcode);
-	
+		
 		// CHANGE LANGUAGE
 		$("#language").click(function(){
 			var valOptionLanguage = $("#language").val();
 			alert(valOptionLanguage);
 		});
+
 	
 		// ON CHANGE EDITOR GET INPUT AND CHECK
 		editor.on('change', function(){
@@ -79,6 +95,7 @@ $(function(){
 				}
 			}, 2200);
 		}));
+		
 ////{//////////////////////////////////////////////////////////////////////////////////////////////////////////////////}////
 ///{/////////////////////////////////.................IT IS DONE.. THANK...............................///////////////}///
 //{//////////////////////////////////////////////////////////////////////////////////////////////////////////////////}//
