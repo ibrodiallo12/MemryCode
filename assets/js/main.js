@@ -4,7 +4,7 @@ $(function(){
 //{//////////////////////////////////////////////////////////////////////////////////////////////////////////////////}//
 		
 		// CODE IN #CODE PRINTER
-		var Codingcode = "<strong>\n\tun gras word\n</strong><?php echo \"Hello word\"";
+		var Codingcode = "<strong>\n\tun gras word\n</strong><?php echo \"Hello word\"; ?>";
 	
 		// TEXT IN #CODE PRINTER
 		$("#code").text(Codingcode);
@@ -47,10 +47,10 @@ $(function(){
 			}
 			// border red to textarea
 			if(errr == true){
-				$("#codingTextarea").css("border","2px solid red");
+				$(".navbar").css("border","2px solid red");
 			}
 			else{//normal style for textarea
-				$("#codingTextarea").css("border","2px solid white");
+				$(".navbar").css("border","2px solid white");
 			}
 		});
 	
