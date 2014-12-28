@@ -19,6 +19,11 @@ list-style:none;
 margin-left: -40px;
 margin-top:20px;
 }
+#main_area
+{
+	width: 100%;
+	margin: auto;
+}
 #codingTextarea
 {
 	font-size: 20px;
