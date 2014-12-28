@@ -2,15 +2,16 @@ $(function(){
 ////{//////////////////////////////////////////////////////////////////////////////////////////////////////////////////}////
 ///{/////////////////////////////////....................NOW LET'S BEGING............................/////////////////}///
 //{//////////////////////////////////////////////////////////////////////////////////////////////////////////////////}//
-		var myArray = [
-			'<strong>\n\tun gras word\n</strong>',
-			'<?php echo \"Hello word\"; ?>',
-			'head>\n\t<title>Hello world!</title>',
-			'<h1>Welcome</h1>',
-			'<script> alert(Hello!); </script>'
-		];
-		var maxNumber = myArray.length;
+
+		var lang = $("#lang").text();
+		var splitingLang = lang.split(',');	
+		var myArray = splitingLang;
 		
+		var know = $("#know").text();
+		var splitingKnow = know.split(',');
+		var myArrayKnow = splitingKnow;
+		
+		var maxNumber = myArray.length;
 		// FUNCTION RANDOM
 		function rand(maxNumber, min){
 				return Math.floor(Math.random() * (maxNumber - min + 1) + min);
@@ -24,6 +25,10 @@ $(function(){
 		// TEXT IN #CODE PRINTER
 		$("#code").text(Codingcode);
 		
+		// CODE IN #KNOW PRINTER
+		var textKnow = myArrayKnow[randNumber];
+		// TEXT IN #KNOW PRINTER
+		$("#knowPrinter").text(textKnow);
 		// CHANGE LANGUAGE
 		$("#language").click(function(){
 			var valOptionLanguage = $("#language").val();
@@ -50,6 +55,19 @@ $(function(){
 						$("#error").text("0");
 						$("#TsecLine").text("R");
 						$("#nbLine").text("0");
+						//BEGING THE REPEAT
+						// FUNCTION RANDOM
+						randNumber = rand(maxNumber, 0);
+						// CODE IN #CODE PRINTER
+						Codingcode = myArray[randNumber];
+						// TEXT IN #CODE PRINTER
+						$("#code").text(Codingcode);
+		
+						// CODE IN #KNOW PRINTER
+						textKnow = myArrayKnow[randNumber];
+						// TEXT IN #KNOW PRINTER
+						$("#knowPrinter").text(textKnow);
+						// END OF THE REPEAT
 					}, 2000);
 				}
 			}
