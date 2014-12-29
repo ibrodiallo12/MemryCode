@@ -16,12 +16,58 @@ $(function(){
 		function rand(maxNumber, min){
 				return Math.floor(Math.random() * (maxNumber - min + 1) + min);
 		}
+		// FUNCTION if BROWSER HAVE AN ERROR
+		function browserError(c){
+			// if the browser have an error 
+			if(!Codingcode){
+				// FUNCTION RANDOM
+				randNumber = rand(maxNumber, 0);
+				// CODE IN #CODE PRINTER
+				Codingcode = myArray[randNumber];
+				// TEXT IN #CODE PRINTER
+				$("#code").text(Codingcode);
+
+				// CODE IN #KNOW PRINTER
+				textKnow = myArrayKnow[randNumber];
+				// TEXT IN #KNOW PRINTER
+				$("#knowPrinter").text(textKnow);
+				if(!Codingcode){
+					// FUNCTION RANDOM
+					randNumber = rand(maxNumber, 0);
+					// CODE IN #CODE PRINTER
+					Codingcode = myArray[randNumber];
+					// TEXT IN #CODE PRINTER
+					$("#code").text(Codingcode);
+
+					// CODE IN #KNOW PRINTER
+					textKnow = myArrayKnow[randNumber];
+					// TEXT IN #KNOW PRINTER
+					$("#knowPrinter").text(textKnow);
+					if(!Codingcode){
+						// FUNCTION RANDOM
+						randNumber = rand(maxNumber, 0);
+						// CODE IN #CODE PRINTER
+						Codingcode = myArray[randNumber];
+						// TEXT IN #CODE PRINTER
+						$("#code").text(Codingcode);
+
+						// CODE IN #KNOW PRINTER
+						textKnow = myArrayKnow[randNumber];
+						// TEXT IN #KNOW PRINTER
+						$("#knowPrinter").text(textKnow);
+					}
+				}
+			}
+		}
+		// END FUNCTION if BROWSER HAVE AN ERROR
 		randNumber = rand(maxNumber, 0);
 		alert(myArray[randNumber]);
 		alert(rand(maxNumber, 0));
 		
 		// CODE IN #CODE PRINTER
 		var Codingcode = myArray[randNumber];
+		//call the function browserError
+		browserError(Codingcode);
 		// TEXT IN #CODE PRINTER
 		$("#code").text(Codingcode);
 		
@@ -55,14 +101,17 @@ $(function(){
 						$("#error").text("0");
 						$("#TsecLine").text("R");
 						$("#nbLine").text("0");
+						$("#code").text("");
 						//BEGING THE REPEAT
 						// FUNCTION RANDOM
 						randNumber = rand(maxNumber, 0);
 						// CODE IN #CODE PRINTER
 						Codingcode = myArray[randNumber];
+						//call the function browserError
+						browserError(Codingcode);
 						// TEXT IN #CODE PRINTER
 						$("#code").text(Codingcode);
-		
+			
 						// CODE IN #KNOW PRINTER
 						textKnow = myArrayKnow[randNumber];
 						// TEXT IN #KNOW PRINTER
