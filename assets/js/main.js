@@ -2,7 +2,6 @@ $(function(){
 ////{//////////////////////////////////////////////////////////////////////////////////////////////////////////////////}////
 ///{/////////////////////////////////....................NOW LET'S BEGING............................/////////////////}///
 //{//////////////////////////////////////////////////////////////////////////////////////////////////////////////////}//
-
 		var lang = $("#lang").text();
 		var splitingLang = lang.split(',');	
 		var myArray = splitingLang;
@@ -75,6 +74,7 @@ $(function(){
 		var textKnow = myArrayKnow[randNumber];
 		// TEXT IN #KNOW PRINTER
 		$("#knowPrinter").text(textKnow);
+
 		// CHANGE LANGUAGE
 		$("#language").click(function(){
 			var valOptionLanguage = $("#language").val();
@@ -111,7 +111,7 @@ $(function(){
 						browserError(Codingcode);
 						// TEXT IN #CODE PRINTER
 						$("#code").text(Codingcode);
-			
+	
 						// CODE IN #KNOW PRINTER
 						textKnow = myArrayKnow[randNumber];
 						// TEXT IN #KNOW PRINTER
