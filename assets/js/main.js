@@ -83,7 +83,7 @@ $(function(){
 
 	
 		// ON CHANGE EDITOR GET INPUT AND CHECK
-		editor.on('change', function(){
+		editor.on('keyup', function(){
 			tap = editor.getValue();
 			//alert(tap);
 			var T = tap.length;
