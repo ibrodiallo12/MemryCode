@@ -83,7 +83,7 @@ $(function(){
 
 	
 		// ON CHANGE EDITOR GET INPUT AND CHECK
-		editor.on('keypress', function(){
+		editor.on('change', function(){
 			tap = editor.getValue();
 			//alert(tap);
 			var T = tap.length;
@@ -120,7 +120,18 @@ $(function(){
 					}, 2000);
 				}
 			}
-			else{
+		});
+		// if AN ERROR
+		editor.on('keypress',(function(){
+			tap = editor.getValue();
+			//alert(tap);
+			var T = tap.length;
+			indexTap = T - 1;
+			ValTap = tap.charAt(indexTap);
+			indexCode = T - 1;
+			var codeTap = Codingcode.charAt(indexCode);
+			
+			if(ValTap != codeTap){
 				var alrdyError = $("#error").text();
 				var error = parseInt(alrdyError) + 1;
 				$("#error").text(error);
@@ -135,7 +146,7 @@ $(function(){
 			else{//normal style for textarea
 				$(".navbar").css("border","2px solid white");
 			}
-		});
+		}));
 	
 		// ON CHANGE EDITOR GET KEY-ENTER
 		editor.on('change',(function(){
