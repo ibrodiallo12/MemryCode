@@ -2,12 +2,14 @@ $(function(){
 ////{//////////////////////////////////////////////////////////////////////////////////////////////////////////////////}////
 ///{/////////////////////////////////....................NOW LET'S BEGING............................/////////////////}///
 //{//////////////////////////////////////////////////////////////////////////////////////////////////////////////////}//
+		// the separator for the array with functin split
+		var separator = $("#separator").text();
 		var lang = $("#lang").text();
-		var splitingLang = lang.split(',');	
+		var splitingLang = lang.split(separator);	
 		var myArray = splitingLang;
 		
 		var know = $("#know").text();
-		var splitingKnow = know.split(',');
+		var splitingKnow = know.split(separator);
 		var myArrayKnow = splitingKnow;
 		
 		var maxNumber = myArray.length;

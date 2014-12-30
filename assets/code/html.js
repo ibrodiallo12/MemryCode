@@ -13,4 +13,5 @@ $(function(){
 	know = know + s + "un script JavaScript pour afficher une alert Hello";
 	$("#lang").text(code);
 	$("#know").text(know);
+	$("#separator").text(s);
 });
