@@ -62,8 +62,8 @@ $(function(){
 		}
 		// END FUNCTION if BROWSER HAVE AN ERROR
 		randNumber = rand(maxNumber, 0);
-		alert(myArray[randNumber]);
-		alert(rand(maxNumber, 0));
+		//alert(myArray[randNumber]);
+		//alert(rand(maxNumber, 0));
 		
 		// CODE IN #CODE PRINTER
 		var Codingcode = myArray[randNumber];
