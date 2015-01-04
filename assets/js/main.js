@@ -175,6 +175,32 @@ $(function(){
 				}
 			}, 2200);
 		}));
+		
+		// USER WANT THE NEXT CODE
+		$("#next").click(function(){
+			setTimeout(function(){
+				editor.setValue("");
+				$("#error").text("0");
+				$("#TsecLine").text("R");
+				$("#nbLine").text("0");
+				$("#code").text("");
+				//BEGING THE REPEAT
+				// FUNCTION RANDOM
+				randNumber = rand(maxNumber, 0);
+				// CODE IN #CODE PRINTER
+				Codingcode = myArray[randNumber];
+				//call the function browserError
+				browserError(Codingcode);
+				// TEXT IN #CODE PRINTER
+				$("#code").text(Codingcode);
+
+				// CODE IN #KNOW PRINTER
+				textKnow = myArrayKnow[randNumber];
+				// TEXT IN #KNOW PRINTER
+				$("#knowPrinter").text(textKnow);
+				// END OF THE REPEAT
+			}, 2000);
+		});
 ////{//////////////////////////////////////////////////////////////////////////////////////////////////////////////////}////
 ///{/////////////////////////////////.................IT IS DONE.. THANK...............................///////////////}///
 //{//////////////////////////////////////////////////////////////////////////////////////////////////////////////////}//
