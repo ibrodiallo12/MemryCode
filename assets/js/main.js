@@ -181,7 +181,7 @@ $(function(){
 			setTimeout(function(){
 				editor.setValue("");
 				$("#error").text("0");
-				$("#TsecLine").text("R");
+				$("#TsecLine").text("0");
 				$("#nbLine").text("0");
 				$("#code").text("");
 				//BEGING THE REPEAT
@@ -198,6 +198,7 @@ $(function(){
 				textKnow = myArrayKnow[randNumber];
 				// TEXT IN #KNOW PRINTER
 				$("#knowPrinter").text(textKnow);
+				editor.setFocus();
 				// END OF THE REPEAT
 			}, 2000);
 		});
