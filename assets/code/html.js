@@ -88,7 +88,7 @@ $(function(){
 	c = c + s + "<a href=\"url\">link text</a>";
 	k = k + s + "A hyperlink is an element a text or an image that you can click on and jump to another document.";
 	// N 28
-	c = c + s + "<a href=\"http://www.w3schools.com/html/\">Visit our HTML tutorial</a>";
+	c = c + s + "<a href=\"http://www.w3schools.com/html/\">Visit a HTML tutorial</a>";
 	k = k + s + "The link text is the visible part (Visit the W3schools HTML tutorial).";
 	// N 29
 	c = c + s + "<a href=\"text.html\">My test page</a>";
@@ -104,10 +104,10 @@ $(function(){
 	k = k + s + "Add an id attribute to a <a> element";
 	// N 33
 	c = c + s + "<p><b>This text is bold</b>.</p>";
-	k = k + s + "The HTML <b> element defines bold text, without any extra importance.";
+	k = k + s + "The HTML <b> element defines bold text without any extra importance.";
 	// N 34
 	c = c + s + "<p><i>This text is italic</i>.</p>";
-	k = k + s + "The HTML <i> element defines italic text, without any extra importance.";
+	k = k + s + "The HTML <i> element defines italic text without any extra importance.";
 	// N 35
 	c = c + s + "<h2>HTML <small>Small</small> Formatting</h2>";
 	k = k + s + "The HTML <small> element defines small text";
@@ -151,11 +151,85 @@ $(function(){
 	c = c + s + "<!--[if IE 8]>\n\t.... some HTML here ....\n<![endif]-->";
 	k = k + s + "You might stumble upon conditional comments in HTML";
 	// N 49
-	c = c + s + "<style>\n\tbody {background-color:lightgray}\n\th1{color:blue}\n\tp{color:green}\n</style>";
+	c = c + s + "<style>\n\tbody{background-color:lightgray}\n\th1{color:blue}\n\tp{color:green}\n</style>";
 	k = k + s + "Internal - using a <style> element in the HTML <head> section";
 	// N 50
 	c = c + s + "<h1 style=\"color:blue\">This is a Blue Heading</h1>";
 	k = k + s + "Inline styling is useful for applying a unique style to a single HTML element";
+	// N 51
+	c = c + s + "<table style=\"width:100%\">\n\t<tr>\n\t\t<td>Jill</td>\n\t\t<td>Smith</td>\n\t\t<td>50</td>\n\t</tr>\n\t<tr>\n\t\t<td>Eve</td>\n\t\t<td>Jackson</td>\n\t\t<td>94</td>\n\t</tr>\n</table>";
+	k = k + s + "Defining HTML Tables";
+	// N 52
+	c = c + s + "<table border=\"1\" style=\"width:100%\">\n\t<tr>\n\t\t<td>Jill</td>\n\t\t<td>Smith</td>\n\t\t<td>50</td>\n\t</tr>\n\t<tr>\n\t\t<td>Eve</td>\n\t\t<td>Jackson</td>\n\t\t<td>94</td>\n\t</tr>\n</table>";
+	k = k + s + "An HTML Table with a Border Attribute. If you do not specify a border for the table. The will be displayed without borders.";
+	// N 53
+	c = c + s + "<table style=\"width:100%\">\n\t<tr>\n\t\t<th>Name</th>\n\t\t<th colspan=\"2\">Telephone</th>\n\t</tr>\n\t<tr>\n\t\t<td>Bill Gates</td>\n\t\t<td>555 77 854</td>\n\t\t<td>555 77 855</td>\n\t</tr>\n</table>";
+	k = k + s + "Table Cells that Span Many Columns. To make a cell span more than one column use the colspan attribute";
+	// N 54
+	c = c + s + "<table style=\"width:100%\">\n\t<tr>\n\t\t<th>Name:</th>\n\t\t<td>Bill Gates</td>\n\t</tr>\n\t<tr>\n\t\t<th rowspan=\"2\">Telephone:</th>\n\t\t<td>555 77 854</td>\n\t</tr>\n\t<tr>\n\t\t<td>555 77 855</td>\n\t</tr>\n</table>";
+	k = k + s + "Table Cells that Span Many Rows. To make a cell span more than one row use the rowspan attribute";
+	// N 55
+	c = c + s + "<iframe src=\"URL\"></iframe>";
+	k = k + s + "The syntax for adding an iframe";
+	// N 56
+	c = c + s + "<iframe src=\"demo_iframe.htm\" width=\"200\" height=\"200\"></iframe>";
+	k = k + s + "Iframe - Set Height and Width. Use the height and width attributes to specify the size.";
+	// N 57
+	c = c + s + "<iframe src=\"demo_iframe.html\" frameborder=\"0\"></iframe>";
+	k = k + s + "Iframe - Remove the Border. The frameborder attribute specifies whether or not to display a border around the iframe.";
+	// N 58
+	c = c + s + "<iframe src=\"demo_iframe.html\" name=\"iframe_a\"></iframe>\n<p><a href=\"http://www.w3schools.com\" target=\"iframe_a\">W3Schools.com</a></p>";
+	k = k + s + "Use iframe as a Target for a Link. An iframe can be used as the target frame for a link.The target attribute of the link must refer to the name attribute of the iframe";
+	// N 59
+	c = c + s + "<script>\n\tdocument.getElementById(\"demo\").innerHTML = \"Hello JavaScript!\";\n</script>";
+	k = k + s + "The HTML <script> Tag. The <script> tag is used to define a client-side script such as a JavaScript. The <script> element either contains scripting statements or it points to an external script file through the src attribute.";
+	// N 60
+	c = c + s + "<script>\n\tdocument.getElementById(\"demo\").innerHTML = \"Hello JavaScript!\";\n</script>\n<noscript>Sorry your browser does not support JavaScript!</noscript>";
+	k = k + s + "The HTML <noscript> Tag. The <noscript> tag is used to provide an alternate content for users that have disabled scripts in their browser or have a browser that doesn't support client-side scripting.";
+	// N 61
+	c = c + s + "<!DOCTYPE html>\n\t<head>\n\t\t<link rel=\"stylesheet\" href=\"mystyle.css\">\n\t\t<title>Page Title</title>\n\t</head>";
+	k = k + s + "The HTML <head> Element. The <head> element is a container for meta data (data about data).";
+	// N 62
+	c = c + s + "<meta name=\"keywords\" content=\"HTML CSS XML XHTML JavaScript\">";
+	k = k + s + "The HTML <meta> Element. The <meta> element is used to specify page description keywords author and other metadata.";
+	// N 63
+	c = c + s + "<meta name=\"description\" content=\"Free Web tutorials on HTML and CSS\"/>";
+	k = k + s + "Define a description of your web page";
+	// N 64
+	c = c + s + "<meta name=\"author\" content=\"Hege Refsnes\">";
+	k = k + s + "Define the author of a page";
+	// N 65
+	c = c + s + "<base href=\"http://www.w3schools.com/images/\" target=\"_blank\">";
+	k = k + s + "The HTML <base> Element. The <base> element specifies the base URL and base target for all relative URLs in a page";
+	// N 66
+	c = c + s + "< &lt; &#60;\n> &gt; &#62;\n& &amp; &#38;\n¢ &cent; &#162;\n£ &pound; &#163;\n¥ &yen; &#165;\n€ &euro; &#8364;\n© &copy; &#169;\n® &reg; &#174;";
+	k = k + s + "HTML Entities. Some characters are reserved in HTML. If you use the less than (<) or greater than (>) signs in your text. The browser might mix them with tags.";
+	// N 67
+	c = c + s + "<form>\n\t<!--form elements-->\n</form>";
+	k = k + s + "The <form> Element HTML forms are used to collect user input. The <form> element defines an HTML form";
+	// N 68
+	c = c + s + "<form>\n\tFirst name:<br>\n\t<input type=\"text\" name=\"firstname\">\n<br>\n\tLast name:<br>\n\t<input type=\"text\" name=\"lastname\">\n</form>";
+	k = k + s + "Text Input <input type=\"text\"> defines a one-line input field for text input";
+	// N 69
+	c = c + s + "<form>\n\t<input type=\"radio\" name=\"race\" value=\"human\" checked>Human\n<br>\n\t<input type=\"radio\" name=\"race\" value=\"animal\">Animal\n</form>";
+	k = k + s + "<input type=\"radio\"> defines a radio button. Radio buttons let a user select ONE of a limited number of choices:";
+	// N 70
+	c = c + s + "<form action=\"action_page.php\">\n\tFirst name:<br>\n<input type=\"text\" name=\"firstname\" value=\"Mickey\">\n<br>\n\t<input type=\"submit\" value=\"Submit\">\n</form>";
+	k = k + s + "The Submit Button <input type=\"submit\"> defines a button for submitting a form to a form-handler.The form-handler is typically a server page with a script for processing input data.";
+	// N 71
+	c = c + s + "";
+	k = k + s + "";
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	//PRINT IN THE 
 	$("#lang").text(c);
