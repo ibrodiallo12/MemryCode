@@ -1,0 +1,11 @@
+### USE THE GOOGLE APP ENGINE ON MEMRYCODE IN UBUNTU ###
+
+##########START RUNTIME
+google_appengine/dev_appserver.py --php_executable_path=/usr/bin/php-cgi MemryCode
+
+#########FOR THE FIRST DEPLOY APPLICATION
+google_appengine/appcfg.py --oauth2 update MemryCode
+
+##########DEPLOY APPLICATION
+google_appengine/appcfg.py update MemryCode
+
