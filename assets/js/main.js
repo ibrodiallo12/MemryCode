@@ -2,7 +2,7 @@ $(function(){
 ////{//////////////////////////////////////////////////////////////////////////////////////////////////////////////////}////
 ///{/////////////////////////////////....................NOW LET'S BEGING............................/////////////////}///
 //{//////////////////////////////////////////////////////////////////////////////////////////////////////////////////}//
-		// the separator for the array with functin split
+		// the separator for the array with function split
 		var separator = $("#separator").text();
 		var lang = $("#lang").text();
 		var splitingLang = lang.split(separator);	
@@ -89,7 +89,7 @@ $(function(){
 		// CHANGE LANGUAGE
 		$("#language").click(function(){
 			var valOptionLanguage = $("#language").val();
-			alert(valOptionLanguage);
+		 	$(location).attr('href', 'memrycode.php?lang=' + valOptionLanguage);
 		});
 
 	

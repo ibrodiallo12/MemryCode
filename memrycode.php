@@ -1,3 +1,13 @@
+<?php if(isset($_GET['lang'])){
+// BEGIN THE PHP FOR MAKE CHOICE FOR LANGUAGE
+	if($_GET['lang'] == 'HTML5'){$lang = 'html';}
+	elseif($_GET['lang'] == 'CSS3'){$lang = 'css';}
+	elseif($_GET['lang'] == 'PHP'){$lang = 'php';}
+	elseif($_GET['lang'] == 'JavaScript'){$lang = 'javascript';}
+	elseif($_GET['lang'] == 'Python'){$lang = 'python';}
+	else{$lang = 'html.js';}
+}
+;?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -21,7 +31,7 @@
 	<script src="assets/codemirror/mode/xml/xml.js"></script>
 	<script src="assets/js/jquery.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
-	<script src="assets/code/html.js"></script>
+	<script src="assets/code/<?php if (!empty($lang)){ echo $lang.".js";} else { echo 'html.js';}?>"></script>
 	<script src="assets/js/main.js"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -50,12 +60,16 @@
 						 	 <h3 class="text-muted"  style="display: inline-block;"> &lt;{&gt; HTML/CSS/JavaScript/PHP/Python &lt;}&gt;</h3>
 						 </div>
 					    <div class="pull-right" class="col-md-2 language" style="margin-left: 80px; margin-top: 5px;">
-						  <select class="btn btn-primary" id="language">
+					    <form action="memrycode.php" method="post" id="formChoiceLang">
+						  <select name="choiceLang" class="btn btn-primary" id="language">
 						  	<span class="caret"></span>
-							<option>HTML5/CSS3</option>
-							<option>JAVASCRIPT</option>
+							<option>HTML5</option>
+							<option>CSS3</option>
+							<option>JavaScript</option>
 							<option>PHP</option>
+							<option>Python</option>
 						  </select>
+						</form>
 					   </div>
 					 </div>
 		           </div>
