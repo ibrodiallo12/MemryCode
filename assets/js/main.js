@@ -32,6 +32,8 @@ $(function(){
 				textKnow = myArrayKnow[randNumber];
 				// TEXT IN #KNOW PRINTER
 				$("#knowPrinter").text(textKnow);
+				// SIGN LINK HREF #DETAILS
+				$('#details').attr('href',"http://www.google.com/?q=" + textKnow);
 				if(!Codingcode){
 					// FUNCTION RANDOM
 					randNumber = rand(maxNumber, 0);
@@ -44,6 +46,8 @@ $(function(){
 					textKnow = myArrayKnow[randNumber];
 					// TEXT IN #KNOW PRINTER
 					$("#knowPrinter").text(textKnow);
+					// SIGN LINK HREF #DETAILS
+					$('#details').attr('href',"http://www.google.com/?q=" + textKnow);
 					if(!Codingcode){
 						// FUNCTION RANDOM
 						randNumber = rand(maxNumber, 0);
@@ -56,6 +60,8 @@ $(function(){
 						textKnow = myArrayKnow[randNumber];
 						// TEXT IN #KNOW PRINTER
 						$("#knowPrinter").text(textKnow);
+						// SIGN LINK HREF #DETAILS
+						$('#details').attr('href',"http://www.google.com/?q=" + textKnow);
 					}
 				}
 			}
@@ -76,7 +82,10 @@ $(function(){
 		var textKnow = myArrayKnow[randNumber];
 		// TEXT IN #KNOW PRINTER
 		$("#knowPrinter").text(textKnow);
-
+		
+		// SIGN LINK HREF #DETAILS
+		$('#details').attr('href',"http://www.google.com/?q=" + textKnow);
+		
 		// CHANGE LANGUAGE
 		$("#language").click(function(){
 			var valOptionLanguage = $("#language").val();
@@ -198,7 +207,8 @@ $(function(){
 				textKnow = myArrayKnow[randNumber];
 				// TEXT IN #KNOW PRINTER
 				$("#knowPrinter").text(textKnow);
-				editor.setFocus();
+				// SIGN LINK HREF #DETAILS
+				$('#details').attr('href',"http://www.google.com/?q=" + textKnow);
 				// END OF THE REPEAT
 			}, 2000);
 		});

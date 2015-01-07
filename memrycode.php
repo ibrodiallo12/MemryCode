@@ -71,10 +71,10 @@
 	  <div class="jumbotron col-lg-4" style="position: absolute; right: 20px; top: 100px;">
 	    <h1>...KNOW...</h1>
 	    <p id="knowPrinter"></p>
-	    <p><button type="button" class="btn btn-lg btn-info">View details &raquo;</button></p>
+	    <a href="" id="details" target="_blank"><p><button type="button" class="btn btn-lg btn-info">View details &raquo;</button></p></a>
 	  </div>
 		<div class="alert alert-default row col-lg-8" style="margin-top: -20px; text-align: left;">
-				 <pre><textarea contentEditable="true" id="codingTextarea"></textarea></pre>
+				<pre><textarea contentEditable="true" id="codingTextarea"></textarea></pre>
 				<div class="btn-primary col-lg-5" style="margin-left: 40px; margin-right: 20px;">
 					<h5><span class="glyphicon glyphicon-pencil"><span> LINE_CODE: <em id="nbLine">0</em> IN <em id="TsecLine">0</em> seconds</h5>
 				</div>
