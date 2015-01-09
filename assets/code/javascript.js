@@ -37,7 +37,7 @@ $(function(){
 	c = c + s + "\"John Doe\"\n\'John Doe\'";
 	k = k + s + "Strings are text, written within double or single quotes";
 	// N 11
-	c = c + s + " 5 + 6\n5 * 10";
+	c = c + s + "5 + 6\n5 * 10";
 	k = k + s + "Expressions can also represent fixed values";
 	// N 12
 	c = c + s + "var x;\nx = 6;";
@@ -52,16 +52,16 @@ $(function(){
 	c = c + s + "var x = 5 + 6;\nvar y = x * 10;";
 	k = k + s + "JavaScript Keywords. JavaScript keywords are used to identify actions to be performed. The var keyword tells the browser to create a new variable:";
 	// N 16
-	c = c + s + " var x = 5; // I will be executed\n// var x = 6; I will NOT be executed";
+	c = c + s + "var x = 5; // I will be executed\n// var x = 6; I will NOT be executed";
 	k = k + s + "JavaScript Comments. Not all JavaScript statements are \"executed\". Code after double slashes // or between /* and */ is treated as a comment. Comments are ignored, and will not be executed:";
 	// N 17
 	c = c + s + "lastName = \"Doe\";\nlastname = \"Peterson\";";
 	k = k + s + "JavaScript is Case Sensitive. All JavaScript identifiers are case sensitive. The variables lastName and lastname, are two different variables.";
 	// N 18
 	c = c + s + "var x = 5;\nvar y = 6;\nvar z = x + y;\ndocument.getElementById(\"demo\").innerHTML = z;";
-	k = k + s + "JavaScript Programs. Most JavaScript programs contain many JavaScript statements. The statements are executed, one by one, in the same order as they are written. In this example, x, y, and z is given values, and finally z is displayed: ";
+	k = k + s + "JavaScript Programs. Most JavaScript programs contain many JavaScript statements. The statements are executed, one by one, in the same order as they are written. In this example, x, y, and z is given values, and finally z is displayed:";
 	// N 19
-	c = c + s + "/*\nThe code below will change\nthe heading with id = \"myH\"\nand the paragraph with id = \"myP\"\nin my web page:\n*/\ndocument.getElementById(\"myH\").innerHTML = \"My First Page\";\ndocument.getElementById(\"myP\").innerHTML = \"My first paragraph.\"; ";
+	c = c + s + "/*\nThe code below will change\nthe heading with id = \"myH\"\nand the paragraph with id = \"myP\"\nin my web page:\n*/\ndocument.getElementById(\"myH\").innerHTML = \"My First Page\";\ndocument.getElementById(\"myP\").innerHTML = \"My first paragraph.\";";
 	k = k + s + "Multi-line Comments. Multi-line comments start with /* and end with */. Any text between /* and */ will be ignored by JavaScript. This example uses a multi-line comment (a comment block) to explain the code:";
 	// N 20
 	c = c + s + "var carName;";
@@ -80,7 +80,7 @@ $(function(){
 	k = k + s + "Re-Declaring JavaScript Variables If you re-declare a JavaScript variable, it will not lose its value. The variable carName will still have the value \"Volvo\" after the execution of these statements";
 	// N 25
 	c = c + s + "var x = 5 + 2 + 3;";
-	k = k + s + "JavaScript Arithmetic. As with algebra, you can do arithmetic with JavaScript variables, using operators like = and +: ";
+	k = k + s + "JavaScript Arithmetic. As with algebra, you can do arithmetic with JavaScript variables, using operators like = and +";
 	// N 26
 	c = c + s + "var x = \"John\" + \" \" + \"Doe\";";
 	k = k + s + "JavaScript Arithmetic. You can also add strings, but strings will be concatenated (added end-to-end)";
@@ -88,13 +88,13 @@ $(function(){
 	c = c + s + "var x = \"5\" + 2 + 3;";
 	k = k + s + "If you add a number to a string, the number will be treated as string, and concatenated.";
 	// N 28
-	c = c + s + "var x = 5;\nvar y = 2;\nvar z = x + y; ";
+	c = c + s + "var x = 5;\nvar y = 2;\nvar z = x + y;";
 	k = k + s + "JavaScript Arithmetic Operators. The addition operator (+) adds a value";
 	// N 29
-	c = c + s + "var x = 5;\nvar y = 2;\nvar z = x - y; ";
+	c = c + s + "var x = 5;\nvar y = 2;\nvar z = x - y;";
 	k = k + s + "JavaScript Arithmetic Operators. The subtraction operator (-) subtracts a value.";
 	// N 30
-	c = c + s + "var x = 5;\nvar y = 2;\nvar z = x * y; ";
+	c = c + s + "var x = 5;\nvar y = 2;\nvar z = x * y;";
 	k = k + s + "JavaScript Arithmetic Operators. The multiplication operator (*) multiplies a value.";
 	// N 31
 	c = c + s + "var x = 5;\nvar y = 2;\nvar z = x / y;";
@@ -106,7 +106,7 @@ $(function(){
 	c = c + s + "var x = 5;\nx++;\nvar z = x;";
 	k = k + s + "JavaScript Arithmetic Operators. The increment operator (++) increments a value.";
 	// N 34
-	c = c + s + "var x = 5;\nx--;\nvar z = x; ";
+	c = c + s + "var x = 5;\nx--;\nvar z = x;";
 	k = k + s + "JavaScript Arithmetic Operators. The decrement operator (--) decrements a value.";
 	// N 35
 	c = c + s + "var x = 10;\nx += 5;";
@@ -128,7 +128,7 @@ $(function(){
 	k = k + s + "JavaScript Arithmetic Operators. Insert a space into the expression:";
 	// N 41
 	c = c + s + "txt1 = \"What a very\";\ntxt1 += \"nice day\";";
-	k = k + s + "JavaScript Arithmetic Operators. The += operator can also be used to concatenate strings:";
+	k = k + s + "JavaScript Arithmetic Operators. The += operator can also be used to concatenate strings";
 	// N 42
 	c = c + s + "x = 5 + 5;\ny = \"5\" + 5;\nz= \"Hello\" + 5;";
 	k = k + s + "Adding Strings and Numbers. Adding two numbers, will return the sum, but adding a number and a string will return a string:";
