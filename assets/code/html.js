@@ -1,6 +1,6 @@
 $(function(){
 	//The separator in the ARRAY
-	var s = ",";
+	var s = "¢";
 	// code in the ARRAY
 	var c = "";
 	// know not affecte in same ARRAY to code
@@ -202,7 +202,7 @@ $(function(){
 	c = c + s + "<base href=\"http://www.w3schools.com/images/\" target=\"_blank\">";
 	k = k + s + "The HTML <base> Element. The <base> element specifies the base URL and base target for all relative URLs in a page";
 	// N 66
-	c = c + s + "< &lt; &#60;\n> &gt; &#62;\n& &amp; &#38;\n¢ &cent; &#162;\n£ &pound; &#163;\n¥ &yen; &#165;\n€ &euro; &#8364;\n© &copy; &#169;\n® &reg; &#174;";
+	c = c + s + "<&lt; &#60;\n> &gt; &#62;\n& &amp; &#38;";
 	k = k + s + "HTML Entities. Some characters are reserved in HTML. If you use the less than (<) or greater than (>) signs in your text. The browser might mix them with tags.";
 	// N 67
 	c = c + s + "<form>\n\t<!--form elements-->\n</form>";
