@@ -1,4 +1,6 @@
 $(function(){
+	// Introduction word
+	var w = "Easily and Quickly memorize HTML tag and your keyboard like a GEEK....";
 	//The separator in the ARRAY
 	var s = "¢";
 	// code in the ARRAY
@@ -231,7 +233,8 @@ $(function(){
 	
 	
 	
-	//PRINT IN THE 
+	//PRINT IN THE
+	$("#introWord").text(w); 
 	$("#lang").text(c);
 	$("#know").text(k);
 	$("#separator").text(s);

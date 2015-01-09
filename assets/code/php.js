@@ -1,6 +1,8 @@
 $(function(){
+	//INTRDUCTION WORD
+	var w = "Memrize your keyboard, php code and be fast to make a dynamic website!";
 	//The separator in the ARRAY
-	var s = ",";
+	var s = "¢";
 	// code in the ARRAY
 	var c = "";
 	// know not affecte in same ARRAY to code
@@ -15,6 +17,7 @@ $(function(){
 	
 	
 	//PRINT IN THE 
+	$("#introWord").text(w);
 	$("#lang").text(c);
 	$("#know").text(k);
 	$("#separator").text(s);

@@ -1,4 +1,6 @@
 $(function(){
+	// Introduction word
+	var w = "Memorize your keyboard and JavaScript code now and coding fast!!";
 	//The separator in the ARRAY
 	var s = "¢";
 	// code in the ARRAY
@@ -10,7 +12,7 @@ $(function(){
 	c = "<script> alert(\"Hello world !\");</script>";
 	k = "A simple hello world in javascript";
 	// N 2
-	c = c + s + "<script>\n\tdocument.getElementById(\"demo\").innerHTML = \"My First JavaScript\";\n</script>";
+	c = c + s + "<script>\n\tdocument.getElementById(\"demo\").innerHTML = \"My JavaScript\";\n</script>";
 	k = k + s + "The <script> Tag In HTML, JavaScript code must be inserted between <script> and </script> tags.";
 	// N 3
 	c = c + s + "<script src=\"myScript.js\"></script>";
@@ -61,7 +63,7 @@ $(function(){
 	c = c + s + "var x = 5;\nvar y = 6;\nvar z = x + y;\ndocument.getElementById(\"demo\").innerHTML = z;";
 	k = k + s + "JavaScript Programs. Most JavaScript programs contain many JavaScript statements. The statements are executed, one by one, in the same order as they are written. In this example, x, y, and z is given values, and finally z is displayed:";
 	// N 19
-	c = c + s + "/*\nThe code below will change\nthe heading with id = \"myH\"\nand the paragraph with id = \"myP\"\nin my web page:\n*/\ndocument.getElementById(\"myH\").innerHTML = \"My First Page\";\ndocument.getElementById(\"myP\").innerHTML = \"My first paragraph.\";";
+	c = c + s + "/*\nThe code below will change\nthe heading with id = \"myH\"\nand the paragraph with id = \"myP\"\nin my web page:\n*/\ndocument.getElementById(\"myH\").innerHTML = \"My First Page\";\ndocument.getElementById(\"myP\").innerHTML = \"My paragraph.\";";
 	k = k + s + "Multi-line Comments. Multi-line comments start with /* and end with */. Any text between /* and */ will be ignored by JavaScript. This example uses a multi-line comment (a comment block) to explain the code:";
 	// N 20
 	c = c + s + "var carName;";
@@ -130,10 +132,11 @@ $(function(){
 	c = c + s + "txt1 = \"What a very\";\ntxt1 += \"nice day\";";
 	k = k + s + "JavaScript Arithmetic Operators. The += operator can also be used to concatenate strings";
 	// N 42
-	c = c + s + "x = 5 + 5;\ny = \"5\" + 5;\nz= \"Hello\" + 5;";
+	c = c + s + "x = 5 + 5;\ny = \"5\" + 5;\nz = \"Hello\" + 5;";
 	k = k + s + "Adding Strings and Numbers. Adding two numbers, will return the sum, but adding a number and a string will return a string:";
 	
 	//PRINT IN THE 
+	$("#introWord").text(w);
 	$("#lang").text(c);
 	$("#know").text(k);
 	$("#separator").text(s);

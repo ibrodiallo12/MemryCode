@@ -78,7 +78,7 @@
 	
 	<div class="container" style="margin-top: 60px;">
 		 <div class="row col-lg-8">
-			  <h4 style="font-size: 20px;"><strong>Easily and Quickly memorize code and keyboard like a GEEK....</strong></h4>
+			  <h4 style="font-size: 20px;"><strong id="introWord"></strong></h4>
 			  <div><pre id="code" style="font-size: 16px; text-align: left;" class="html"><code></code></pre></div>
 		</div>
 	 <!-- jumbotron MORE KNOW -->
@@ -99,7 +99,7 @@
 					<h5><span class="glyphicon glyphicon-fast-forward"></h5>
 				</div>
 				<div id="lang" style="display: none;"></div>
-				<div id="separator" style="dispaly: none;"></div>
+				<div id="separator" style="display: none;"></div>
 				<div id="know" style="display: none;"></div>
 		 </div>
 	</div>
