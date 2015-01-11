@@ -162,7 +162,7 @@ $(function(){
 	c = c + s + "var car = \"\"; // The value is \"\", the typeof is string";
 	k = k + s + "Empty Values. An empty value has nothing to do with undefined. An empty string variable has both a value and a type.";
 	// N 52
-	c = c + s + "var answer = \"It's alright\"; // Single quote in double quotes\nvar answer = \"He is called 'Johnny'\"; // Single quotes inside double quotes\nvar answer = 'He is called \"Johnny\"'; // Double quotes in single quotes";
+	c = c + s + "var answer = \"It's alright\"; //Single quote in double quotes\nvar answer = \"He is called 'Johnny'\"; //Single quotes in double quotes\nvar answer = 'He is called \"Johnny\"'; //Double quotes in single quotes";
 	k = k + s + "JavaScript Strings. A string (or a text string) is a series of characters like \"John Doe\".Strings are written with quotes. You can use single or double quotes. You can use quotes inside a string, as long as they don't match the quotes surrounding the string";
 	// N 53
 	c = c + s + "var carName = \"Volvo XC60\"; // Using double quotes\nvar carName = 'Volvo XC60'; // Using single quotes";
@@ -215,6 +215,9 @@ $(function(){
 	// N 69
 	c = c + s + "// code here can use window.carName\nfunction myFunction(){\n\tcarName = \"Volvo\";\n}";
 	k = k + s + "Global Variables in HTML. With JavaScript, the global scope is the complete JavaScript environment. In HTML, the global scope is the window object: All global variables belong to the window object.";
+	// N 70
+	c = c + s + "<button onclick='getElementById(\"demo\").innerHTML=Date()'>The time is?</button>";
+	k = k + s + "HTML Events. An HTML event can be something the browser does, or something a user does. Here are some examples of HTML events. An HTML web page has finished loading. An HTML input field was changed. An HTML button was clicked";
 	
 	
 	//PRINT IN THE 
