@@ -180,7 +180,7 @@ $(function(){
 	c = c + s + "<iframe src=\"demo_iframe.html\" frameborder=\"0\"></iframe>";
 	k = k + s + "Iframe - Remove the Border. The frameborder attribute specifies whether or not to display a border around the iframe.";
 	// N 58
-	c = c + s + "<iframe src=\"demo_iframe.html\" name=\"iframe_a\"></iframe>\n<p><a href=\"http://www.w3schools.com\" target=\"iframe_a\">W3Schools.com</a></p>";
+	c = c + s + "<iframe src=\"demo_iframe.html\" name=\"iframe_a\"></iframe>\n<p><a href=\"http://www.w3schools.com\" target=\"iframe_a\">W3S.com</a></p>";
 	k = k + s + "Use iframe as a Target for a Link. An iframe can be used as the target frame for a link.The target attribute of the link must refer to the name attribute of the iframe";
 	// N 59
 	c = c + s + "<script>\n\tdocument.getElementById(\"demo\").innerHTML = \"Hello JavaScript!\";\n</script>";
@@ -204,7 +204,7 @@ $(function(){
 	c = c + s + "<base href=\"http://www.w3schools.com/images/\" target=\"_blank\">";
 	k = k + s + "The HTML <base> Element. The <base> element specifies the base URL and base target for all relative URLs in a page";
 	// N 66
-	c = c + s + "<&lt; &#60;\n> &gt; &#62;\n& &amp; &#38;";
+	c = c + s + "< &lt; &#60;\n> &gt; &#62;\n& &amp; &#38;";
 	k = k + s + "HTML Entities. Some characters are reserved in HTML. If you use the less than (<) or greater than (>) signs in your text. The browser might mix them with tags.";
 	// N 67
 	c = c + s + "<form>\n\t<!--form elements-->\n</form>";
