@@ -1,11 +1,11 @@
 <?php if(isset($_GET['lang'])){
 // BEGIN THE PHP FOR MAKE CHOICE FOR LANGUAGE
-	if($_GET['lang'] == 'HTML5'){$lang = 'html';}
-	elseif($_GET['lang'] == 'CSS3'){$lang = 'css';}
-	elseif($_GET['lang'] == 'PHP'){$lang = 'php';}
-	elseif($_GET['lang'] == 'JavaScript'){$lang = 'javascript';}
-	elseif($_GET['lang'] == 'Python'){$lang = 'python';}
-	else{$lang = 'html.js';}
+	if($_GET['lang'] == 'HTML'){$lang = 'HTML';}
+	elseif($_GET['lang'] == 'CSS'){$lang = 'CSS';}
+	elseif($_GET['lang'] == 'PHP'){$lang = 'PHP';}
+	elseif($_GET['lang'] == 'JavaScript'){$lang = 'JavaScript';}
+	elseif($_GET['lang'] == 'Python'){$lang = 'Python';}
+	else{$lang = 'HTML';}
 }
 ;?>
 <!DOCTYPE html>
@@ -31,7 +31,7 @@
 	<script src="assets/codemirror/mode/xml/xml.js"></script>
 	<script src="assets/js/jquery.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
-	<script src="assets/code/<?php if (!empty($lang)){ echo $lang.".js";} else { echo 'html.js';}?>"></script>
+	<script src="assets/code/<?php if (!empty($lang)){ echo $lang.".js";} else { echo 'HTML.js';}?>"></script>
 	<script src="assets/js/main.js"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -63,8 +63,10 @@
 					    <form action="memrycode.php" method="post" id="formChoiceLang">
 						  <select name="choiceLang" class="btn btn-primary" id="language">
 						  	<span class="caret"></span>
-							<option>HTML5</option>
-							<option>CSS3</option>
+						  	<!-- for print the choice language -->
+						  	<option><?php if (!empty($lang)){ echo $lang;} else { echo "HTML";}?></option>
+							<option>HTML</option>
+							<option>CSS</option>
 							<option>JavaScript</option>
 							<option>PHP</option>
 							<option>Python</option>
