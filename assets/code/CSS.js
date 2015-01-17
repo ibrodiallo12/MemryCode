@@ -183,7 +183,7 @@ $(function(){
 	c = c + s + "p.one {\n\tborder-style: solid;\n\tborder-color: red;\n}";
 	k = k + s + "Border Color. The border-color property is used to set the color of the border.";
 	// N 59
-	c = c + s + "p.two {\n\tborder-style: solid;\n\border-color: #98bf21;\n}";
+	c = c + s + "p.two {\n\tborder-style: solid;\n\tborder-color: #98bf21;\n}";
 	k = k + s + "Border Color. The border-color property is used to set the color of the border.";
 	// N 60
 	c = c + s + "p {\n\tborder-top-style: dotted;\n\tborder-right-style: solid;\n\tborder-bottom-style: dotted;\n\tborder-left-style: solid;\n}";
