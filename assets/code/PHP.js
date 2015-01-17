@@ -4,9 +4,9 @@ $(function(){
 	//The separator in the ARRAY
 	var s = "¢";
 	// code in the ARRAY
-	var c = "";
+	var c;
 	// know not affecte in same ARRAY to code
-	var k = "";
+	var k;
 	
 	// N 1	
 	c = "<?php echo \"Hello world !\"; ?>";
