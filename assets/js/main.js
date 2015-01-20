@@ -127,6 +127,8 @@ $(function(){
 						textKnow = myArrayKnow[randNumber];
 						// TEXT IN #KNOW PRINTER
 						$("#knowPrinter").text(textKnow);
+						// BEGIN without ERROR
+						$(".navbar").css("border","2px solid white");
 						// END OF THE REPEAT
 					}, 2000);
 				}
@@ -190,7 +192,7 @@ $(function(){
 			setTimeout(function(){
 				editor.setValue("");
 				$("#error").text("0");
-				$("#TsecLine").text("0");
+				$("#TsecLine").text("R");
 				$("#nbLine").text("0");
 				$("#code").text("");
 				//BEGING THE REPEAT
@@ -209,6 +211,8 @@ $(function(){
 				$("#knowPrinter").text(textKnow);
 				// SIGN LINK HREF #DETAILS
 				$('#details').attr('href',"http://www.google.com/?q=" + textKnow);
+				// BEGIN without ERROR
+				$(".navbar").css("border","2px solid white");
 				// END OF THE REPEAT
 			}, 2000);
 		});
