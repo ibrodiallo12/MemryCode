@@ -191,6 +191,125 @@ $(function(){
 	// N 61
 	c = c + s + "p {\n\tborder: 5px solid red;\n}";
 	k = k + s + "Border - Shorthand property. As you can see from the examples above, there are many properties to consider when dealing with borders.";
+	// N 62
+	c = c + s + "p {\n\tmargin-top: 100px;\n\tmargin-bottom: 100px;\n\tmargin-right: 150px;\n\tmargin-left: 50px;\n}";
+	k = k + s + "Margin - Individual sides. In CSS, it is possible to specify different margins for different sides of an element";
+	// N 63
+	c = c + s + "p {\n\tmargin: 100px 50px;\n}";
+	k = k + s + "Margin - Shorthand property. To shorten the code, it is possible to specify all the margin properties in one property. This is called a shorthand property.";
+	// N 64
+	c = c + s + "p {\n\tpadding-top: 25px;\n\tpadding-right: 50px;\n\tpadding-bottom: 25px;\n\tpadding-left: 50px;\n}";
+	k = k + s + "Padding - Individual sides. In CSS, it is possible to specify different padding for different sides:";
+	// N 65
+	c = c + s + "p {\n\tpadding: 25px 50px;\n}";
+	k = k + s + "Padding - Shorthand property. To shorten the code, it is possible to specify all the padding properties in one property. This is called a shorthand property.";
+	// N 66
+	c = c + s + "h1.hidden {\n\tvisibility: hidden;\n}";
+	k = k + s + "Hiding an Element - display:none or visibility:hidden. Hiding an element can be done by setting the display property to \"none\" or the visibility property to \"hidden\".";
+	// N 67
+	c = c + s + "h1.hidden {\n\tdisplay: none;\n}";
+	k = k + s + "Hiding an Element - display:none or visibility:hidden. Display:none hides an element, and it will not take up any space. The element will be hidden, and the page will be displayed as if the element is not there:";
+	// N 68
+	c = c + s + "li {\n\tdisplay: inline;\n}";
+	k = k + s + "Changing How an Element is Displayed. Changing an inline element to a block element, or vice versa, can be useful for making the page look a specific way, and still follow web standards. The example displays <li> elements as inline elements:";
+	// N 69
+	c = c + s + "span {\n\tdisplay: block;\n}";
+	k = k + s + "Changing How an Element is Displayed. Changing an inline element to a block element, or vice versa, can be useful for making the page look a specific way, and still follow web standards. The example displays <span> elements as block elements:";
+	// N 70
+	c = c + s + "p.pos_fixed {\n\tposition: fixed;\n\ttop: 30px;\n\tright: 5px;\n}";
+	k = k + s + "Fixed Positioning. An element with a fixed position is positioned relative to the browser window, and will not move even if the window is scrolled";
+	// N 71
+	c = c + s + "h2.pos_left {\n\tposition: relative;\n\tleft: -20px;\n}";
+	k = k + s + "Relative Positioning. A relative positioned element is positioned relative to its normal position";
+	// N 72
+	c = c + s + "h2.pos_right {\n\tposition: relative;\n\tleft: 20px;\n}";
+	k = k + s + "Relative Positioning. A relative positioned element is positioned relative to its normal position";
+	// N 73
+	c = c + s + "h2.pos_top {\n\tposition: relative;\n\ttop: -50px;\n}";
+	k = k + s + "Relative Positioning. The content of relatively positioned elements can be moved and overlap other elements, but the reserved space for the element is still preserved in the normal flow.";
+	// N 74
+	c = c + s + "h2 {\n\tposition: absolute;\n\tleft: 100px;\n\ttop: 150px;\n}";
+	k = k + s + "Absolute Positioning. An absolute position element is positioned relative to the first parent element that has a position other than static. If no such element is found, the containing block is <html>";
+	// N 75
+	c = c + s + "img {\n\tposition: absolute;\n\tleft: 0px;\n\ttop: 0px;\n\tz-index: -1;\n}";
+	k = k + s + "Overlapping Elements. When elements are positioned outside the normal flow, they can overlap other elements. The z-index property specifies the stack order of an element (which element should be placed in front of, or behind, the others).";
+	// N 76
+	c = c + s + "img {\n\tfloat: right;\n}";
+	k = k + s + "How Elements Float. Elements are floated horizontally, this means that an element can only be floated left or right, not up or down. A floated element will move as far to the left or right as it can. Usually this means all the way to the left or right of the containing element.";
+	// N 77
+	c = c + s + ".thumbnail {\n\tfloat: left;\n\twidth: 110px;\n\theight: 90px;\n\tmargin: 5px;\n}";
+	k = k + s + "Floating Elements Next to Each Other. If you place several floating elements after each other, they will float next to each other if there is room. Here we have made an image gallery using the float property:";
+	// N 78
+	c = c + s + ".text_line {\n\tclear: both;\n}";
+	k = k + s + "Turning off Float - Using Clear. Elements after the floating element will flow around it. To avoid this, use the clear property. The clear property specifies which sides of an element other floating elements are not allowed.";
+	// N 79
+	c = c + s + ".center {\n\tmargin-left: auto;\n\tmargin-right: auto;\n\twidth: 70%;\n\tbackground-color: #b0e0e6;\n}";
+	k = k + s + "Center Aligning Using the margin Property. Block elements can be center-aligned by setting the left and right margins to \"auto\".";
+	// N 80
+	c = c + s + ".right {\n\tposition: absolute;\n\tright: 0px;\n\twidth: 300px;\n\tbackground-color: #b0e0e6;\n}";
+	k = k + s + "Left and Right Aligning Using the position Property. One method of aligning elements is to use absolute positioning:";
+	// N 81
+	c = c + s + ".right {\n\tfloat: right;\n\twidth: 300px;\n\tbackground-color: #b0e0e6;\n}";
+	k = k + s + "Left and Right Aligning Using the float Property. One method of aligning elements is to use the float property:";
+	// N 82
+	c = c + s + "div p {\n\tbackground-color: yellow;\n}";
+	k = k + s + "Descendant Selector. The descendant selector matches all element that are descendants of a specified element. The following example selects all <p> elements inside <div> elements";
+	// N 83
+	c = c + s + "div > p {\n\tbackground-color: yellow;\n}";
+	k = k + s + "Child Selector. The child selector selects all elements that are the immediate children of a specified element. The following example selects all <p> elements that are immediate children of a <div> element:";
+	// N 84
+	c = c + s + "div + p {\n\tbackground-color: yellow;\n}";
+	k = k + s + "Adjacent Sibling Selector. The adjacent sibling selector selects all elements that are the adjacent siblings of a specified element.Sibling elements must have the same parent element, and \"adjacent\" means \"immediately following\".";
+	// N 85
+	c = c + s + "div ~ p {\n\tbackground-color: yellow;\n}";
+	k = k + s + "General Sibling Selector. The general sibling selector selects all elements that are siblings of a specified element. The example selects all <p> elements that are siblings of <div> elements";
+	// N 86
+	c = c + s + "a.highlight:hover {\n\tcolor: #ff0000;\n}";
+	k = k + s + "Pseudo-classes and CSS Classes. Pseudo-classes can be combined with CSS classes";
+	// N 87
+	c = c + s + "p:first-child {\n\tcolor: blue;\n}";
+	k = k + s + "Match the first <p> element. In the following example, the selector matches any <p> element that is the first child of any element";
+	// N 88
+	c = c + s + "p i:first-child {\n\tcolor: blue;\n}";
+	k = k + s + "Match the first <i> element in all <p> elements. In the example, the selector matches the first <i> element in all <p> elements:";
+	// N 89
+	c = c + s + "p:first-child i {\n\tcolor: blue;\n}";
+	k = k + s + "Match all <i> elements in all first child <p> elements. In the example, the selector matches all <i> elements in <p> elements that are the first child of another element:";
+	// N 90
+	c = c + s + "<head>\n<style>\n\tq:lang(no) {\n\tquotes: \"~\" \"~\";\n\t}\n</style>\n</head>\n<body>\n<p>Some text <q lang=\"no\">A quote in a paragraph</q> Some text.</p\n</body>";
+	k = k + s + "CSS - The :lang Pseudo-class. The :lang pseudo-class allows you to define special rules for different languages.";
+	// N 91
+	c = c + s + "";
+	k = k + s + "";
+	// N 92
+	c = c + s + "";
+	k = k + s + "";
+	// N 93
+	c = c + s + "";
+	k = k + s + "";
+	// N 94
+	c = c + s + "";
+	k = k + s + "";
+	// N 95
+	c = c + s + "";
+	k = k + s + "";
+	// N 96
+	c = c + s + "";
+	k = k + s + "";
+	// N 97
+	c = c + s + "";
+	k = k + s + "";
+	// N 98
+	c = c + s + "";
+	k = k + s + "";
+	// N 99
+	c = c + s + "";
+	k = k + s + "";
+	// N 100
+	c = c + s + "";
+	k = k + s + "";
+	
+	
 	
 	
 	//PRINT IN THE 
