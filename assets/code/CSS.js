@@ -271,43 +271,58 @@ $(function(){
 	k = k + s + "Match the first <p> element. In the following example, the selector matches any <p> element that is the first child of any element";
 	// N 88
 	c = c + s + "p i:first-child {\n\tcolor: blue;\n}";
-	k = k + s + "Match the first <i> element in all <p> elements. In the example, the selector matches the first <i> element in all <p> elements:";
+	k = k + s + "Match the first <i> element in all <p> elements. In the example, the selector matches the first <i> element in all <p> elements";
 	// N 89
 	c = c + s + "p:first-child i {\n\tcolor: blue;\n}";
-	k = k + s + "Match all <i> elements in all first child <p> elements. In the example, the selector matches all <i> elements in <p> elements that are the first child of another element:";
+	k = k + s + "Match all <i> elements in all first child <p> elements. In the example, the selector matches all <i> elements in <p> elements that are the first child of another element";
 	// N 90
-	c = c + s + "<head>\n<style>\n\tq:lang(no) {\n\tquotes: \"~\" \"~\";\n\t}\n</style>\n</head>\n<body>\n<p>Some text <q lang=\"no\">A quote in a paragraph</q> Some text.</p\n</body>";
+	c = c + s + "<head>\n<style>\n\tq:lang(no) {\n\t\tquotes: \"~\" \"~\";\n\t}\n</style>\n</head>\n<body>\n<p>Some text <q lang=\"no\">A quote in a paragraph</q> Some text.</p\n</body>";
 	k = k + s + "CSS - The :lang Pseudo-class. The :lang pseudo-class allows you to define special rules for different languages.";
 	// N 91
-	c = c + s + "";
-	k = k + s + "";
+	c = c + s + "p::first-line {\n\tcolor: #ff0000;\n\tfont-variant: small-caps;\n}";
+	k = k + s + "The ::first-line Pseudo-element. The ::first-line pseudo-element is used to add a special style to the first line of a text. The ::first-line pseudo-element can only be applied to block elements.";
 	// N 92
-	c = c + s + "";
-	k = k + s + "";
+	c = c + s + "p::first-letter {\n\tcolor: #ff0000;\n\tfont-size: xx-large;\n}";
+	k = k + s + "The ::first-letter Pseudo-element. The ::first-letter pseudo-element is used to add a special style to the first letter of a text. The ::first-letter pseudo-element can only be applied to block elements.";
 	// N 93
-	c = c + s + "";
-	k = k + s + "";
+	c = c + s + "p.intro::first-letter {\n\tcolor: #ff0000;\n\tfont-size:200%;\n}";
+	k = k + s + "Pseudo-elements and CSS Classes. Pseudo-elements can be combined with CSS classes";
 	// N 94
-	c = c + s + "";
-	k = k + s + "";
+	c = c + s + "p::first-letter {\n\tcolor: #ff0000;\n\tfont-size: xx-large;\n}\np::first-line {\n\tcolor: #0000ff;\n\tfont-variant: small-caps;\n}";
+	k = k + s + "Multiple Pseudo-elements. Several pseudo-elements can also be combined. In the following example, the first letter of a paragraph will be red, in an xx-large font size. The rest of the first line will be blue, and in small-caps. The rest of the paragraph will be the default font size and color";
 	// N 95
-	c = c + s + "";
-	k = k + s + "";
+	c = c + s + "h1::before {\n\tcontent: url(smiley.gif);\n}";
+	k = k + s + "CSS - The ::before Pseudo-element. The ::before pseudo-element can be used to insert some content before the content of an element. The example inserts an image before each <h1> element";
 	// N 96
-	c = c + s + "";
-	k = k + s + "";
+	c = c + s + "h1::after {\n\tcontent: url(smiley.gif);\n}";
+	k = k + s + "CSS - The ::after Pseudo-element. The ::after pseudo-element can be used to insert some content after the content of an element. The example inserts an image after each <h1> element:";
 	// N 97
-	c = c + s + "";
-	k = k + s + "";
+	c = c + s + "::selection {\n\tcolor: red;\n\tbackground: yellow;\n}";
+	k = k + s + "CSS - The ::selection Pseudo-element. The ::selection pseudo-element matches the portion of an element that is selected by a user. The CSS properties can be applied to ::selection: color, background, cursor, and outline. The example makes the selected text red on a yellow background:";
 	// N 98
-	c = c + s + "";
-	k = k + s + "";
+	c = c + s + "ul {\n\tlist-style-type: none;\n\tmargin: 0;\n\tpadding: 0;\n}";
+	k = k + s + "Now let's remove the bullets and the margins and padding from the list";
 	// N 99
-	c = c + s + "";
-	k = k + s + "";
+	c = c + s + "a {\n\tdisplay: block;\n\twidth: 60px;\n}";
+	k = k + s + "Vertical Navigation BarTo build a vertical navigation bar we only need to style the <a> elements, in addition to the code above";
 	// N 100
-	c = c + s + "";
-	k = k + s + "";
+	c = c + s + "li {\n\tdisplay: inline;\n}";
+	k = k + s + "Inline List Items. One way to build a horizontal navigation bar is to specify the <li> elements as inline, in addition to the \"standard\" code above";
+	// N 101
+	c = c + s + "li {\n\tfloat: left;\n}\na {\n\tdisplay: block;\n\twidth: 60px;\n}";
+	k = k + s + "Floating List Items. In the example above the links have different widths. For all the links to have an equal width, float the <li> elements and specify a width for the <a> elements";
+	// N 102
+	c = c + s + "img {\n\topacity: 0.4;\n\tfilter: alpha(opacity=40); /* For IE8 and earlier */\n}";
+	k = k + s + "Creating a Transparent Image. The CSS3 property for transparency is opacity. First we will show you how to create a transparent image with CSS";
+	// N 103
+	c = c + s + "img {\n\topacity: 0.4;\n\tfilter: alpha(opacity=40); /* For IE8 and earlier */\n}\n\timg:hover {\n\topacity: 1.0;\n\tfilter: alpha(opacity=100); /* For IE8 and earlier */\n}";
+	k = k + s + "Image Transparency - Hover Effect. Mouse over the images:";
+	// N 104
+	c = c + s + "#home {\n\twidth: 46px;\n\theight: 44px;\n\tbackground: url(img_navsprites.gif) 0 0;\n}";
+	k = k + s + "Image Sprites. An image sprite is a collection of images put into a single image. Image Sprites - Simple Example. Instead of using three separate images, we use this single image (\"img_navsprites.gif\"):";
+	// N 105
+	c = c + s + "#home a:hover {\n\tbackground: url('img_navsprites_hover.gif') 0 -45px;\n}\n#prev a:hover {\n\tbackground: url('img_navsprites_hover.gif') -47px -45px;\n}\n#next a:hover {\n\tbackground: url('img_navsprites_hover.gif') -91px -45px;\n}";
+	k = k + s + "Image Sprites - Hover Effect. Now we want to add a hover effect to our navigation list.";
 	
 	
 	
