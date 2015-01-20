@@ -219,20 +219,98 @@ $(function(){
 	c = c + s + "<form action=\"action_page.php\">\n\tFirst name:<br>\n<input type=\"text\" name=\"firstname\" value=\"Mickey\">\n<br>\n\t<input type=\"submit\" value=\"Submit\">\n</form>";
 	k = k + s + "The Submit Button <input type=\"submit\"> defines a button for submitting a form to a form-handler.The form-handler is typically a server page with a script for processing input data.";
 	// N 71
+	c = c + s + "<form action=\"action_page.php\" method=\"GET\">\n<!--OR-->\n<form action=\"action_page.php\" method=\"POST\">";
+	k = k + s + "The Method Attribute. The method attribute specifies the HTTP method (GET or POST) to be used when submitting the forms.";
+	// N 72
+	c = c + s + "<form action=\"action_page.php\">\n\t<fieldset>\n\t\t<legend>Personal information:</legend>\n\t\tFirst name:<br>\n\t\t<input type=\"text\" name=\"firstname\" value=\"Mickey\">\n\t\t<br>\n\t\tLast name:<br>\n\t\t<input type=\"text\" name=\"lastname\" value=\"Mouse\">\n\t\t<br><br>\n\t\t<input type=\"submit\" value=\"Submit\">\n\t</fieldset>\n</form>";
+	k = k + s + "Grouping Form Data with <fieldset>. The <fieldset> element groups related data in a form. The <legend> element defines a caption for the <fieldset> element.";
+	// N 73
+	c = c + s + "<form action=\"action_page.php\" method=\"GET\" target=\"_blank\" accept-charset=\"UTF-8\"\nenctype=\"application/x-www-form-urlencoded\" autocomplete=\"off\" novalidate>\n.\nform elements\n.\n</form>";
+	k = k + s + "HTML Form Attributes. An HTML <form> element, with all possible attributes set, will look like this example";
+	// N 74
+	c = c + s + "<select name=\"cars\">\n\t<option value=\"volvo\">Volvo</option>\n\t<option value=\"saab\">Saab</option>\n\t<option value=\"fiat\">Fiat</option>\n\t<option value=\"audi\">Audi</option>\n</select>";
+	k = k + s + "The <select> Element (Drop-Down List). The <select> element defines a drop-down list.";
+	// N 75
+	c = c + s + "<option value=\"fiat\" selected>Fiat</option>";
+	k = k + s + "The <option> elements defines the options to select. The list will normally show the first item as selected.You can add a selected attribute to define a predefined option.";
+	// N 76
+	c = c + s + "<textarea name=\"message\" rows=\"10\" cols=\"30\">\n\tThe cat was playing in the garden.\n</textarea>";
+	k = k + s + "The <textarea> Element. The <textarea> element defines a multi-line input field (a text area)";
+	// N 77
+	c = c + s + "<button type=\"button\" onclick=\"alert('Hello World!')\">Click Me!</button>";
+	k = k + s + "The <button> Element. The <button> element defines a a clickable button";
+	// N 78
+	c = c + s + "<form action=\"action_page.php\">\n<input list=\"browsers\">\n<datalist id=\"browsers\">\n\t<option value=\"Internet Explorer\">\n\t<option value=\"Firefox\">\n\t<option value=\"Chrome\">\n\t<option value=\"Opera\">\n\t<option value=\"Safari\">\n</datalist>\n</form>";
+	k = k + s + "HTML5 <datalist> Element. The <datalist> element specifies a list of pre-defined options for an <input> element. Users will see a drop-down list of pre-defined options as they input data. The list attribute of the <input> element, must refer to the id attribute of the <datalist> element.";
+	// N 79
+	c = c + s + "<form action=\"action_page.php\">\n\tUsername: <input type=\"text\" name=\"user\">\n\tEncryption: <keygen name=\"security\">\n\t<input type=\"submit\">\n</form>";
+	k = k + s + "HTML5 <keygen> Element. The purpose of the <keygen> element is to provide a secure way to authenticate users. The <keygen> element specifies a key-pair generator field in a form. When the form is submitted, two keys are generated, one private and one public.";
+	// N 80
+	c = c + s + "<form action=\"action_page.php\"\noninput=\"x.value=parseInt(a.value)+parseInt(b.value)\">\n\t0\n\t<input type=\"range\"  id=\"a\" name=\"a\" value=\"50\">\n\t100 +\n\t<input type=\"number\" id=\"b\" name=\"b\" value=\"50\">\n\t=\n\t<output name=\"x\" for=\"a b\"></output>\n\t<br><br>\n\t<input type=\"submit\">\n</form>";
+	k = k + s + "HTML5 <output> Element. The <output> element represents the result of a calculation (like one performed by a script).";
+	// N 81
+	c = c + s + "";
+	k = k + s + "";
+	// N 82
+	c = c + s + "";
+	k = k + s + "";
+	// N 83
+	c = c + s + "";
+	k = k + s + "";
+	// N 84
+	c = c + s + "";
+	k = k + s + "";
+	// N 85
+	c = c + s + "";
+	k = k + s + "";
+	// N 86
+	c = c + s + "";
+	k = k + s + "";
+	// N 87
+	c = c + s + "";
+	k = k + s + "";
+	// N 88
+	c = c + s + "";
+	k = k + s + "";
+	// N 89
+	c = c + s + "";
+	k = k + s + "";
+	// N 90
+	c = c + s + "";
+	k = k + s + "";
+	// N 91
+	c = c + s + "";
+	k = k + s + "";
+	// N 92
+	c = c + s + "";
+	k = k + s + "";
+	// N 93
+	c = c + s + "";
+	k = k + s + "";
+	// N 94
+	c = c + s + "";
+	k = k + s + "";
+	// N 95
+	c = c + s + "";
+	k = k + s + "";
+	// N 96
+	c = c + s + "";
+	k = k + s + "";
+	// N 97
+	c = c + s + "";
+	k = k + s + "";
+	// N 98
+	c = c + s + "";
+	k = k + s + "";
+	// N 99
+	c = c + s + "";
+	k = k + s + "";
+	// N 100
 	c = c + s + "";
 	k = k + s + "";
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+		
 	//PRINT IN THE
 	$("#introWord").text(w); 
 	$("#lang").text(c);
