@@ -191,6 +191,7 @@ $(function(){
 	// N 61
 	c = c + s + "p {\n\tborder: 5px solid red;\n}";
 	k = k + s + "Border - Shorthand property. As you can see from the examples above, there are many properties to consider when dealing with borders.";
+<<<<<<< HEAD
 	// N 62
 	c = c + s + "p {\n\tmargin-top: 100px;\n\tmargin-bottom: 100px;\n\tmargin-right: 150px;\n\tmargin-left: 50px;\n}";
 	k = k + s + "Margin - Individual sides. In CSS, it is possible to specify different margins for different sides of an element";
@@ -325,6 +326,8 @@ $(function(){
 	k = k + s + "Image Sprites - Hover Effect. Now we want to add a hover effect to our navigation list.";
 	
 	
+=======
+>>>>>>> parent of 5179a4e... ajout jusqu'a 90 bout de code dans CSS.js
 	
 	
 	//PRINT IN THE 

@@ -134,35 +134,6 @@ $(function(){
 				}
 			}
 		});
-		// USER WANT THE NEXT CODE
-		$("#next").click(function(){
-			setTimeout(function(){
-				editor.setValue("");
-				$("#error").text("0");
-				$("#TsecLine").text("R");
-				$("#nbLine").text("0");
-				$("#code").text("");
-				//BEGING THE REPEAT
-				// FUNCTION RANDOM
-				randNumber = rand(maxNumber, 0);
-				// CODE IN #CODE PRINTER
-				Codingcode = myArray[randNumber];
-				//call the function browserError
-				browserError(Codingcode);
-				// TEXT IN #CODE PRINTER
-				$("#code").text(Codingcode);
-
-				// CODE IN #KNOW PRINTER
-				textKnow = myArrayKnow[randNumber];
-				// TEXT IN #KNOW PRINTER
-				$("#knowPrinter").text(textKnow);
-				// SIGN LINK HREF #DETAILS
-				$('#details').attr('href',"http://www.google.com/?q=" + textKnow);
-				// BEGIN without ERROR
-				$(".navbar").css("border","2px solid white");
-				// END OF THE REPEAT
-			}, 2000);
-		});
 		
 		// if AN ERROR
 		editor.on('keypress',(function(){
@@ -216,6 +187,36 @@ $(function(){
 				}
 			}, 2200);
 		}));
+		
+		// USER WANT THE NEXT CODE
+		$("#next").click(function(){
+			setTimeout(function(){
+				editor.setValue("");
+				$("#error").text("0");
+				$("#TsecLine").text("R");
+				$("#nbLine").text("0");
+				$("#code").text("");
+				//BEGING THE REPEAT
+				// FUNCTION RANDOM
+				randNumber = rand(maxNumber, 0);
+				// CODE IN #CODE PRINTER
+				Codingcode = myArray[randNumber];
+				//call the function browserError
+				browserError(Codingcode);
+				// TEXT IN #CODE PRINTER
+				$("#code").text(Codingcode);
+
+				// CODE IN #KNOW PRINTER
+				textKnow = myArrayKnow[randNumber];
+				// TEXT IN #KNOW PRINTER
+				$("#knowPrinter").text(textKnow);
+				// SIGN LINK HREF #DETAILS
+				$('#details').attr('href',"http://www.google.com/?q=" + textKnow);
+				// BEGIN without ERROR
+				$(".navbar").css("border","2px solid white");
+				// END OF THE REPEAT
+			}, 2000);
+		});
 		
 		
 ////{//////////////////////////////////////////////////////////////////////////////////////////////////////////////////}////
