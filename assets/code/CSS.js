@@ -4,9 +4,9 @@ $(function(){
 	//The separator in the ARRAY
 	var s = "¢";
 	// code in the ARRAY
-	var c = "";
+	var c;
 	// know not affecte in same ARRAY to code
-	var k = "";
+	var k;
 	
 	// N 1	
 	c = "p {\n\tcolor: red;\n\ttext-align: center;\n}";
@@ -21,22 +21,21 @@ $(function(){
 	c = c + s + ".center {\n\ttext-align: center;\n\tcolor: red;\n}";
 	k = k + s + "The class Selector. The class selector selects elements with a specific class attribute. To select elements with a specific class, write a period character, followed by the name of the class. In the example. all HTML elements with class=\"center\" will be center-aligned";
 	// N 5
-	c = c + s + "";
-	k = k + s + "";
+	c = c + s + "<head>\n\t<link rel=\"stylesheet\" type=\"text/css\" href=\"mystyle.css\">\n</head>";
+	k = k + s + "External Style Sheet. An external style sheet is ideal when the style is applied to many pages. With an external style sheet, you can change the look of an entire Web site by changing just one file. Each page must include a link to the style sheet with the <link> tag. The <link> tag goes inside the head section";
 	// N 6
-	c = c + s + "";
-	k = k + s + "";
+	c = c + s + "body {\n\tbackground-color: lightblue;\n}\nh1 {\n\tcolor: navy;\n\tmargin-left: 20px;\n}";
+	k = k + s + "External Style Sheet. An external style sheet can be written in any text editor. The file should not contain any html tags. The style sheet file must be saved with a .css extension. An example of a style sheet file called \"myStyle.css\", is shown below:";
 	// N 7
-	c = c + s + "";
-	k = k + s + "";
+	c = c + s + "<head>\n<style>\nbody {\n\tbackground-color: linen;\n}\nh1 {\n\tcolor: maroon;\n}\n</style>\n</head>";
+	k = k + s + "Internal Style Sheet. An internal style sheet should be used when a single document has a unique style. You define internal styles in the head section of an HTML page, inside the <style> tag, like this:";
 	// N 8
-	c = c + s + "";
-	k = k + s + "";
+	c = c + s + "<h1 style=\"color:blue; margin-left:30px;\">This is a heading.</h1>";
+	k = k + s + "Inline Styles. An inline style loses many of the advantages of a style sheet (by mixing content with presentation). Use this method sparingly! To use inline styles, add the style attribute to the relevant tag. The style attribute can contain any CSS property. The example shows how to change the color and the left margin of a h1 element:";
 	// N 9
-	c = c + s + "";
-	k = k + s + "";
+	c = c + s + "h1 {\n\tcolor: navy;\n\tmargin-left: 20px;\n}\n/* then */\nh1 {\n\tcolor: orange;\n}";
+	k = k + s + "Multiple Style Sheets. If some properties have been set for the same selector in different style sheets, the values will be inherited from the more specific style sheet. For example, assume that an external style sheet has the following properties for the <h1> element";
 	// N 10
-<<<<<<< HEAD
 	c = c + s + "body {\n\tbackground-color: #b0c4de;\n}";
 	k = k + s + "Background Color. The background-color property specifies the background color of an element.The background color of a page is set like this example";
 	// N 11
@@ -192,8 +191,6 @@ $(function(){
 	// N 61
 	c = c + s + "p {\n\tborder: 5px solid red;\n}";
 	k = k + s + "Border - Shorthand property. As you can see from the examples above, there are many properties to consider when dealing with borders.";
-<<<<<<< HEAD
-<<<<<<< HEAD
 	// N 62
 	c = c + s + "p {\n\tmargin-top: 100px;\n\tmargin-bottom: 100px;\n\tmargin-right: 150px;\n\tmargin-left: 50px;\n}";
 	k = k + s + "Margin - Individual sides. In CSS, it is possible to specify different margins for different sides of an element";
@@ -328,14 +325,6 @@ $(function(){
 	k = k + s + "Image Sprites - Hover Effect. Now we want to add a hover effect to our navigation list.";
 	
 	
-=======
->>>>>>> parent of 5179a4e... ajout jusqu'a 90 bout de code dans CSS.js
-=======
->>>>>>> parent of 5179a4e... ajout jusqu'a 90 bout de code dans CSS.js
-=======
-	c = c + s + "";
-	k = k + s + "";
->>>>>>> parent of f4cb3bc... ajout jusqu'a 60 bout de code dans CSS.js
 	
 	
 	//PRINT IN THE 
