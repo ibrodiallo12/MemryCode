@@ -59,7 +59,7 @@
 							 <h4  style="display: inline-block;">As fast, Memorize code... </h4>
 						 	 <h3 class="text-muted"  style="display: inline-block;"> &lt;{&gt; HTML/CSS/JavaScript/PHP/Python &lt;}&gt;</h3>
 						 </div>
-					    <div class="pull-right" class="col-md-2 language" style="margin-left: 80px; margin-top: 5px;">
+					    <div class="pull-right col-md-2 language" style="margin-left: 80px; margin-top: 5px;">
 					    <form action="memrycode.php" method="post" id="formChoiceLang">
 						  <select name="choiceLang" class="btn btn-primary" id="language">
 						  	<span class="caret"></span>
@@ -92,13 +92,13 @@
 		<div class="alert alert-default row col-lg-8" style="margin-top: -20px; text-align: left;">
 				<pre><textarea contentEditable="true" id="codingTextarea"></textarea></pre>
 				<div class="btn-primary col-lg-5" style="margin-left: 40px; margin-right: 20px;">
-					<h5><span class="glyphicon glyphicon-pencil"><span> LINE_CODE: <em id="nbLine">0</em> IN <em id="TsecLine">0</em> seconds</h5>
+					<h5><span class="glyphicon glyphicon-pencil"></span> LINE_CODE: <em id="nbLine">0</em> IN <em id="TsecLine">0</em> seconds</h5>
 				</div>
 				<div class="btn-danger col-lg-4">
-					<h5><span class="glyphicon glyphicon-tags"><span> ERROR: <em  id="error">0</em></h5>
+					<h5><span class="glyphicon glyphicon-tags"></span> ERROR: <em  id="error">0</em></h5>
 				</div>
 				<div class="btn-info col-lg-1" style="margin-left: 10px;"  id="next">
-					<h5><span class="glyphicon glyphicon-fast-forward"></h5>
+					<h5><span class="glyphicon glyphicon-fast-forward"></span></h5>
 				</div>
 				<div id="lang" style="display: none;"></div>
 				<div id="separator" style="display: none;"></div>
