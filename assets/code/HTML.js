@@ -249,26 +249,29 @@ $(function(){
 	c = c + s + "<form action=\"action_page.php\"\noninput=\"x.value=parseInt(a.value)+parseInt(b.value)\">\n\t0\n\t<input type=\"range\"  id=\"a\" name=\"a\" value=\"50\">\n\t100 +\n\t<input type=\"number\" id=\"b\" name=\"b\" value=\"50\">\n\t=\n\t<output name=\"x\" for=\"a b\"></output>\n\t<br><br>\n\t<input type=\"submit\">\n</form>";
 	k = k + s + "HTML5 <output> Element. The <output> element represents the result of a calculation (like one performed by a script).";
 	// N 81
-	c = c + s + "";
-	k = k + s + "";
+	c = c + s + "<p>This is some text in a paragraph.</p>";
+	k = k + s + "HTML <p> Tag. Definition and Usage. The <p> tag defines a paragraph. Browsers automatically add some space (margin) before and after each <p> element. The margins can be modified with CSS (with the margin properties).";
 	// N 82
-	c = c + s + "";
-	k = k + s + "";
+	c = c + s + " <object data=\"horse.wav\">\n\t<param name=\"autoplay\" value=\"true\">\n</object>
+";
+	k = k + s + "HTML <param> Tag. Definition and Usage. The <param> tag is used to define parameters for plugins embedded with an <object> element. Tip: HTML 5 also includes two new elements for playing audio or video: The <audio> and <video> tags. ";
 	// N 83
-	c = c + s + "";
-	k = k + s + "";
+	c = c + s + "param {\n\tdisplay: none;\n}";
+	k = k + s + "HTML <param> Tag. Default CSS Settings, Most browsers will display the <param> element with the following default values: ";
 	// N 84
-	c = c + s + "";
-	k = k + s + "";
+	c = c + s + "<pre>\nText in a pre element\nis displayed in a fixed-width\nfont, and it preserves\nboth paces and\nline breaks\n</pre>";
+	k = k + s + "HTML <pre> Tag. Definition and Usage. The <pre> tag defines preformatted text. Text in a <pre> element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks.
+";
 	// N 85
-	c = c + s + "";
-	k = k + s + "";
+	c = c + s + "pre {\n\tdisplay: block;\n\tfont-family: monospace;\n\twhite-space: pre;\n\tmargin: 1em 0;
+}";
+	k = k + s + "HTML <pre> Tag. Default CSS Settings. Most browsers will display the <pre> element with the following default value";
 	// N 86
-	c = c + s + "";
-	k = k + s + "";
+	c = c + s + "<progress value=\"22\" max=\"100\"></progress>";
+	k = k + s + "HTML <progress> Tag. Definition and Usage, The <progress> tag represents the progress of a task. ";
 	// N 87
-	c = c + s + "";
-	k = k + s + "";
+	c = c + s + "<p>WWF's goal is to:\n<q>Build a future where people live in harmony with nature.</q>\nWe hope they succeed.</p>";
+	k = k + s + "HTML <q> Tag. Definition and Usage. The <q> tag defines a short quotation. Browsers normally insert quotation marks around the quotation.";
 	// N 88
 	c = c + s + "";
 	k = k + s + "";
