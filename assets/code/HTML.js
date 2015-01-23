@@ -250,67 +250,64 @@ $(function(){
 	k = k + s + "HTML5 <output> Element. The <output> element represents the result of a calculation (like one performed by a script).";
 	// N 81
 	c = c + s + "<p>This is some text in a paragraph.</p>";
-	k = k + s + "HTML <p> Tag. Definition and Usage. The <p> tag defines a paragraph. Browsers automatically add some space (margin) before and after each <p> element. The margins can be modified with CSS (with the margin properties).";
+	k = k + s + "HTML <p> Tag.  The <p> tag defines a paragraph. Browsers automatically add some space (margin) before and after each <p> element. The margins can be modified with CSS (with the margin properties).";
 	// N 82
-	c = c + s + " <object data=\"horse.wav\">\n\t<param name=\"autoplay\" value=\"true\">\n</object>
-";
-	k = k + s + "HTML <param> Tag. Definition and Usage. The <param> tag is used to define parameters for plugins embedded with an <object> element. Tip: HTML 5 also includes two new elements for playing audio or video: The <audio> and <video> tags. ";
+	c = c + s + "<object data=\"horse.wav\">\n\t<param name=\"autoplay\" value=\"true\">\n</object>";
+	k = k + s + "HTML <param> Tag.  The <param> tag is used to define parameters for plugins embedded with an <object> element. Tip: HTML 5 also includes two new elements for playing audio or video: The <audio> and <video> tags. ";
 	// N 83
 	c = c + s + "param {\n\tdisplay: none;\n}";
 	k = k + s + "HTML <param> Tag. Default CSS Settings, Most browsers will display the <param> element with the following default values: ";
 	// N 84
 	c = c + s + "<pre>\nText in a pre element\nis displayed in a fixed-width\nfont, and it preserves\nboth paces and\nline breaks\n</pre>";
-	k = k + s + "HTML <pre> Tag. Definition and Usage. The <pre> tag defines preformatted text. Text in a <pre> element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks.
-";
+	k = k + s + "HTML <pre> Tag.  The <pre> tag defines preformatted text. Text in a <pre> element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks.";
 	// N 85
-	c = c + s + "pre {\n\tdisplay: block;\n\tfont-family: monospace;\n\twhite-space: pre;\n\tmargin: 1em 0;
-}";
+	c = c + s + "pre {\n\tdisplay: block;\n\tfont-family: monospace;\n\twhite-space: pre;\n\tmargin: 1em 0;\n}";
 	k = k + s + "HTML <pre> Tag. Default CSS Settings. Most browsers will display the <pre> element with the following default value";
 	// N 86
 	c = c + s + "<progress value=\"22\" max=\"100\"></progress>";
 	k = k + s + "HTML <progress> Tag. Definition and Usage, The <progress> tag represents the progress of a task. ";
 	// N 87
 	c = c + s + "<p>WWF's goal is to:\n<q>Build a future where people live in harmony with nature.</q>\nWe hope they succeed.</p>";
-	k = k + s + "HTML <q> Tag. Definition and Usage. The <q> tag defines a short quotation. Browsers normally insert quotation marks around the quotation.";
+	k = k + s + "HTML <q> Tag.  The <q> tag defines a short quotation. Browsers normally insert quotation marks around the quotation.";
 	// N 88
-	c = c + s + "";
-	k = k + s + "";
+	c = c + s + "<p><s>My car is blue.</s></p>\n<p>My new car is silver.</p>";
+	k = k + s + " The <s> tag specifies text that is no longer correct, accurate or relevant. The <s> tag should not be used to define replaced or deleted text, use the <del> tag to define replaced or deleted text.";
 	// N 89
-	c = c + s + "";
-	k = k + s + "";
+	c = c + s + "<samp>Sample output from a computer program</samp>";
+	k = k + s + "HTML <samp> Tag.  The <samp> tag is a phrase tag. It defines sample output from a computer program. Tip: This tag is not deprecated, but it is possible to achieve richer effect with CSS.";
 	// N 90
-	c = c + s + "";
-	k = k + s + "";
+	c = c + s + "<section>\n<h1>WWF</h1>\n<p>The World Wide Fund for Nature (WWF) is....</p>\n</section>";
+	k = k + s + "HTML <section> Tag.  The <section> tag defines sections in a document, such as chapters, headers, footers, or any other sections of the document.";
 	// N 91
-	c = c + s + "";
-	k = k + s + "";
+	c = c + s + "<p>W3Schools.com - the world's largest web development site.</p>\n<p><small>Copyright 1999-2050 by Refsnes Data</small></p>";
+	k = k + s + "HTML <small> Tag.  The <small> tag defines smaller text (and other side comments).";
 	// N 92
-	c = c + s + "";
-	k = k + s + "";
+	c = c + s + " <audio controls>\n\t<source src=\"horse.ogg\" type=\"audio/ogg\">\n\t<source src=\"horse.mp3\" type=\"audio/mpeg\">\n\tYour browser does not support the audio element.\n</audio> ";
+	k = k + s + "HTML <source> Tag.  The <source> tag is used to specify multiple media resources for media elements, such as <video> and <audio>. The <source> tag allows you to specify alternative video/audio files which the browser may choose from, based on its media type or codec support.";
 	// N 93
-	c = c + s + "";
-	k = k + s + "";
+	c = c + s + "<p>My mother has <span style=\"color:blue\">blue</span> eyes.</p>";
+	k = k + s + "HTML <span> Tag.  The <span> tag is used to group inline-elements in a document. The <span> tag provides no visual change by itself. The <span> tag provides a way to add a hook to a part of a text or a part of a document.";
 	// N 94
-	c = c + s + "";
-	k = k + s + "";
+	c = c + s + "<p>Version 2.0 is <strike>not yet available!</strike> now available!</p>";
+	k = k + s + " The <strike> tag is not supported in HTML5. Use the <del> or <s> tag instead. The <strike> tag defines strikethrough text.";
 	// N 95
-	c = c + s + "";
-	k = k + s + "";
+	c = c + s + "<strong>Strong text</strong>";
+	k = k + s + "HTML <strong> Tag. The <strong> tag is a phrase tag. It defines important text. Tip: This tag is not deprecated, but it is possible to achieve richer effect with CSS.";
 	// N 96
-	c = c + s + "";
-	k = k + s + "";
+	c = c + s + "<details>\n\t<summary>Copyright 2014-2015.</summary>\n\t<p> - by MemryCode. All Rights Reserved.</p>\n</details> ";
+	k = k + s + "HTML <summary> Tag.  The <summary> tag defines a visible heading for the <details> element. The heading can be clicked to view/hide the details.";
 	// N 97
-	c = c + s + "";
-	k = k + s + "";
+	c = c + s + "<table>\n\t<tr>\n\t\t<th>Month</th>\n\t\t<th>Savings</th>\n\t</tr>\n\t<tr>\n\t\t<td>January</td>\n\t\t<td>$100</td>\n\t</tr>\n</table> ";
+	k = k + s + "HTML <th> Tag. The <th> tag defines a header cell in an HTML table. An HTML table has two kinds of cells:-Header cells - contains header information (created with the <th> element). -Standard cells - contains data (created with the <td> element)";
 	// N 98
-	c = c + s + "";
-	k = k + s + "";
+	c = c + s + "<head>\n\t<title>HTML Reference</title>\n</head>";
+	k = k + s + "HTML <title> Tag.  The <title> tag is required in all HTML documents and it defines the title of the document. The <title> element:-defines a title in the browser toolbar -provides a title for the page when it is added to favorites -displays a title for the page in search-engine resul";
 	// N 99
-	c = c + s + "";
-	k = k + s + "";
+	c = c + s + "<video width=\"320\" height=\"240\" controls>\n\t<source src=\"forrest_gump.mp4\" type=\"video/mp4\">\n\t<source src=\"forrest_gump.ogg\" type=\"video/ogg\">\n\t<track src=\"subtitles_en.vtt\" kind=\"subtitles\" srclang=\"en\" label=\"English\">\n\t<track src=\"subtitles_no.vtt\" kind=\"subtitles\" srclang=\"no\" label=\"Norwegian\">\n</video>";
+	k = k + s + "HTML <track> Tag. The <track> tag specifies text tracks for media elements (<audio> and <video>). This element is used to specify subtitles, caption files or other files containing text, that should be visible when the media is playing";
 	// N 100
-	c = c + s + "";
-	k = k + s + "";
+	c = c + s + "<p>This is a <u>parragraph</u>.</p>";
+	k = k + s + "The <u> tag represents some text that should be stylistically different from normal text, such as misspelled words or proper nouns in Chinese.";
 	
 	
 		
