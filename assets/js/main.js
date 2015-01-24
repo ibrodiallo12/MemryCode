@@ -67,6 +67,8 @@ $(function(){
 			}
 		}
 		// END FUNCTION if BROWSER HAVE AN ERROR
+		
+		
 		randNumber = rand(maxNumber, 0);
 		//alert(myArray[randNumber]);
 		//alert(rand(maxNumber, 0));
@@ -127,6 +129,8 @@ $(function(){
 						textKnow = myArrayKnow[randNumber];
 						// TEXT IN #KNOW PRINTER
 						$("#knowPrinter").text(textKnow);
+						// SIGN LINK HREF #DETAILS
+						$('#details').attr('href',"http://www.google.com/?q=" + textKnow);
 						// BEGIN WITHOUT red border
 						$(".navbar").css("border","2px solid white");
 						// END OF THE REPEAT
