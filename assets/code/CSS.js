@@ -315,7 +315,7 @@ $(function(){
 	c = c + s + "img {\n\topacity: 0.4;\n\tfilter: alpha(opacity=40); /* For IE8 and earlier */\n}";
 	k = k + s + "Creating a Transparent Image. The CSS3 property for transparency is opacity. First we will show you how to create a transparent image with CSS";
 	// N 103
-	c = c + s + "img {\n\topacity: 0.4;\n\tfilter: alpha(opacity=40); /* For IE8 and earlier */\n}\n\timg:hover {\n\topacity: 1.0;\n\tfilter: alpha(opacity=100); /* For IE8 and earlier */\n}";
+	c = c + s + "img {\n\topacity: 0.4;\n\tfilter: alpha(opacity=40); /* For IE8 and earlier */\n}\nimg:hover {\n\topacity: 1.0;\n\tfilter: alpha(opacity=100); /* For IE8 and earlier */\n}";
 	k = k + s + "Image Transparency - Hover Effect. Mouse over the images:";
 	// N 104
 	c = c + s + "#home {\n\twidth: 46px;\n\theight: 44px;\n\tbackground: url(img_navsprites.gif) 0 0;\n}";

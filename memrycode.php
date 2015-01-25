@@ -60,7 +60,7 @@
 						 	 <h3 class="text-muted"  style="display: inline-block;"> &lt;{&gt; HTML/CSS/JavaScript/PHP/Python &lt;}&gt;</h3>
 						 </div>
 					    <div class="pull-right col-md-2 language" style="margin-left: 80px; margin-top: -50px;">
-					    <form class="pull-right" action="memrycode.php" method="post" id="formChoiceLang">
+					    <form class="pull-right" action="memrycode.php" method="post" id="formChoiceLang" style="margin-top: 10px;">
 						  <select name="choiceLang" class="btn btn-primary" id="language">
 						  	<span class="caret"></span>
 						  	<!-- for print the choice language -->
