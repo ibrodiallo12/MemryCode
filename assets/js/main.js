@@ -134,7 +134,7 @@ $(function(){
 						// BEGIN WITHOUT red border
 						$(".navbar").css("border","2px solid white");
 						// END OF THE REPEAT
-					}, 2000);
+					}, 2200);
 				}
 			}
 		});
