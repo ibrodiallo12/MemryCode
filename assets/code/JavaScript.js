@@ -183,7 +183,7 @@ $(function(){
 	c = c + s + "// Instead of:\ntemp = toCelsius(32);\ntext = \"The temperature is \" + temp + \" Centigrade\";\n// You can use:\ntext = \"The temperature is \" + toCelsius(32) + \" Centigrade\";";
 	k = k + s + "Functions Used as Variables. In JavaScript, functions can be used as variables:";
 	// N 59
-	c = c + s + "var person = {firstName:\"John\", lastName:\"Doe\", age:50, eye:\"blue\"};";
+	c = c + s + "var person = {firstName:\"John\",lastName:\"Doe\",age:50,eye:\"blue\"};";
 	k = k + s + "Object Definition. You define (and create) a JavaScript object with an object literal";
 	// N 60
 	c = c + s + "var person = {\n\tfirstName:\"John\",\n\tlastName:\"Doe\",\n\tage:50,\n\teyeColor:\"blue\"\n};";
@@ -218,6 +218,97 @@ $(function(){
 	// N 70
 	c = c + s + "<button onclick='getElementById(\"demo\").innerHTML=Date()'>The time is?</button>";
 	k = k + s + "HTML Events. An HTML event can be something the browser does, or something a user does. Here are some examples of HTML events. An HTML web page has finished loading. An HTML input field was changed. An HTML button was clicked";
+	// N 71
+	c = c + s + "var txt = \"ABCDEFGHIJKLMNOPQRSTUVWXYZ\";\nvar sln = txt.length;";
+	k = k + s + "JavaScript. String Length. The length of a string is found in the built in property length";
+	// N 72
+	c = c + s + "var x = 'It\\'s alright';\nvar y = \"We are the so-called \\\"Vikings\\\" from the north.\";";
+	k = k + s + "Special Characters. Because strings must be written within quotes, JavaScript will understand this string. Use the \ escape character.";
+	// N 73
+	c = c + s + "document.getElementById(\"demo\").innerHTML = \"Hello \\\
+Dolly!\";";
+	k = k + s + "Breaking Long Code Lines. For best readability, programmers often like to avoid code lines longer than 80 characters. You can also break up a code line within a text string with a single backslash.";
+	// N 74
+	c = c + s + "var x = \"John\";\nvar y = new String(\"John\");\n// type of x will return String\n// type of y will return Object";
+	k = k + s + "Strings Can be Objects. Normally, JavaScript strings are primitive values, created from literals: var firstName = \"John\". But strings can also be defined as objects with the keyword new: var firstName = new String(\"John\")";
+	// N 75
+	c = c + s + "var x = \"John\";\nvar y = new String(\"John\");\n// (x == y) is true because x and y have equal values";
+	k = k + s + "Strings Can be Objects. When using the == equality operator, equal strings looks equal";
+	// N 76
+	c = c + s + "var x = \"John\";\nvar y = new String(\"John\");\n// (x === y) is false because x and y have different types";
+	k = k + s + "Strings Can be Objects. When using the === equality operator, equal strings are not equal";
+	// N 77
+	c = c + s + "var str = \"Please locate where 'locate' occurs!\";\nvar pos = str.indexOf(\"locate\");";
+	k = k + s + "Finding a String in a String. The indexOf() method returns the index of (the position of) the first occurrence of a specified text in a string";
+	// N 78
+	c = c + s + "var str = \"Please locate where 'locate' occurs!\";\nvar pos = str.lastIndexOf(\"locate\");";
+	k = k + s + "Finding a String in a String. The lastIndexOf() method returns the index of the last occurrence of a specified text in a string";
+	// N 79
+	c = c + s + "var str = \"Please locate where 'locate' occurs!\";var pos = str.search(\"locate\");";
+	k = k + s + "Searching for a String in a String. The search() method searches a string for a specified value and returns the position of the match";
+	// N 80
+	c = c + s + "var str = \"Apple, Banana, Kiwi\";var res = str.slice(7,13);";
+	k = k + s + "The slice() Method. slice() extracts a part of a string and returns the extracted part in a new string. The method takes 2 parameters: the starting index (position), and the ending index (position).";
+	// N 81
+	c = c + s + "var str = \"Apple, Banana, Kiwi\";\nvar res = str.slice(-12,-6);";
+	k = k + s + "The slice() Method. If a parameter is negative, the position is counted from the end of the string. This example slices out a portion of a string from position -12 to position -6";
+	// N 82
+	c = c + s + "var res = str.slice(7);";
+	k = k + s + "The slice() Method. If you omit the second parameter, the method will slice out the rest of the string:";
+	// N 83
+	c = c + s + "var res = str.slice(-12);";
+	k = k + s + "The slice() Method. or, counting from the end";
+	// N 84
+	c = c + s + "var str = \"Apple, Banana, Kiwi\";\nvar res = str.substring(7,13); ";
+	k = k + s + "The substring() Method. substring() is similar to slice(). The difference is that substring() cannot accept negative indexes.";
+	// N 85
+	c = c + s + "var str = \"Apple, Banana, Kiwi\";\nvar res = str.substr(7,6);";
+	k = k + s + "The substr() Method. substr() is similar to slice(). The difference is that the second parameter specifies the length of the extracted part.";
+	// N 86
+	c = c + s + "str = \"Please visit Microsoft!\";\nvar n = str.replace(\"Microsoft\",\"W3Schools\");";
+	k = k + s + "Replacing String Content. The replace() method replaces a specified value with another value in a string";
+	// N 87
+	c = c + s + "var text1 = \"Hello World!\";//String\nvar text2 = text1.toUpperCase();//text2 is text1 converted to upper";
+	k = k + s + "Converting to Upper and Lower Case. A string is converted to upper case with toUpperCase()";
+	// N 88
+	c = c + s + " var text1 = \"Hello World!\";//String\nvar text2 = text1.toLowerCase();//text2 is text1 converted to lower";
+	k = k + s + "Converting to Upper and Lower Case. A string is converted to lower case with toLowerCase()";
+	// N 89
+	c = c + s + "var text1 = \"Hello\";\nvar text2 = \"World\";\ntext3 = text1.concat(\" \",text2);";
+	k = k + s + "The concat() Method. concat() joins two or more strings";
+	// N 90
+	c = c + s + "var text = \"Hello\" + \" \" + \"World!\";\nvar text = \"Hello\".concat(\" \",\"World!\");";
+	k = k + s + "The concat() Method. The concat() method can be used instead of the plus operator. These two lines do the same";
+	// N 91
+	c = c + s + "var str = \"HELLO WORLD\";\nstr.charAt(0);// returns H";
+	k = k + s + "The charAt() Method. The charAt() method returns the character at a specified index (position) in a string";
+	// N 92
+	c = c + s + "var str = \"HELLO WORLD\";\nstr.charCodeAt(0);// returns 72 ";
+	k = k + s + "The charCodeAt() Method. The charCodeAt() method returns the unicode of the character at a specified index in a string";
+	// N 93
+	c = c + s + "var str = \"HELLO WORLD\";\nstr[0];// returns H";
+	k = k + s + "Accessing a String as an Array is Unsafe. You might have seen code like this, accessing a string as an array";
+	// N 94
+	c = c + s + "var txt = \"a,b,c,d,e\";// String\ntxt.split(\",\");// Split on commas\ntxt.split(\" \");// Split on spaces\ntxt.split(\"|\");// Split on pipe ";
+	k = k + s + "Converting a String to an Array. A string can be converted to an array with the split() method";
+	// N 95
+	c = c + s + "var txt = \"Hello\";// String\ntxt.split(\"\");// Split in characters";
+	k = k + s + "Converting a String to an Array. A string can be converted to an array with the split() method. If the separator is omitted, the returned array will contain the whole string in index [0].";
+	// N 96
+	c = c + s + "var x = 34.00;// A number with decimals\nvar y = 34;// A number without decimals";
+	k = k + s + "JavaScript Numbers. JavaScript numbers can be written with, or without decimals";
+	// N 97
+	c = c + s + "var x = 999999999999999;// x will be 999999999999999\nvar y = 9999999999999999;// y will be 10000000000000000";
+	k = k + s + "Precision. Integers (numbers without a period or exponent notation) are considered accurate up to 15 digits.";
+	// N 98
+	c = c + s + " var x = 0.2 + 0.1;// x will be 0.30000000000000004";
+	k = k + s + "Precision. Integers (numbers without a period or exponent notation) are considered accurate up to 15 digits. The maximum number of decimals is 17, but floating point arithmetic is not always 100% accurate";
+	// N 99
+	c = c + s + "var x = (0.2 * 10 + 0.1 * 10) / 10;// x will be 0.3";
+	k = k + s + "Precision. Integers (numbers without a period or exponent notation) are considered accurate up to 15 digits. To solve the problem above, it helps to multiply and divide";
+	// N 100
+	c = c + s + "var x = 0xFF;// x will be 255";
+	k = k + s + "Hexadecimal. JavaScript interprets numeric constants as hexadecimal if they are preceded by 0x.";
 	
 	
 	//PRINT IN THE 
