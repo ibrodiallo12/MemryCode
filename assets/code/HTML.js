@@ -282,7 +282,7 @@ $(function(){
 	c = c + s + "<p>W3Schools.com - the world's largest web development site.</p>\n<p><small>Copyright 1999-2050 by Refsnes Data</small></p>";
 	k = k + s + "HTML <small> Tag.  The <small> tag defines smaller text (and other side comments).";
 	// N 92
-	c = c + s + " <audio controls>\n\t<source src=\"horse.ogg\" type=\"audio/ogg\">\n\t<source src=\"horse.mp3\" type=\"audio/mpeg\">\n\tYour browser does not support the audio element.\n</audio> ";
+	c = c + s + "<audio controls>\n\t<source src=\"horse.ogg\" type=\"audio/ogg\">\n\t<source src=\"horse.mp3\" type=\"audio/mpeg\">\n\tYour browser does not support the audio element.\n</audio> ";
 	k = k + s + "HTML <source> Tag.  The <source> tag is used to specify multiple media resources for media elements, such as <video> and <audio>. The <source> tag allows you to specify alternative video/audio files which the browser may choose from, based on its media type or codec support.";
 	// N 93
 	c = c + s + "<p>My mother has <span style=\"color:blue\">blue</span> eyes.</p>";
