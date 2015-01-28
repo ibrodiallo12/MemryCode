@@ -259,7 +259,7 @@ Dolly!\";";
 	c = c + s + "var res = str.slice(-12);";
 	k = k + s + "The slice() Method. or, counting from the end";
 	// N 84
-	c = c + s + "var str = \"Apple, Banana, Kiwi\";\nvar res = str.substring(7,13); ";
+	c = c + s + "var str = \"Apple, Banana, Kiwi\";\nvar res = str.substring(7,13);";
 	k = k + s + "The substring() Method. substring() is similar to slice(). The difference is that substring() cannot accept negative indexes.";
 	// N 85
 	c = c + s + "var str = \"Apple, Banana, Kiwi\";\nvar res = str.substr(7,6);";
@@ -271,7 +271,7 @@ Dolly!\";";
 	c = c + s + "var text1 = \"Hello World!\";//String\nvar text2 = text1.toUpperCase();//text2 is text1 converted to upper";
 	k = k + s + "Converting to Upper and Lower Case. A string is converted to upper case with toUpperCase()";
 	// N 88
-	c = c + s + " var text1 = \"Hello World!\";//String\nvar text2 = text1.toLowerCase();//text2 is text1 converted to lower";
+	c = c + s + "var text1 = \"Hello World!\";//String\nvar text2 = text1.toLowerCase();//text2 is text1 converted to lower";
 	k = k + s + "Converting to Upper and Lower Case. A string is converted to lower case with toLowerCase()";
 	// N 89
 	c = c + s + "var text1 = \"Hello\";\nvar text2 = \"World\";\ntext3 = text1.concat(\" \",text2);";
@@ -309,6 +309,117 @@ Dolly!\";";
 	// N 100
 	c = c + s + "var x = 0xFF;// x will be 255";
 	k = k + s + "Hexadecimal. JavaScript interprets numeric constants as hexadecimal if they are preceded by 0x.";
+	// N 101
+	c = c + s + "var myNumber = 128;\nmyNumber.toString(16);// returns 80\nmyNumber.toString(8);// returns 200\nmyNumber.toString(2);// returns 10000000";
+	k = k + s + "Hexadecimal. JavaScript interprets numeric constants as hexadecimal if they are preceded by 0x. By default, Javascript displays numbers as base 10 decimals. But you can use the toString() method to output numbers as base 16 (hex), base 8 (octal), or base 2 (binary).";
+	// N 102
+	c = c + s + "var myNumber = 2;\nwhile (myNumber != Infinity) { // Execute until Infinity\n\tmyNumber = myNumber * myNumber;\n}";
+	k = k + s + "Infinity. Infinity (or -Infinity) is the value JavaScript will return if you calculate a number outside the largest possible number.";
+	// N 103
+	c = c + s + "var x =  2 / 0;// x will be Infinity\nvar y = -2 / 0;// y will be -Infinity";
+	k = k + s + "Infinity. Division by 0 (zero) also generates Infinity.";
+	// N 104
+	c = c + s + " typeof Infinity;// returns \"number\"";
+	k = k + s + "Infinity is a number: typeOf Infinity returns number.";
+	// N 105
+	c = c + s + "var x = 100 / \"Apple\";// x will be NaN (Not a Number)";
+	k = k + s + "NaN - Not a Number. NaN is a JavaScript reserved word indicating that a value is not a number. Trying to do arithmetic with a non-numeric string will result in NaN (Not a Number):";
+	// N 106
+	c = c + s + "var x = 100 / \"10\";// x will be 10";
+	k = k + s + "NaN - Not a Number. However, if the string contains a numeric value , the result will be a number:";
+	// N 107
+	c = c + s + "var x = 100 / \"Apple\";\nisNaN(x);// returns true because x is Not a Number";
+	k = k + s + "NaN - Not a Number. You can use the global JavaScript function isNaN() to find out if a value is a number.";
+	// N 108
+	c = c + s + "var x = NaN;\nvar y = 5;\nvar z = x + y;// z will be NaN";
+	k = k + s + "Watch out for NaN. If you use NaN in a mathematical operation, the result will also be NaN.";
+	// N 109
+	c = c + s + "typeof NaN;// returns \"number\"";
+	k = k + s + "NaN is a number: typeOf NaN returns number.";
+	// N 110
+	c = c + s + "var x = 123;\nvar y = new Number(123);\n\n\ntypeof x;// returns number\ntypeof y; // returns object";
+	k = k + s + "Numbers Can be Objects. Normally JavaScript numbers are primitive values created from literals: var x = 123. But numbers can also be defined as objects with the keyword new: var y = new Number(123)";
+	// N 111
+	c = c + s + "var x = 123;\nvar y = new Number(123);\n//(x === y)\nis false because x is a number and y is an object";
+	k = k + s + "Numbers Can be Objects. Don't create Number objects. They slow down execution speed, and produce nasty side effects";
+	// N 112
+	c = c + s + "var x = 123;\nx.toString();// returns 123 from variable x\n(123).toString();// returns 123 from literal 123\n(100 + 23).toString();//returns 123 from expression 100 + 23";
+	k = k + s + "The toString() Method. toString() returns a number as a string. All number methods can be used on any type of numbers (literals, variables, or expressions):";
+	// N 113
+	c = c + s + "var x = 9.656;\nx.toExponential(2);// returns 9.66e+0\nx.toExponential(4);// returns 9.6560e+0\nx.toExponential(6);// returns 9.656000e+0";
+	k = k + s + "The toExponential() Method. toExponential() returns a string, with a number rounded and written using exponential notation. A parameter defines the number of character behind the decimal point:";
+	// N 114
+	c = c + s + "var x = 9.656;\nx.toFixed(0);// returns 10\nx.toFixed(2);// returns 9.66\nx.toFixed(4);// returns 9.6560\nx.toFixed(6);// returns 9.656000";
+	k = k + s + "The toFixed() Method. toFixed() returns a string, with the number written with a specified number of decimals";
+	// N 115
+	c = c + s + "var x = 9.656;\nx.toPrecision();// returns 9.656\nx.toPrecision(2);// returns 9.7\nx.toPrecision(4);// returns 9.656\nx.toPrecision(6);// returns 9.65600";
+	k = k + s + "The toPrecision() Method. toPrecision() returns a string, with a number written with a specified length";
+	// N 116
+	c = c + s + "x = true;\nNumber(x);// returns 1\nx = false;\nNumber(x);// returns 0\n\nx = new Date();\nNumber(x);// returns 1404568027739\nx = \"10\"\nNumber(x);// returns 10\nx = \"10 20\"\nNumber(x);// returns NaN";
+	k = k + s + "The Number() Method. Number(), can be used to convert JavaScript variables to numbers:";
+	// N 117
+	c = c + s + "parseInt(\"10\");// returns 10\nparseInt(\"10.33\");// returns 10\nparseInt(\"10 20 30\");// returns 10\nparseInt(\"10 years\");// returns 10\nparseInt(\"years 10\");// returns NaN";
+	k = k + s + "The parseInt() Method. parseInt() parses a string and returns a whole number. Spaces are allowed. Only the first number is returned:";
+	// N 118
+	c = c + s + "var x = 123;\nx.valueOf();// returns 123 from variable x\n(123).valueOf();// returns 123 from literal 123\n(100 + 23).valueOf();// returns 123 from expression 100 + 23";
+	k = k + s + "The valueOf() Method. valueOf() returns a number as a number. In JavaScript, a number can be a primitive value (typeof = number) or an object (typeof = object). The valueOf() method is used internally in JavaScript to convert Number objects to primitive values.";
+	// N 119
+	c = c + s + "Math.random();// returns a random number";
+	k = k + s + "The Math Object. The Math object allows you to perform mathematical tasks. The Math object includes several mathematical methods.";
+	// N 120
+	c = c + s + "Math.min(0, 150, 30, 20, -8);// returns -8";
+	k = k + s + "Math.min() and Math.max(). Math.min() and Math.max() can be used to find the lowest or highest value in a list of arguments";
+	// N 120
+	c = c + s + "Math.max(0, 150, 30, 20, -8);// returns 150";
+	k = k + s + "Math.min() and Math.max(). Math.min() and Math.max() can be used to find the lowest or highest value in a list of arguments";
+	// N 121
+	c = c + s + "Math.random();// returns a random number";
+	k = k + s + "Math.random(). Math.random() returns a random number between 0 and 1";
+	// N 122
+	c = c + s + "Math.round(4.7);// returns 5\nMath.round(4.4);// returns 4";
+	k = k + s + "Math.round(). Math.round() rounds a number to the nearest integer:";
+	// N 123
+	c = c + s + "Math.ceil(4.4);// returns 5";
+	k = k + s + "Math.ceil(). Math.ceil() rounds a number up to the nearest integer";
+	// N 124
+	c = c + s + "Math.floor(4.7);// returns 4";
+	k = k + s + "Math.floor(). Math.floor() rounds a number down to the nearest integer";
+	// N 125
+	c = c + s + "Math.floor(Math.random() * 11);//returns a random number between 0 and 10";
+	k = k + s + "Math.floor() and Math.random() can be used together to return a random number between 0 and 10";
+	// N 126
+	c = c + s + "Math.E;// returns Euler's number\nMath.PI // returns PI\nMath.SQRT2 // returns the square root of 2\nMath.SQRT1_2 // returns the square root of 1/2\nMath.LN2 // returns the natural logarithm of 2\nMath.LN10 // returns the natural logarithm of 10\nMath.LOG2E // returns base 2 logarithm of E\nMath.LOG10E // returns base 10 logarithm of E";
+	k = k + s + "Math Constants. JavaScript provides 8 mathematical constants that can be accessed with the Math object";
+	// N 127
+	c = c + s + "<p id=\"demo\"></p>\n\n<script>\ndocument.getElementById(\"demo\").innerHTML = Date();\n</script>";
+	k = k + s + "JavaScript Dates. The Date object lets you work with dates (years, months, days, minutes, seconds, milliseconds). Displaying Dates.We use a script to display dates inside a <p> element with id=\"demo\"";
+	// N 128
+	c = c + s + "new Date()\nnew Date(milliseconds)\nnew Date(dateString)\nnew Date(year, month, day, hours, minutes, seconds, milliseconds)";
+	k = k + s + "Creating Date Objects. The Date object lets us work with dates. A date consists of a year, a month, a day, a minute, a second, and a millisecond. Date objects are created with the new Date() constructor.";
+	// N 129
+	c = c + s + "<script>\nvar d = new Date();\ndocument.getElementById(\"demo\").innerHTML = d;\n</script>";
+	k = k + s + "Creating Date Objects. The Date object lets us work with dates. Using new Date(), creates a new date object with the current date and time";
+	// N 130
+	c = c + s + "<script>\nvar d = new Date(\"October 13, 2014 11:13:00\");\ndocument.getElementById(\"demo\").innerHTML = d;\n</script> ";
+	k = k + s + "Creating Date Objects. Using new Date(date string), creates a new date object from the specified date and time";
+	// N 125
+	c = c + s + "<script>\nvar d = new Date(86400000);\ndocument.getElementById(\"demo\").innerHTML = d;\n</script>";
+	k = k + s + "Creating Date Objects. Using new Date(number), creates a new date object as zero time plus the number. Zero time is 01 January 1970 00:00:00 UTC. The number is specified in milliseconds";
+	// N 126
+	c = c + s + "<script>\nvar d = new Date(99,5,24,11,33,30,0);\ndocument.getElementById(\"demo\").innerHTML = d;\n</script>";
+	k = k + s + "Creating Date Objects. Using new Date(7 numbers), creates a new date object with the specified date and time. The 7 numbers specify the year, month, day, hour, minute, second, and millisecond, in that order:";
+	// N 127
+	c = c + s + "<script>\nvar d = new Date(99,5,24);\ndocument.getElementById(\"demo\").innerHTML = d;\n</script>";
+	k = k + s + "Creating Date Objects. Variants of the example above let us omit any of the last 4 parameters:";
+	// N 128
+	c = c + s + "";
+	k = k + s + "";
+	// N 129
+	c = c + s + "";
+	k = k + s + "";
+	// N 130
+	c = c + s + "";
+	k = k + s + "";
 	
 	
 	//PRINT IN THE 
