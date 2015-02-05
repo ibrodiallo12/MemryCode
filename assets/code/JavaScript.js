@@ -216,7 +216,7 @@ $(function(){
 	c = c + s + "// code here can use window.carName\nfunction myFunction(){\n\tcarName = \"Volvo\";\n}";
 	k = k + s + "Global Variables in HTML. With JavaScript, the global scope is the complete JavaScript environment. In HTML, the global scope is the window object: All global variables belong to the window object.";
 	// N 70
-	c = c + s + "<button onclick='getElementById(\"demo\").innerHTML=Date()'>The time is?</button>";
+	c = c + s + "<button onclick='getElementById(\"demo\").innerHTML=Date()'>\nThe time is?\n</button>";
 	k = k + s + "HTML Events. An HTML event can be something the browser does, or something a user does. Here are some examples of HTML events. An HTML web page has finished loading. An HTML input field was changed. An HTML button was clicked";
 	// N 71
 	c = c + s + "var txt = \"ABCDEFGHIJKLMNOPQRSTUVWXYZ\";\nvar sln = txt.length;";
@@ -283,13 +283,13 @@ Dolly!\";";
 	c = c + s + "var str = \"HELLO WORLD\";\nstr.charAt(0);// returns H";
 	k = k + s + "The charAt() Method. The charAt() method returns the character at a specified index (position) in a string";
 	// N 92
-	c = c + s + "var str = \"HELLO WORLD\";\nstr.charCodeAt(0);// returns 72 ";
+	c = c + s + "var str = \"HELLO WORLD\";\nstr.charCodeAt(0);// returns 72";
 	k = k + s + "The charCodeAt() Method. The charCodeAt() method returns the unicode of the character at a specified index in a string";
 	// N 93
 	c = c + s + "var str = \"HELLO WORLD\";\nstr[0];// returns H";
 	k = k + s + "Accessing a String as an Array is Unsafe. You might have seen code like this, accessing a string as an array";
 	// N 94
-	c = c + s + "var txt = \"a,b,c,d,e\";// String\ntxt.split(\",\");// Split on commas\ntxt.split(\" \");// Split on spaces\ntxt.split(\"|\");// Split on pipe ";
+	c = c + s + "var txt = \"a,b,c,d,e\";// String\ntxt.split(\",\");// Split on commas\ntxt.split(\" \");// Split on spaces\ntxt.split(\"|\");// Split on pipe";
 	k = k + s + "Converting a String to an Array. A string can be converted to an array with the split() method";
 	// N 95
 	c = c + s + "var txt = \"Hello\";// String\ntxt.split(\"\");// Split in characters";
@@ -301,7 +301,7 @@ Dolly!\";";
 	c = c + s + "var x = 999999999999999;// x will be 999999999999999\nvar y = 9999999999999999;// y will be 10000000000000000";
 	k = k + s + "Precision. Integers (numbers without a period or exponent notation) are considered accurate up to 15 digits.";
 	// N 98
-	c = c + s + " var x = 0.2 + 0.1;// x will be 0.30000000000000004";
+	c = c + s + "var x = 0.2 + 0.1;// x will be 0.30000000000000004";
 	k = k + s + "Precision. Integers (numbers without a period or exponent notation) are considered accurate up to 15 digits. The maximum number of decimals is 17, but floating point arithmetic is not always 100% accurate";
 	// N 99
 	c = c + s + "var x = (0.2 * 10 + 0.1 * 10) / 10;// x will be 0.3";
@@ -319,7 +319,7 @@ Dolly!\";";
 	c = c + s + "var x =  2 / 0;// x will be Infinity\nvar y = -2 / 0;// y will be -Infinity";
 	k = k + s + "Infinity. Division by 0 (zero) also generates Infinity.";
 	// N 104
-	c = c + s + " typeof Infinity;// returns \"number\"";
+	c = c + s + "typeof Infinity;// returns \"number\"";
 	k = k + s + "Infinity is a number: typeOf Infinity returns number.";
 	// N 105
 	c = c + s + "var x = 100 / \"Apple\";// x will be NaN (Not a Number)";
@@ -337,7 +337,7 @@ Dolly!\";";
 	c = c + s + "typeof NaN;// returns \"number\"";
 	k = k + s + "NaN is a number: typeOf NaN returns number.";
 	// N 110
-	c = c + s + "var x = 123;\nvar y = new Number(123);\n\n\ntypeof x;// returns number\ntypeof y; // returns object";
+	c = c + s + "var x = 123;\nvar y = new Number(123);\ntypeof x;// returns number\ntypeof y; // returns object";
 	k = k + s + "Numbers Can be Objects. Normally JavaScript numbers are primitive values created from literals: var x = 123. But numbers can also be defined as objects with the keyword new: var y = new Number(123)";
 	// N 111
 	c = c + s + "var x = 123;\nvar y = new Number(123);\n//(x === y)\nis false because x is a number and y is an object";
@@ -400,26 +400,57 @@ Dolly!\";";
 	c = c + s + "<script>\nvar d = new Date();\ndocument.getElementById(\"demo\").innerHTML = d;\n</script>";
 	k = k + s + "Creating Date Objects. The Date object lets us work with dates. Using new Date(), creates a new date object with the current date and time";
 	// N 130
-	c = c + s + "<script>\nvar d = new Date(\"October 13, 2014 11:13:00\");\ndocument.getElementById(\"demo\").innerHTML = d;\n</script> ";
+	c = c + s + "<script>\nvar d = new Date(\"October 13, 2014 11:13:00\");\ndocument.getElementById(\"demo\").innerHTML = d;\n</script>";
 	k = k + s + "Creating Date Objects. Using new Date(date string), creates a new date object from the specified date and time";
 	// N 125
 	c = c + s + "<script>\nvar d = new Date(86400000);\ndocument.getElementById(\"demo\").innerHTML = d;\n</script>";
 	k = k + s + "Creating Date Objects. Using new Date(number), creates a new date object as zero time plus the number. Zero time is 01 January 1970 00:00:00 UTC. The number is specified in milliseconds";
 	// N 126
 	c = c + s + "<script>\nvar d = new Date(99,5,24,11,33,30,0);\ndocument.getElementById(\"demo\").innerHTML = d;\n</script>";
-	k = k + s + "Creating Date Objects. Using new Date(7 numbers), creates a new date object with the specified date and time. The 7 numbers specify the year, month, day, hour, minute, second, and millisecond, in that order:";
+	k = k + s + "Creating Date Objects. Using new Date(7 numbers), creates a new date object with the specified date and time. The 7 numbers specify the year, month, day, hour, minute, second, and millisecond, in that order";
 	// N 127
 	c = c + s + "<script>\nvar d = new Date(99,5,24);\ndocument.getElementById(\"demo\").innerHTML = d;\n</script>";
-	k = k + s + "Creating Date Objects. Variants of the example above let us omit any of the last 4 parameters:";
+	k = k + s + "Creating Date Objects. Variants of the example above let us omit any of the last 4 parameters";
 	// N 128
-	c = c + s + "";
-	k = k + s + "";
+	c = c + s + "<p id=\"demo\"></p>\n\n<script>\nd = new Date();\ndocument.getElementById(\"demo\").innerHTML = d.toString();\n</script>";
+	k = k + s + "Creating Date Objects. Displaying Dates. When you display a date object in HTML, it is automatically converted to a string, with the toString() method.";
 	// N 129
-	c = c + s + "";
-	k = k + s + "";
+	c = c + s + "<script>\nvar d = new Date();\ndocument.getElementById(\"demo\").innerHTML = d.toUTCString();\n</script>";
+	k = k + s + "Creating Date Objects. The toUTCString() method converts a date to a UTC string (a date display standard).";
 	// N 130
-	c = c + s + "";
-	k = k + s + "";
+	c = c + s + "<script>\nvar d = new Date();\ndocument.getElementById(\"demo\").innerHTML = d.toDateString();\n</script>";
+	k = k + s + "Creating Date Objects. The toDateString() method converts a date to a more readable format";
+	// N 131
+	c = c + s + "<script>\nvar d = new Date();\ndocument.getElementById(\"demo\").innerHTML = d.getTime();\n</script>";
+	k = k + s + "The getTime() Method. getTime() returns the the number of milliseconds since 01.01.1970";
+	// N 132
+	c = c + s + "<script>\nvar d = new Date();\ndocument.getElementById(\"demo\").innerHTML = d.getFullYear();\n</script>";
+	k = k + s + "The getFullYear() Method. getFullYear() returns the year of a date as a four digit number";
+	// N 133
+	c = c + s + "<script>\nvar d = new Date();\ndocument.getElementById(\"demo\").innerHTML = d.getDay();\n</script>";
+	k = k + s + "The getDay() Method. getDay() returns the weekday as a number (0-6)";
+	// N 134
+	c = c + s + "<script>\nvar d = new Date();\nvar days = [\"Sunday\",\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\"];\ndocument.getElementById(\"demo\").innerHTML = days[d.getDay()];\n</script>";
+	k = k + s + "The getDay() Method. getDay() returns the weekday as a number (0-6). You can use an array of names, and getDay() to return the weekday as a name";
+	// N 135
+	c = c + s + "<script>\nvar d = new Date();\nd.setFullYear(2020, 0, 14);\ndocument.getElementById(\"demo\").innerHTML = d;\n</script>";
+	k = k + s + "The setFullYear() Method. setFullYear() sets a date object to a specific date. In this example, to January 14, 2020";
+	// N 136
+	c = c + s + "<script>\nvar d = new Date();\nd.setDate(20);\ndocument.getElementById(\"demo\").innerHTML = d;\n</script>";
+	k = k + s + "The setDate() Method. setDate() sets the day of the month (1-31)";
+	// N 137
+	c = c + s + "<script>\nvar d = new Date();\nd.setDate(d.getDate() + 50);\ndocument.getElementById(\"demo\").innerHTML = d;\n</script>";
+	k = k + s + "The setDate() Method. setDate() sets the day of the month (1-31). The setDate() method can also be used to add days to a date";
+	// N 138
+	c = c + s + "<script>\nvar msec = Date.parse(\"March 21, 2012\");\ndocument.getElementById(\"demo\").innerHTML = msec;\n</script>";
+	k = k + s + "Date Input - Parsing Dates. If you have an input value (or any string), you can use the Date.parse() method to convert it to milliseconds. Date.parse() returns the number of milliseconds between the date and January 1, 1970	";
+	// N 139
+	c = c + s + "var today, someday, text;\ntoday = new Date();\nsomeday = new Date();\nsomeday.setFullYear(2100, 0, 14);\n\nif (someday > today) {\n\ttext = \"Today is before January 14, 2100\";\n}\nelse {\n\ttext = \"Today is after January 14, 2100.\";\n}\ndocument.getElementById(\"demo\").innerHTML = text;";
+	k = k + s + "Compare Dates. Dates can easily be compared. The following example compares today's date with January 14, 2100:";
+	// N 140
+	c = c + s + "<p id=\"demo\"></p>\n<script>\nvar cars = [\"Saab\", \"Volvo\", \"BMW\"];\ndocument.getElementById(\"demo\").innerHTML = cars;\n</script>";
+	k = k + s + "Displaying Arrays. In this tutorial we will use a script to display arrays inside a <p> element with id=\"demo\"";
+	
 	
 	
 	//PRINT IN THE 
