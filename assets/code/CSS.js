@@ -323,7 +323,51 @@ $(function(){
 	// N 105
 	c = c + s + "#home a:hover {\n\tbackground: url('img_navsprites_hover.gif') 0 -45px;\n}\n#prev a:hover {\n\tbackground: url('img_navsprites_hover.gif') -47px -45px;\n}\n#next a:hover {\n\tbackground: url('img_navsprites_hover.gif') -91px -45px;\n}";
 	k = k + s + "Image Sprites - Hover Effect. Now we want to add a hover effect to our navigation list.";
-	
+	// N 106
+	c = c + s + "@media screen {\n\tp {\n\t\tfont-family: verdana,sans-serif;\n\t\tfont-size: 14px;\n\t}\n}\n@media print {\n\tp {\n\t\tfont-size: 20px;\n\t\tcolor: red;\n\t}\n}";
+	k = k + s + "The @media Rule. The @media rule allows different style rules for different media in the same style sheet. The style in the example below tells the browser to display a 14 pixels Verdana font on the screen. But if the page is printed, it will be in a 20 pixels font, and in a red color:";
+	// N 107
+	c = c + s + "a[target] {\n\tbackground-color: yellow;\n}";
+	k = k + s + "CSS [attribute] Selector. The [attribute] selector is used to select elements with a specified attribute. The following example selects all <a> elements with a target attribute";
+	// N 108
+	c = c + s + "a[target=\"_blank\"] {\n\tbackground-color: yellow;\n}";
+	k = k + s + "CSS [attribute=value] Selector. The [attribute=value] selector is used to select elements with a specified attribute and value. The following example selects all <a> elements with a target=\"_blank\" attribute";
+	// N 109
+	c = c + s + "[title~=\"flower\"] {\n\tborder: 5px solid yellow;\n}";
+	k = k + s + "CSS [attribute~=value] Selector. The [attribute~=value] selector is used to select elements with an attribute value containing a specified word. The following example selects all elements with a title attribute that contains a space-separated list of words, one of which is \"flower\"";
+	// N 110
+	c = c + s + "[class|=\"top\"] {\n\tbackground: blue;\n}";
+	k = k + s + "CSS [attribute|=value] Selector. The [attribute|=value] selector is used to select elements with the specified attribute starting with the specified value. The following example selects all elements with a class attribute value that begins with \"top\"";
+	// N 111
+	c = c + s + "[class^=\"top\"] {\n\tbackground: red;\n}";
+	k = k + s + "CSS [attribute^=value] Selector. The [attribute^=value] selector is used to select elements whose attribute value begins with a specified value. The following example selects all elements with a class attribute value that begins with \"top\". Note: The value does not have to be a whole word! ";
+	// N 112
+	c = c + s + "[class$=\"test\"] {\n\tbackground: chocolate;\n}";
+	k = k + s + "CSS [attribute$=value] Selector. The [attribute$=value] selector is used to select elements whose attribute value ends with a specified value.The following example selects all elements with a class attribute value that ends with \"test\": Note: The value does not have to be a whole word!";
+	// N 113
+	c = c + s + "[class*=\"te\"] {\n\tbackground: yellow;\n}";
+	k = k + s + "CSS [attribute*=value] Selector. The [attribute*=value] selector is used to select elements whose attribute value contains a specified value. The following example selects all elements with a class attribute value that contains \"te\". Note: The value does not have to be a whole word";
+	// N 114
+	c = c + s + "input[type=\"text\"] {\n\twidth: 150px;\n\tdisplay: block;\n\tmargin-bottom: 10px;\n\tbackground-color: yellow;\n}";
+	k = k + s + "Styling Forms. The attribute selectors can be useful for styling forms without class or ID";
+	// N 115
+	c = c + s + "input[type=\"button\"] {\n\twidth: 120px;\n\tmargin-left: 35px;\n\tdisplay: block;\n}";
+	k = k + s + "Styling Forms. The attribute selectors can be useful for styling forms without class or ID";
+	// N 116
+	c = c + s + "";
+	k = k + s + "";
+	// N 117
+	c = c + s + "";
+	k = k + s + "";
+	// N 118
+	c = c + s + "";
+	k = k + s + "";
+	// N 119
+	c = c + s + "";
+	k = k + s + "";
+	// N 120
+	c = c + s + "";
+	k = k + s + "";
 	
 	
 	
