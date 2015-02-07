@@ -59,7 +59,7 @@ if(isset($_GET['lang'])){
 						<div class="navbar-header">
 							<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
 							</button>
-							<a class="navbar-brand" href="#">&lt;{&gt; MeMRyCoDe &lt;}&gt;</a>
+							<a class="navbar-brand" href="index.php">&lt;{&gt; MeMRyCoDe &lt;}&gt;</a>
 						</div>
 						 <div class="pull-left" style="margin-top: -10px; margin-left: 50px;">
 							 <h4  style="display: inline-block;">As fast, Memorize code... </h4>
