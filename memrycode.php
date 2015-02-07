@@ -11,8 +11,9 @@ if(isset($_GET['lang'])){
 	elseif($_GET['lang'] == 'JavaScript'){$lang = 'JavaScript'; createCookie('JavaScript');}
 	elseif($_GET['lang'] == 'Python'){$lang = 'Python'; createCookie('Python');}
 	else{$lang = 'HTML';}
-}
-;?>
+}else{
+	if(isset($_COOKIE['lang'])){$lang = $_COOKIE['lang'];}
+}?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
