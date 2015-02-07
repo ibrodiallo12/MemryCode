@@ -178,7 +178,7 @@ $(function(){
 	k = k + s + "Why Functions? You can reuse code: Define the code once, and use it many times.You can use the same code many times with different arguments, to produce different results.";
 	// N 57
 	c = c + s + "//Accessing a function without () will return the function definition:\nfunction toCelsius(fahrenheit){\n\treturn (5/9) * (fahrenheit-32);\n}\ndocument.getElementById(\"demo\").innerHTML = toCelsius;";
-	k = k + s + "The () Operator Invokes the Function. Using the example above, toCelsius refers to the function object, and toCelcius() refers to the function result.";
+	k = k + s + "The () Operator Invokes the Function. Using the example, toCelsius refers to the function object, and toCelcius() refers to the function result.";
 	// N 58
 	c = c + s + "// Instead of:\ntemp = toCelsius(32);\ntext = \"The temperature is \" + temp + \" Centigrade\";\n// You can use:\ntext = \"The temperature is \" + toCelsius(32) + \" Centigrade\";";
 	k = k + s + "Functions Used as Variables. In JavaScript, functions can be used as variables:";
@@ -410,7 +410,7 @@ Dolly!\";";
 	k = k + s + "Creating Date Objects. Using new Date(7 numbers), creates a new date object with the specified date and time. The 7 numbers specify the year, month, day, hour, minute, second, and millisecond, in that order";
 	// N 127
 	c = c + s + "<script>\nvar d = new Date(99,5,24);\ndocument.getElementById(\"demo\").innerHTML = d;\n</script>";
-	k = k + s + "Creating Date Objects. Variants of the example above let us omit any of the last 4 parameters";
+	k = k + s + "Creating Date Objects. Variants of the example let us omit any of the last 4 parameters";
 	// N 128
 	c = c + s + "<p id=\"demo\"></p>\n\n<script>\nd = new Date();\ndocument.getElementById(\"demo\").innerHTML = d.toString();\n</script>";
 	k = k + s + "Creating Date Objects. Displaying Dates. When you display a date object in HTML, it is automatically converted to a string, with the toString() method.";
@@ -446,10 +446,100 @@ Dolly!\";";
 	k = k + s + "Date Input - Parsing Dates. If you have an input value (or any string), you can use the Date.parse() method to convert it to milliseconds. Date.parse() returns the number of milliseconds between the date and January 1, 1970	";
 	// N 139
 	c = c + s + "var today, someday, text;\ntoday = new Date();\nsomeday = new Date();\nsomeday.setFullYear(2100, 0, 14);\n\nif (someday > today) {\n\ttext = \"Today is before January 14, 2100\";\n}\nelse {\n\ttext = \"Today is after January 14, 2100.\";\n}\ndocument.getElementById(\"demo\").innerHTML = text;";
-	k = k + s + "Compare Dates. Dates can easily be compared. The following example compares today's date with January 14, 2100:";
+	k = k + s + "Compare Dates. Dates can easily be compared. The example compares today's date with January 14, 2100:";
 	// N 140
 	c = c + s + "<p id=\"demo\"></p>\n<script>\nvar cars = [\"Saab\", \"Volvo\", \"BMW\"];\ndocument.getElementById(\"demo\").innerHTML = cars;\n</script>";
-	k = k + s + "Displaying Arrays. In this tutorial we will use a script to display arrays inside a <p> element with id=\"demo\"";
+	k = k + s + "Displaying Arrays. Use a script to display arrays inside a <p> element with id=\"demo\"";
+	// N 141
+	c = c + s + "var cars = [\"Saab\", \"Volvo\", \"BMW\"];";
+	k = k + s + "Create an array, and assign values to it";
+	// N 142
+	c = c + s + "var cars = [\n\t\"Saab\",\n\t\"Volvo\",\n\t\"BMW\"\n];";
+	k = k + s + "Create an array. Spaces and line breaks are not important. A declaration can span multiple lines";
+	// N 143
+	c = c + s + "var car1 = \"Saab\";\nvar car2 = \"Volvo\";\nvar car3 = \"BMW\";";
+	k = k + s + "What is an Array? An array is a special variable, which can hold more than one value at a time. If you have a list of items (a list of car names, for example), storing the cars in single variables could look like this:";
+	// N 144
+	c = c + s + "var Numbers = [\"number1\", \"number2\", \"number3\"];";
+	k = k + s + "Creating an Array. Using an array literal is the easiest way to create a JavaScript Array.";
+	// N 145
+	c = c + s + "var cars = new Array(\"Saab\", \"Volvo\", \"BMW\");";
+	k = k + s + "Using the JavaScript Keyword new. The following example also creates an Array, and assigns values to it:";
+	// N 146
+	c = c + s + "var name = cars[0];";
+	k = k + s + "Access the Elements of an Array. You refer to an array element by referring to the index number. This statement access the value of the first element in myCars";
+	// N 147
+	c = c + s + "cars[0] = \"Opel\";";
+	k = k + s + "Access the Elements of an Array. This statement modifies the first element in cars";
+	// N 148
+	c = c + s + "myArray[0] = Date.now;\nmyArray[1] = myFunction;\nmyArray[2] = myCars;";
+	k = k + s + "You Can Have Different Objects in One Array. Arrays are special kinds of objects. Because of this, you can have variables of different types in the same Array. You can have objects in an Array. You can have functions in an Array. You can have arrays in an Array:";
+	// N 149
+	c = c + s + "var person = [\"John\", \"Doe\", 46];";
+	k = k + s + "Arrays are Objects. Arrays are a special type of objects. The typeof operator in JavaScript returns \"object\" for arrays. Arrays use numbers to access its \"elements\". In this example, person[0] returns John";
+	// N 150
+	c = c + s + "var x = cars.length;\n// The length property returns the number of elements in cars\nvar y = cars.sort();\n// The sort() method sort cars in alphabetical order";
+	k = k + s + "Array Properties and Methods. The real strength of JavaScript arrays are the built-in array properties and methods";
+	// N 151
+	c = c + s + "var fruits = [\"Banana\", \"Apple\", \"Mango\"];\nfruits.length;// the length of fruits is 4";
+	k = k + s + "The length Property. The length property of an array returns the length of an array (the number of array elements).";
+	// N 152
+	c = c + s + "var fruits = [\"Orange\", \"Apple\", \"Mango\"];\nfruits[fruits.length] = \"Lemon\";\n// adds a new element (Lemon) to fruits";
+	k = k + s + "Adding Array Elements. The easiest way to add a new element to an array is to use the length property:";
+	// N 153
+	c = c + s + "var fruits = [\"Banana\", \"Orange\", \"Apple\"];\nfruits[10] = \"Lemon\";\n// adds a new element (Lemon) to fruits";
+	k = k + s + "Adding Array Elements. Adding elements with high indexes can create undefined \"holes\" in an array";
+	// N 154
+	c = c + s + "var index;\nvar fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\nfor (index = 0; index < fruits.length; index++) {\n\ttext += fruits[index];\n}";
+	k = k + s + "Looping Array Elements. The best way to loop through an array is using a standard for loop";
+	// N 155
+	c = c + s + "var person = []\nperson[0] = \"John\";\nperson[1] = \"Doe\";\nperson[2] = 46;\nvar x = person.length; // person.length will return 3\nvar y = person[0]; // person[0] will return \"John\"";
+	k = k + s + "Associative Arrays?. Many programming languages support arrays with named indexes. Arrays with named indexes are called associative arrays (or hashes). JavaScript does not support arrays with named indexes. In JavaScript, arrays use numbered indexes.";
+	// N 156
+	c = c + s + "var person = [];\nperson[\"firstName\"] = \"John\";\nperson[\"lastName\"] = \"Doe\";\nperson[\"age\"] = 46;\nvar x = person.length;// person.length will return 0\nvar y = person[0];// person[0] will return undefined";
+	k = k + s + "Associative Arrays? If you use a named index, when accessing an array, JavaScript will redefine the array to a standard object, and all array methods and properties will produce undefined or incorrect results";
+	// N 157
+	c = c + s + "var points = new Array();// Bad\nvar points = [];// Good";
+	k = k + s + "Avoid new Array(). There is no need to use the JavaScript's built-in array constructor new Array(). Use [] instead. These two different statements both create a new empty array named points";
+	// N 158
+	c = c + s + "var points = new Array(40, 100, 1, 5, 25, 10); // Bad\nvar points = [40, 100, 1, 5, 25, 10]; // Good";
+	k = k + s + "Avoid new Array(). There is no need to use the JavaScript's built-in array constructor new Array().These two different statements both create a new array containing 6 numbers";
+	// N 159
+	c = c + s + "var points = new Array(40, 100);\n// Creates an array with two elements (40 and 100)";
+	k = k + s + "Avoid new Array(). There is no need to use the JavaScript's built-in array constructor new Array(). The new keyword complicates your code and produces nasty side effects";
+	// N 160
+	c = c + s + "var points = new Array(40);\n// Creates an array with 40 undefined elements";
+	k = k + s + "Avoid new Array(). There is no need to use the JavaScript's built-in array constructor new Array(). What if I remove one of the elements?";
+	// N 161
+	c = c + s + "var fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\ntypeof fruits;// typeof returns object";
+	k = k + s + "How to Recognize an Array? A common question is: How do I know if a variable is an array? The problem is that the JavaScript operator typeof returns \"object\"";
+	// N 162
+	c = c + s + "function isArray(myArray) {\n\treturn myArray.constructor.toString().indexOf(\"Array\") > -1;\n}";
+	k = k + s + "How to Recognize an Array? The typeof operator returns object because a JavaScript array is an object. To solve this problem you can create your own isArray() function. The function above always return true if the argument is an array. Or more precisely: it returns true if the object prototype of the argument is \"[object array]\"";
+	// N 163
+	c = c + s + "";
+	k = k + s + "";
+	// N 164
+	c = c + s + "";
+	k = k + s + "";
+	// N 165
+	c = c + s + "";
+	k = k + s + "";
+	// N 166
+	c = c + s + "";
+	k = k + s + "";
+	// N 167
+	c = c + s + "";
+	k = k + s + "";
+	// N 168
+	c = c + s + "";
+	k = k + s + "";
+	// N 169
+	c = c + s + "";
+	k = k + s + "";
+	// N 170
+	c = c + s + "";
+	k = k + s + "";
 	
 	
 	

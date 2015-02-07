@@ -4,8 +4,14 @@ runtime: php
 api_version: 1
 
 handlers:
+# Serve as static files.
 - url: /assets
   static_dir: assets
 
+# Serve php scripts.
+- url: /(.+\.php)$
+  script: \1
+  
+#Serve default page
 - url: /.*
   script: index.php
