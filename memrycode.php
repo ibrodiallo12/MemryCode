@@ -1,10 +1,15 @@
-<?php if(isset($_GET['lang'])){
-// BEGIN THE PHP FOR MAKE CHOICE FOR LANGUAGE
-	if($_GET['lang'] == 'HTML'){$lang = 'HTML';}
-	elseif($_GET['lang'] == 'CSS'){$lang = 'CSS';}
-	elseif($_GET['lang'] == 'PHP'){$lang = 'PHP';}
-	elseif($_GET['lang'] == 'JavaScript'){$lang = 'JavaScript';}
-	elseif($_GET['lang'] == 'Python'){$lang = 'Python';}
+<?php // BEGIN THE PHP 
+if(isset($_GET['lang'])){
+	// FUNCTION FOR CREATE A COOKIE
+	function createCookie($cookie){
+		setcookie('lang', $cookie, time() + 365*24*3600, null, null, false, true);
+	}
+	// THE GET FOR MAKE CHOICE LANGUAGE
+	if($_GET['lang'] == 'HTML'){$lang = 'HTML'; createCookie('HTML');}
+	elseif($_GET['lang'] == 'CSS'){$lang = 'CSS'; createCookie('CSS');}
+	elseif($_GET['lang'] == 'PHP'){$lang = 'PHP'; createCookie('PHP');}
+	elseif($_GET['lang'] == 'JavaScript'){$lang = 'JavaScript'; createCookie('JavaScript');}
+	elseif($_GET['lang'] == 'Python'){$lang = 'Python'; createCookie('Python');}
 	else{$lang = 'HTML';}
 }
 ;?>
@@ -120,7 +125,7 @@
 					mode: "xml",
 					theme: "ambiance",
 					indentWithTabs: false,
-					tabSize: 2,
+					tabSize: 8,
 					smartIndent: false,
 					indentWithTabs: false,
 					indentUnit: 0,
