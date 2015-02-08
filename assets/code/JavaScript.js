@@ -517,30 +517,74 @@ Dolly!\";";
 	c = c + s + "function isArray(myArray) {\n\treturn myArray.constructor.toString().indexOf(\"Array\") > -1;\n}";
 	k = k + s + "How to Recognize an Array? The typeof operator returns object because a JavaScript array is an object. To solve this problem you can create your own isArray() function. The function above always return true if the argument is an array. Or more precisely: it returns true if the object prototype of the argument is \"[object array]\"";
 	// N 163
-	c = c + s + "";
-	k = k + s + "";
+	c = c + s + "var fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\ndocument.getElementById(\"demo\").innerHTML = fruits.valueOf();";
+	k = k + s + "Converting Arrays to Strings. In JavaScript, all objects have the valueOf() and toString() methods. The valueOf() method is the default behavior for an array. It returns an array as a string";
 	// N 164
-	c = c + s + "";
-	k = k + s + "";
+	c = c + s + "var fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\ndocument.getElementById(\"demo\").innerHTML = fruits.toString(); ";
+	k = k + s + "Converting Arrays to Strings. For JavaScript arrays, valueOf() and toString() are equal.";
 	// N 165
-	c = c + s + "";
-	k = k + s + "";
+	c = c + s + "<p id=\"demo\"></p>\n<script>\nvar fruits = [\"Banana\", \"Orange\",\"Apple\", \"Mango\"];\ndocument.getElementById(\"demo\").innerHTML = fruits.join(\"*\");\n</script>";
+	k = k + s + "Converting Arrays to Strings. The join() method also joins all array elements into a string. It behaves just like toString(), but you can specify the separator:";
 	// N 166
-	c = c + s + "";
-	k = k + s + "";
+	c = c + s + "var fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\nfruits.pop();\n//Removes the last element (\"Mango\") from fruits";
+	k = k + s + "Popping and Pushing. When you work with arrays, it is easy to remove elements and add new elements. This is what popping and pushing is: Popping items out of an array, or pushing items into an array. The pop() method removes the last element from an array";
 	// N 167
-	c = c + s + "";
-	k = k + s + "";
+	c = c + s + "var fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\nfruits.push(\"Kiwi\");\n//Adds a new element (\"Kiwi\") to fruits";
+	k = k + s + "Popping and Pushing. The push() method adds a new element to an array (at the end)";
 	// N 168
-	c = c + s + "";
-	k = k + s + "";
+	c = c + s + "var fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\nfruits.shift();\n//Removes the first element \"Banana\" from fruits";
+	k = k + s + "Shifting Elements. Shifting is equivalent to popping, working on the first element instead of the last. The shift() method removes the first element of an array, and \"shifts\" all other elements one place down.";
 	// N 169
-	c = c + s + "";
-	k = k + s + "";
+	c = c + s + "var fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\nfruits.unshift(\"Lemon\");\n//Adds a new element \"Lemon\" to fruits";
+	k = k + s + "Shifting Elements. The unshift() method adds a new element to an array (at the beginning), and \"unshifts\" older elements";
 	// N 170
+	c = c + s + "var fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\nfruits[0] =\"Kiwi\";\n// Changes the first element of fruits to \"Kiwi\"";
+	k = k + s + "Changing Elements. Array elements are accessed using their index number";
+	// N 171
+	c = c + s + "var fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\nfruits[fruits.length] = \"Kiwi\";\n// Appends \"Kiwi\" to fruit";
+	k = k + s + "Changing Elements. The length property provides an easy way to append a new element to an array";
+	// N 172
+	c = c + s + "var fruits = [\"Banana\", \"Orange\", \"Apple\"];\ndelete fruits[0];\n// Changes the first element in fruits to undefined";
+	k = k + s + "Deleting Elements. Since JavaScript arrays are objects, elements can be deleted by using the JavaScript operator delete";
+	// N 173
+	c = c + s + "var fruits = [\"Banana\", \"Apple\", \"Mango\"];\nfruits.splice(2, 0, \"Lemon\", \"Kiwi\");";
+	k = k + s + "Splicing an Array. The splice() method can be used to add new items to an array";
+	// N 174
+	c = c + s + "var fruits = [\"Orange\", \"Apple\", \"Mango\"];\nfruits.splice(0,1);\n// Removes the first element of fruits";
+	k = k + s + "Using splice() to Remove Elements. With clever parameter setting, you can use splice() to remove elements without leaving \"holes\" in the array";
+	// N 175
+	c = c + s + "var fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\nfruits.sort();\n// Sorts the elements of fruits";
+	k = k + s + "Sorting an Array. The sort() method sorts an array alphabetically";
+	// N 176
+	c = c + s + "var fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\nfruits.sort();\n// Sorts the elements of fruits\nfruits.reverse();\n// Reverses the order of the elements";
+	k = k + s + "Reversing an Array. The reverse() method reverses the elements in an array. You can use it to sort an array in descending order";
+	// N 177
+	c = c + s + "var points = [40, 100, 1, 5, 25, 10];\npoints.sort(function(a, b){return a-b});";
+	k = k + s + "Numeric Sort. By default, the sort() function sorts values as strings. This works well for strings (\"Apple\" comes before \"Banana\"). However, if numbers are sorted as strings, \"25\" is bigger than \"100\", because \"2\" is bigger than \"1\". Because of this, the sort() method will produce incorrect result when sorting numbers. You can fix this by providing a compare function";
+	// N 178
+	c = c + s + "var points = [40, 100, 1, 5, 25, 10];\npoints.sort(function(a, b){return b-a});";
+	k = k + s + "Numeric Sort. By default, the sort() function sorts values as strings. This works well for strings (\"Apple\" comes before \"Banana\"). However, if numbers are sorted as strings, \"25\" is bigger than \"100\", because \"2\" is bigger than \"1\". Because of this, the sort() method will produce incorrect result when sorting numbers. You can fix this by providing a compare function";
+	// N 179
+	c = c + s + "function(a, b){return a-b}";
+	k = k + s + "The Compare Function. The purpose of the compare function is to define an alternative sort order. The compare function should return a negative, zero, or positive value, depending on the arguments";
+	// N 180
+	c = c + s + "var points = [40, 100, 1, 5, 25, 10];\npoints.sort(function(a, b){return b-a});\n// now points[0] contains the highest value";
+	k = k + s + "Find the Highest (or Lowest) Value. How to find the highest value in an array?";
+	// N 181
+	c = c + s + "var points = [40, 100, 1, 5, 25, 10];\npoints.sort(function(a, b){return a-b});\n// now points[0] contains the lowest value";
+	k = k + s + "Find the Highest (or Lowest) Value. How to find the highest value in an array? The lowest";
+	// N 182
+	c = c + s + "var myGirls = [\"Cecilie\", \"Lone\"];\Nvar myBoys = [\"Emil\", \"Tobias\",\"Linus\"];\Nvar myChildren = myGirls.concat(myBoys);\N// Concatenates (joins) myGirls and myBoys";
+	k = k + s + "Joining Arrays. The concat() method creates a new array by concatenating two arrays";
+	// N 183
+	c = c + s + "var arr1 = [\"Cecilie\", \"Lone\"];\Nvar arr2 = [\"Emil\", \"Tobias\",\"Linus\"];\Nvar arr3 = [\"Robin\", \"Morgan\"];\Nvar myChildren = arr1.concat(arr2, arr3);\N// Concatenates arr1 with arr2 and arr3";
+	k = k + s + "Joining Arrays. The concat() method creates a new array by concatenating two arrays. The concat() method can take any number of array arguments";
+	// N 184
+	c = c + s + "var fruits = [\"Banana\", \"Orange\", \"Lemon\", \"Apple\", \"Mango\"];\Nvar citrus = fruits.slice(1, 3);";
+	k = k + s + "Slicing an Array. The slice() method slices out a piece of an array";
+	// N 185
 	c = c + s + "";
 	k = k + s + "";
-	
 	
 	
 	//PRINT IN THE 
