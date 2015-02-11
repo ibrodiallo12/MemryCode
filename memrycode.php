@@ -90,13 +90,13 @@ if(isset($_GET['lang'])){
 			  <div><pre id="code" style="font-size: 16px; text-align: left;" class="html"><code></code></pre></div>
 		</div>
 	 <!-- jumbotron MORE KNOW -->
-	  <div class="jumbotron col-lg-4" style="position: absolute; right: 20px; top: 100px;">
+	  <div class="jumbotron col-lg-4" style="position: absolute; right: 20px; top: 60px;">
 	    <h1>...KNOW...</h1>
 	    <p id="knowPrinter"></p>
 	    <a href="" id="details" target="_blank"><p><button type="button" class="btn btn-lg btn-info">View details &raquo;</button></p></a>
 	  </div>
 		<div class="alert alert-default row col-lg-8" style="margin-top: -20px; text-align: left;">
-				<pre><textarea contentEditable="true" id="codingTextarea"></textarea></pre>
+				<pre class="errorCoding"><textarea contentEditable="true" id="codingTextarea"></textarea></pre>
 				<div class="btn-primary col-lg-5" style="margin-left: 40px; margin-right: 20px;">
 					<h5><span class="glyphicon glyphicon-pencil"></span> LINE_CODE: <em id="nbLine">0</em> IN <em id="TsecLine">0</em> seconds</h5>
 				</div>
@@ -126,7 +126,7 @@ if(isset($_GET['lang'])){
 					mode: "xml",
 					theme: "ambiance",
 					indentWithTabs: false,
-					tabSize: 8,
+					tabSize: 9,
 					smartIndent: false,
 					indentWithTabs: false,
 					indentUnit: 0,

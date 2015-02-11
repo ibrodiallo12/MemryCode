@@ -132,7 +132,7 @@ $(function(){
 						// SIGN LINK HREF #DETAILS
 						$('#details').attr('href',"http://www.google.com/?q=" + textKnow);
 						// BEGIN WITHOUT red border
-						$(".navbar").css("border","2px solid white");
+						$(".errorCoding").css("border","2px solid white");
 						// END OF THE REPEAT
 					}, 2100);
 				}
@@ -159,10 +159,10 @@ $(function(){
 			}
 			// border red to textarea
 			if(errr == true){
-				$(".navbar").css("border","2px solid red");
+				$(".errorCoding").css("border","2px solid red");
 			}
 			else{//normal style for textarea
-				$(".navbar").css("border","2px solid white");
+				$(".errorCoding").css("border","2px solid white");
 			}
 		}));
 		
@@ -191,7 +191,7 @@ $(function(){
 				// SIGN LINK HREF #DETAILS
 				$('#details').attr('href',"http://www.google.com/?q=" + textKnow);
 				// BEGIN WITHOUT red border
-				$(".navbar").css("border","2px solid white");
+				$(".errorCoding").css("border","2px solid white");
 				// END OF THE REPEAT
 			}, 2300);
 			// SOLVE PROBLEM WITH setTimeout on reset for second per line code
