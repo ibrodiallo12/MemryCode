@@ -86,7 +86,7 @@ if(isset($_GET['lang'])){
 	
 	<div class="container" style="margin-top: 60px;">
 		<!-- jumbotron MORE KNOW -->
-		<div class="jumbotron hidden-md hidden-sm hidden-xs col-lg-4" style="position: absolute; right: 20px; top: 100px;">
+		<div class="jumbotron hidden-md hidden-sm hidden-xs col-lg-4" style="position: absolute; right: 20px; top: 60px;">
 			<h1>...KNOW...</h1>
 			<p id="knowPrinter"></p>
 			<a href="" id="details" target="_blank"><p><button type="button" class="btn btn-lg btn-info">View details &raquo;</button></p></a>
