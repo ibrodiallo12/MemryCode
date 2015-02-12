@@ -61,11 +61,11 @@ if(isset($_GET['lang'])){
 							</button>
 							<a class="navbar-brand" href="index.php">&lt;{&gt; MeMRyCoDe &lt;}&gt;</a>
 						</div>
-						 <div class="pull-left" style="margin-top: -10px; margin-left: 50px;">
-							 <h4  style="display: inline-block;">As fast, Memorize code... </h4>
-						 	 <h3 class="text-muted"  style="display: inline-block;"> &lt;{&gt; HTML/CSS/JavaScript/PHP/Python &lt;}&gt;</h3>
+						 <div  class="pull-left" style="margin-top: 5px; margin-left: 50px;"">
+							 <h4 class="hidden-xs hidden-sm" style="display: inline-block;">As fast, Memorize code... </h4>
+						 	 <h4 class="hidden-xs text-muted"  style="display: inline-block;"> &lt;{&gt; HTML/CSS/JavaScript/PHP/Python &lt;}&gt;</h4>
 						 </div>
-					    <div class="pull-right col-md-2 language" style="margin-left: 80px; margin-top: -50px;">
+					    <div class="col-sm-2 col-md-2 language" style="position: absolute; right: 0px; top: -10px;">
 					    <form class="pull-right" action="memrycode.php" method="post" id="formChoiceLang" style="margin-top: 10px;">
 						  <select name="choiceLang" class="btn btn-primary" id="language">
 						  	<span class="caret"></span>
@@ -85,25 +85,25 @@ if(isset($_GET['lang'])){
     	</div>
 	
 	<div class="container" style="margin-top: 60px;">
-		 <div class="row col-lg-8">
+		<!-- jumbotron MORE KNOW -->
+		<div class="jumbotron hidden-md hidden-sm hidden-xs col-lg-4" style="position: absolute; right: 20px; top: 100px;">
+			<h1>...KNOW...</h1>
+			<p id="knowPrinter"></p>
+			<a href="" id="details" target="_blank"><p><button type="button" class="btn btn-lg btn-info">View details &raquo;</button></p></a>
+		</div>
+		<div class="row col-lg-8">
 			  <h4 style="font-size: 20px;"><strong id="introWord"></strong></h4>
 			  <div><pre id="code" style="font-size: 16px; text-align: left;" class="html"><code></code></pre></div>
 		</div>
-	 <!-- jumbotron MORE KNOW -->
-	  <div class="jumbotron col-lg-4" style="position: absolute; right: 20px; top: 60px;">
-	    <h1>...KNOW...</h1>
-	    <p id="knowPrinter"></p>
-	    <a href="" id="details" target="_blank"><p><button type="button" class="btn btn-lg btn-info">View details &raquo;</button></p></a>
-	  </div>
 		<div class="alert alert-default row col-lg-8" style="margin-top: -20px; text-align: left;">
 				<pre class="errorCoding"><textarea contentEditable="true" id="codingTextarea"></textarea></pre>
-				<div class="btn-primary col-lg-5" style="margin-left: 40px; margin-right: 20px;">
+				<div class="btn-primary col-md-5 col-sm-5 col-xs-5 col-lg-5" style="margin-left: 40px; margin-right: 20px;">
 					<h5><span class="glyphicon glyphicon-pencil"></span> LINE_CODE: <em id="nbLine">0</em> IN <em id="TsecLine">0</em> seconds</h5>
 				</div>
-				<div class="btn-danger col-lg-4">
+				<div class="btn-danger col-md-4 col-sm-4 col-xs-4 col-lg-4">
 					<h5><span class="glyphicon glyphicon-tags"></span> ERROR: <em  id="error">0</em></h5>
 				</div>
-				<div class="btn-info col-lg-1" style="margin-left: 10px;"  id="next">
+				<div class="btn-info col-md-1 col-sm-1 col-xs-1 col-lg-1" style="margin-left: 10px;"  id="next">
 					<h5><span class="glyphicon glyphicon-fast-forward"></span></h5>
 				</div>
 				<div id="lang" style="display: none;"></div>
