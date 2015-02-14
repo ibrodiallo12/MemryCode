@@ -108,6 +108,7 @@ if(isset($_GET['lang'])){
 				<div id="lang" style="display: none;"></div>
 				<div id="separator" style="display: none;"></div>
 				<div id="know" style="display: none;"></div>
+				<div id="choiceLang" style="display: none;"></div>
 		 </div>
 	</div>
 		 

@@ -13,6 +13,9 @@ $(function(){
 		var splitingKnow = know.split(separator);
 		var myArrayKnow = splitingKnow;
 		
+		var choiceLang = $("#choiceLang").text();
+		alert(choiceLang);
+		
 		var maxNumber = myArray.length;
 		// FUNCTION RANDOM
 		function rand(maxNumber, min){
@@ -34,7 +37,7 @@ $(function(){
 		$("#knowPrinter").text(textKnow);
 		
 		// SIGN LINK HREF #DETAILS
-		$('#details').attr('href',"http://www.google.com/?q=" + textKnow);
+		$('#details').attr('href',"http://www.google.com/?q=" + textKnow + " in " + choiceLang);
 		
 		// CHANGE LANGUAGE
 		$("#language").click(function(){
@@ -77,7 +80,7 @@ $(function(){
 						// TEXT IN #KNOW PRINTER
 						$("#knowPrinter").text(textKnow);
 						// SIGN LINK HREF #DETAILS
-						$('#details').attr('href',"http://www.google.com/?q=" + textKnow);
+						$('#details').attr('href',"http://www.google.com/?q=" + textKnow + " in " + choiceLang);
 						// BEGIN WITHOUT red border
 						$(".errorCoding").css("border","2px solid white");
 						// END OF THE REPEAT
@@ -133,16 +136,16 @@ $(function(){
 				// TEXT IN #KNOW PRINTER
 				$("#knowPrinter").text(textKnow);
 				// SIGN LINK HREF #DETAILS
-				$('#details').attr('href',"http://www.google.com/?q=" + textKnow);
+				$('#details').attr('href',"http://www.google.com/?q=" + textKnow + " in " + choiceLang);
 				// BEGIN WITHOUT red border
 				$(".errorCoding").css("border","2px solid white");
 				// END OF THE REPEAT
 			}, 2300);
 		});
 		
-		// ON CHANGE EDITOR GET KEY-ENTER
+		// ON CHANGE EDITOR COUNTER SECOND
 		editorCoding.on('change',(function(){
-			//second per line of code
+			//second increment
 			var alrdyTsecLine = $("#TsecLine").text();
 			var alrdyTsecLine = parseInt(alrdyTsecLine) + 1;
 			TimeTo = setTimeout(function(){
@@ -152,7 +155,7 @@ $(function(){
 			}else{
 				$("#TsecLine").text(alrdyTsecLine);
 			}
-		}, 2200);
+		}, 2000);
 	}));
 
 		

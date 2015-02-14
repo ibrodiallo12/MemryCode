@@ -699,4 +699,5 @@ Dolly!\";";
 	$("#lang").text(c);
 	$("#know").text(k);
 	$("#separator").text(s);
+	$("#choiceLang").text("JavaScript");
 });
