@@ -9,12 +9,14 @@ $(function(){
 		var splitingLang = lang.split(separator);	
 		var myArray = splitingLang;
 		
+		// The KNOW fhe array with function split
 		var know = $("#know").text();
 		var splitingKnow = know.split(separator);
 		var myArrayKnow = splitingKnow;
 		
+		// print the language programming for more in the search google
 		var choiceLang = $("#choiceLang").text();
-		alert(choiceLang);
+		//alert(choiceLang);
 		
 		var maxNumber = myArray.length;
 		// FUNCTION RANDOM
@@ -30,6 +32,10 @@ $(function(){
 		var Codingcode = myArray[randNumber];
 		// TEXT IN #CODE PRINTER
 		editorCode.setValue(Codingcode);
+		
+		// MAXIMUM OF SECOND FOR CODE
+		var maxSecond = Math.ceil(Codingcode.length / 10);
+		$("#maxSecond").text(maxSecond);
 		
 		// CODE IN #KNOW PRINTER
 		var textKnow = myArrayKnow[randNumber];
@@ -74,7 +80,9 @@ $(function(){
 						Codingcode = myArray[randNumber];
 						// TEXT IN #CODE PRINTER
 						editorCode.setValue(Codingcode);
-	
+						// MAXIMUM OF SECOND FOR CODE
+						var maxSecond = Math.ceil(Codingcode.length / 10);
+						$("#maxSecond").text(maxSecond);
 						// CODE IN #KNOW PRINTER
 						textKnow = myArrayKnow[randNumber];
 						// TEXT IN #KNOW PRINTER
@@ -84,7 +92,7 @@ $(function(){
 						// BEGIN WITHOUT red border
 						$(".errorCoding").css("border","2px solid white");
 						// END OF THE REPEAT
-					}, 2100);
+					}, 2000);
 				}
 			}
 		});
@@ -130,7 +138,9 @@ $(function(){
 				Codingcode = myArray[randNumber];
 				// TEXT IN #CODE PRINTER
 				editorCode.setValue(Codingcode);
-
+				// MAXIMUM OF SECOND FOR CODE
+				var maxSecond = Math.ceil(Codingcode.length / 10);
+				$("#maxSecond").text(maxSecond);
 				// CODE IN #KNOW PRINTER
 				textKnow = myArrayKnow[randNumber];
 				// TEXT IN #KNOW PRINTER
@@ -149,13 +159,15 @@ $(function(){
 			var alrdyTsecLine = $("#TsecLine").text();
 			var alrdyTsecLine = parseInt(alrdyTsecLine) + 1;
 			TimeTo = setTimeout(function(){
-			if($("#TsecLine").text() == "R"){
-				$("#TsecLine").text("0");
-				clearTimeout(TimeTo);
-			}else{
-				$("#TsecLine").text(alrdyTsecLine);
-			}
-		}, 2000);
+				if($("#TsecLine").text() == "R"){
+					$("#TsecLine").text("0");
+					clearTimeout(TimeTo);
+				}else{
+					if(typeof alrdyTsecLine == "number"){
+						$("#TsecLine").text(alrdyTsecLine);
+					}
+				}
+			}, 2000);
 	}));
 
 		

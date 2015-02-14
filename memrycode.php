@@ -82,6 +82,10 @@ if(isset($_GET['lang'])){
     	</div>
 	
 	<div class="container" style="margin-top: 60px;">
+		<!-- MAX SECOND -->
+		<div class="hidden-xs col-lg-2 btn-success" style="position: absolute; left: 10px; top: 200px; width: 80px; padding: 5px;">
+			<em>:::Max:::</em><br /><strong id="maxSecond" style="font-size: 35px;">0</strong><br /><em>seconds</em>
+		</div>
 		<!-- jumbotron MORE KNOW -->
 		<div class="jumbotron hidden-md hidden-sm hidden-xs col-lg-4" style="position: absolute; right: 20px; top: 60px;">
 			<h1>...KNOW...</h1>
