@@ -126,7 +126,7 @@ if(isset($_GET['lang'])){
 					mode: "xml",
 					theme: "ambiance",
 					indentWithTabs: false,
-					tabSize: 9,
+					tabSize: 7,
 					smartIndent: false,
 					indentWithTabs: false,
 					indentUnit: 0,
