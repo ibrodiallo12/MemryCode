@@ -29,8 +29,6 @@ if(isset($_GET['lang'])){
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
-	<link rel="stylesheet" href="assets/highlight/styles/pojoaque.css">
-	<script src="assets/highlight/highlight.pack.js"></script>
 	<script src="assets/codemirror/lib/codemirror.js"></script>
 	<link rel="stylesheet" href="assets/codemirror/lib/codemirror.css">
 	<link rel="stylesheet" href="assets/codemirror/theme/ambiance.css">
@@ -44,7 +42,6 @@ if(isset($_GET['lang'])){
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -93,12 +90,14 @@ if(isset($_GET['lang'])){
 		</div>
 		<div class="row col-lg-8">
 			  <h4 style="font-size: 20px;"><strong id="introWord"></strong></h4>
-			  <div><pre id="code" style="font-size: 16px; text-align: left;" class="html"><code></code></pre></div>
+			  <pre style="text-align: left;"><textarea id="code" contentEditable="true"></textarea></pre>
 		</div>
 		<div class="alert alert-default row col-lg-8" style="margin-top: -20px; text-align: left;">
-				<pre class="errorCoding"><textarea contentEditable="true" id="codingTextarea"></textarea></pre>
+		
+				<pre class="errorCoding"><textarea id="codingTextarea"></textarea></pre>
+				
 				<div class="btn-primary col-md-5 col-sm-5 col-xs-5 col-lg-5" style="margin-left: 40px; margin-right: 20px;">
-					<h5><span class="glyphicon glyphicon-pencil"></span> LINE_CODE: <em id="nbLine">0</em> IN <em id="TsecLine">0</em> seconds</h5>
+					<h5><span class="glyphicon glyphicon-pencil"></span>COUNTER: <em id="TsecLine">0</em> seconds</h5>
 				</div>
 				<div class="btn-danger col-md-4 col-sm-4 col-xs-4 col-lg-4">
 					<h5><span class="glyphicon glyphicon-tags"></span> ERROR: <em  id="error">0</em></h5>
@@ -114,19 +113,30 @@ if(isset($_GET['lang'])){
 		 
       <!-- FOOTER -->
       <footer class="col-lg-12">
-        <p>&copy; 2014 Memry code, Inc. &middot; <a href="#">Help</a> &middot; <a href="#">Terms</a></p>
+        <p style="position: absolute; bottom: -80px;">&copy; 2014 Memry code, Inc. &middot; <a href="#">Help</a> &middot; <a href="#">Terms</a></p>
 			<script>
-				$(document).ready(function() {
-				  $('#code').each(function(i, block) {
-					hljs.highlightBlock(block);
-				  });
-				});
-				var editor = CodeMirror.fromTextArea(document.getElementById("codingTextarea"), {
-					lineNumbers: false,
+				
+				 var editorCode = CodeMirror.fromTextArea(document.getElementById("code"), {
+					lineNumbers: true,
 					mode: "xml",
 					theme: "ambiance",
 					indentWithTabs: false,
-					tabSize: 7,
+					tabSize: 4,
+					smartIndent: false,
+					indentWithTabs: false,
+					indentUnit: 0,
+					autofocus: false,
+					dragDrop: false,
+					extraKeys: {"Enter": false},
+					readOnly: "nocursor"
+				  });
+				  
+				var editorCoding = CodeMirror.fromTextArea(document.getElementById("codingTextarea"), {
+					lineNumbers: true,
+					mode: "xml",
+					theme: "ambiance",
+					indentWithTabs: false,
+					tabSize: 4,
 					smartIndent: false,
 					indentWithTabs: false,
 					indentUnit: 0,

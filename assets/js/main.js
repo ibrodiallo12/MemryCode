@@ -2,6 +2,7 @@ $(function(){
 ////{//////////////////////////////////////////////////////////////////////////////////////////////////////////////////}////
 ///{/////////////////////////////////....................NOW LET'S BEGING............................/////////////////}///
 //{//////////////////////////////////////////////////////////////////////////////////////////////////////////////////}//
+		
 		// the separator for the array with function split
 		var separator = $("#separator").text();
 		var lang = $("#lang").text();
@@ -17,57 +18,6 @@ $(function(){
 		function rand(maxNumber, min){
 				return Math.floor(Math.random() * (maxNumber - min + 1) + min);
 		}
-		// FUNCTION if BROWSER HAVE AN ERROR
-		function browserError(c){
-			// if the browser have an error 
-			if(!Codingcode){
-				// FUNCTION RANDOM
-				randNumber = rand(maxNumber, 0);
-				// CODE IN #CODE PRINTER
-				Codingcode = myArray[randNumber];
-				// TEXT IN #CODE PRINTER
-				$("#code").text(Codingcode);
-
-				// CODE IN #KNOW PRINTER
-				textKnow = myArrayKnow[randNumber];
-				// TEXT IN #KNOW PRINTER
-				$("#knowPrinter").text(textKnow);
-				// SIGN LINK HREF #DETAILS
-				$('#details').attr('href',"http://www.google.com/?q=" + textKnow);
-				if(!Codingcode){
-					// FUNCTION RANDOM
-					randNumber = rand(maxNumber, 0);
-					// CODE IN #CODE PRINTER
-					Codingcode = myArray[randNumber];
-					// TEXT IN #CODE PRINTER
-					$("#code").text(Codingcode);
-
-					// CODE IN #KNOW PRINTER
-					textKnow = myArrayKnow[randNumber];
-					// TEXT IN #KNOW PRINTER
-					$("#knowPrinter").text(textKnow);
-					// SIGN LINK HREF #DETAILS
-					$('#details').attr('href',"http://www.google.com/?q=" + textKnow);
-					if(!Codingcode){
-						// FUNCTION RANDOM
-						randNumber = rand(maxNumber, 0);
-						// CODE IN #CODE PRINTER
-						Codingcode = myArray[randNumber];
-						// TEXT IN #CODE PRINTER
-						$("#code").text(Codingcode);
-
-						// CODE IN #KNOW PRINTER
-						textKnow = myArrayKnow[randNumber];
-						// TEXT IN #KNOW PRINTER
-						$("#knowPrinter").text(textKnow);
-						// SIGN LINK HREF #DETAILS
-						$('#details').attr('href',"http://www.google.com/?q=" + textKnow);
-					}
-				}
-			}
-		}
-		// END FUNCTION if BROWSER HAVE AN ERROR
-		
 		
 		randNumber = rand(maxNumber, 0);
 		//alert(myArray[randNumber]);
@@ -75,10 +25,8 @@ $(function(){
 		
 		// CODE IN #CODE PRINTER
 		var Codingcode = myArray[randNumber];
-		//call the function browserError
-		browserError(Codingcode);
 		// TEXT IN #CODE PRINTER
-		$("#code").text(Codingcode);
+		editorCode.setValue(Codingcode);
 		
 		// CODE IN #KNOW PRINTER
 		var textKnow = myArrayKnow[randNumber];
@@ -96,12 +44,12 @@ $(function(){
 
 	
 		// ON CHANGE EDITOR GET INPUT AND CHECK
-		editor.on('change', function(){
-			tap = editor.getValue();
+		editorCoding.on('change', function(){
+			tap = editorCoding.getValue();
 			//alert(tap);
 			var T = tap.length;
 			indexTap = T - 1;
-			ValTap = tap.charAt(indexTap);
+			var ValTap = tap.charAt(indexTap);
 			indexCode = T - 1;
 			var codeTap = Codingcode.charAt(indexCode);
 			//alert(ValTap);
@@ -110,20 +58,19 @@ $(function(){
 				// IF USER DO IT!!
 				if(Codingcode == tap){
 					setTimeout(function(){
-						editor.setValue("");
+						editorCoding.setValue("");
+						$("#error").text("0");
+						$("#TsecLine").text("0");
+						editorCode.setValue("");
 						$("#error").text("0");
 						$("#TsecLine").text("R");
-						$("#nbLine").text("0");
-						$("#code").text("");
 						//BEGING THE REPEAT
 						// FUNCTION RANDOM
 						randNumber = rand(maxNumber, 0);
 						// CODE IN #CODE PRINTER
 						Codingcode = myArray[randNumber];
-						//call the function browserError
-						browserError(Codingcode);
 						// TEXT IN #CODE PRINTER
-						$("#code").text(Codingcode);
+						editorCode.setValue(Codingcode);
 	
 						// CODE IN #KNOW PRINTER
 						textKnow = myArrayKnow[randNumber];
@@ -140,8 +87,8 @@ $(function(){
 		});
 		
 		// if AN ERROR
-		editor.on('keypress',(function(){
-			tap = editor.getValue();
+		editorCoding.on('keypress',(function(){
+			tap = editorCoding.getValue();
 			//alert(tap);
 			var T = tap.length;
 			indexTap = T - 1;
@@ -153,7 +100,7 @@ $(function(){
 				var alrdyError = $("#error").text();
 				var error = parseInt(alrdyError) + 1;
 				$("#error").text(error);
-			
+				
 				// IF an error var errr to true
 				var errr = true;
 			}
@@ -169,20 +116,17 @@ $(function(){
 		// USER WANT THE NEXT CODE
 		$("#next").click(function(){
 			setTimeout(function(){
-				editor.setValue("");
+				editorCoding.setValue("");
 				$("#error").text("0");
-				$("#TsecLine").text("0");
-				$("#nbLine").text("0");
-				$("#code").text("");
+				$("#TsecLine").text("R");
+				editorCode.setValue("");
 				//BEGING THE REPEAT
 				// FUNCTION RANDOM
 				randNumber = rand(maxNumber, 0);
 				// CODE IN #CODE PRINTER
 				Codingcode = myArray[randNumber];
-				//call the function browserError
-				browserError(Codingcode);
 				// TEXT IN #CODE PRINTER
-				$("#code").text(Codingcode);
+				editorCode.setValue(Codingcode);
 
 				// CODE IN #KNOW PRINTER
 				textKnow = myArrayKnow[randNumber];
@@ -194,37 +138,23 @@ $(function(){
 				$(".errorCoding").css("border","2px solid white");
 				// END OF THE REPEAT
 			}, 2300);
-			// SOLVE PROBLEM WITH setTimeout on reset for second per line code
-			setTimeout(function(){
-				$("#TsecLine").text("-1");
-			}, 2000);
 		});
 		
-		
 		// ON CHANGE EDITOR GET KEY-ENTER
-		editor.on('change',(function(){
-			if(ValTap == '\n'){
-				var alrdynbLine = $("#nbLine").text();
-				var nbLine = parseInt(alrdynbLine) + 1;
-				$("#nbLine").text(nbLine);
-			} 
-			if(Codingcode == tap){
-				var alrdynbLine = $("#nbLine").text();
-				var nbLine = parseInt(alrdynbLine) + 1;
-				$("#nbLine").text(nbLine);
-			}	
+		editorCoding.on('change',(function(){
 			//second per line of code
 			var alrdyTsecLine = $("#TsecLine").text();
 			var alrdyTsecLine = parseInt(alrdyTsecLine) + 1;
 			TimeTo = setTimeout(function(){
-				if($("#TsecLine").text() == "R"){
-					$("#TsecLine").text("0");
-					clearTimeout(TimeTo);
-				}else{
-					$("#TsecLine").text(alrdyTsecLine);
-				}
-			}, 2200);
-		}));
+			if($("#TsecLine").text() == "R"){
+				$("#TsecLine").text("0");
+				clearTimeout(TimeTo);
+			}else{
+				$("#TsecLine").text(alrdyTsecLine);
+			}
+		}, 2200);
+	}));
+
 		
 ////{//////////////////////////////////////////////////////////////////////////////////////////////////////////////////}////
 ///{/////////////////////////////////.................IT IS DONE.. THANK...............................///////////////}///
