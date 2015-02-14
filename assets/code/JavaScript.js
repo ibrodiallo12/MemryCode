@@ -4,9 +4,9 @@ $(function(){
 	//The separator in the ARRAY
 	var s = "¢";
 	// code in the ARRAY
-	var c = "";
+	var c;
 	// know not affecte in same ARRAY to code
-	var k = "";
+	var k;
 	
 	// N 1	
 	c = "<script> alert(\"Hello world !\");</script>";
@@ -36,7 +36,7 @@ $(function(){
 	c = c + s + "10.50\n1001";
 	k = k + s + "JavaScript Literals. The most important rules for writing fixed values are: Numbers are written with or without decimals:";
 	// N 10
-	c = c + s + "\"John Doe\"\n\'John Doe\'";
+	c = c + s + "\"John Doe\"\n'John Doe'";
 	k = k + s + "Strings are text, written within double or single quotes";
 	// N 11
 	c = c + s + "5 + 6\n5 * 10";
@@ -380,7 +380,7 @@ Dolly!\";";
 	k = k + s + "Math.round(). Math.round() rounds a number to the nearest integer:";
 	// N 123
 	c = c + s + "Math.ceil(4.4);// returns 5";
-	k = k + s + "Math.ceil(). Math.ceil() rounds a number up to the nearest integer";
+	k = k + s + "Math.ceil() rounds a number up to the nearest integer";
 	// N 124
 	c = c + s + "Math.floor(4.7);// returns 4";
 	k = k + s + "Math.floor(). Math.floor() rounds a number down to the nearest integer";
@@ -430,7 +430,7 @@ Dolly!\";";
 	c = c + s + "<script>\nvar d = new Date();\ndocument.getElementById(\"demo\").innerHTML = d.getDay();\n</script>";
 	k = k + s + "The getDay() Method. getDay() returns the weekday as a number (0-6)";
 	// N 134
-	c = c + s + "<script>\nvar d = new Date();\nvar days = [\"Sunday\",\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\"];\ndocument.getElementById(\"demo\").innerHTML = days[d.getDay()];\n</script>";
+	c = c + s + "<script>\nvar d = new Date();\nvar days = [\n\t\"Sunday\",\n\t\"Monday\",\n\t\"Tuesday\",\n\t\"Wednesday\",\n\t\"Thursday\",\n\t\"Friday\"\n\t,\"Saturday\"\n];\ndocument.getElementById(\"demo\").innerHTML = days[d.getDay()];\n</script>";
 	k = k + s + "The getDay() Method. getDay() returns the weekday as a number (0-6). You can use an array of names, and getDay() to return the weekday as a name";
 	// N 135
 	c = c + s + "<script>\nvar d = new Date();\nd.setFullYear(2020, 0, 14);\ndocument.getElementById(\"demo\").innerHTML = d;\n</script>";
@@ -583,8 +583,115 @@ Dolly!\";";
 	c = c + s + "var fruits = [\"Banana\", \"Orange\", \"Lemon\", \"Apple\", \"Mango\"];\Nvar citrus = fruits.slice(1, 3);";
 	k = k + s + "Slicing an Array. The slice() method slices out a piece of an array";
 	// N 185
+	c = c + s + "Boolean(10 > 9) // returns true";
+	k = k + s + "The Boolean() Function. You can use the Boolean() function to find out if an expression (or a variable) is true";
+	// N 186
+	c = c + s + "100\n3.14\n-15\n\"Hello\"\n\"false\"\n7 + 1 + 3.14\n5 < 6 ";
+	k = k + s + "The Boolean() Function. Everything With a Real Value is True";
+	// N 187
+	c = c + s + "var x = 0;\nBoolean(x); // returns false";
+	k = k + s + "The Boolean() Function. Everything Without a Real Value is False. The Boolean value of 0 (zero) is false:";
+	// N 188
+	c = c + s + "var x = -0;\nBoolean(x); // returns false";
+	k = k + s + "The Boolean() Function. The Boolean value of -0 (minus zero) is false";
+	// N 189
+	c = c + s + "var x = \"\";\nBoolean(x); // returns false";
+	k = k + s + "The Boolean() Function. The Boolean value of \"\" (empty string) is false";
+	// N 190
+	c = c + s + "var x;\nBoolean(x); // returns false";
+	k = k + s + "The Boolean() Function. The Boolean value of undefined is false";
+	// N 191
+	c = c + s + "var x = null;\nBoolean(x); // returns false";
+	k = k + s + "The Boolean() Function. The Boolean value of null is false";
+	// N 192
+	c = c + s + "var x = false;\nBoolean(x); // returns false";
+	k = k + s + "The Boolean() Function. The Boolean value of false is (you guessed it) false";
+	// N 193
+	c = c + s + "var x = 10 / \"H\";\nBoolean(x); // returns false";
+	k = k + s + "The Boolean() Function. The Boolean value of NaN is false";
+	// N 194
+	c = c + s + "if (age < 18) text = \"Too young\";";
+	k = k + s + "How Can it be Used. Comparison operators can be used in conditional statements to compare values and take action depending on the result";
+	// N 195
+	c = c + s + "voteable = (age < 18) ? \"Too young\":\"Old enough\";";
+	k = k + s + "Conditional Operator. JavaScript also contains a conditional operator that assigns a value to a variable based on some condition.";
+	// N 196
+	c = c + s + "x = 5 & 1; //The result in x : 1";
+	k = k + s + "JavaScript Bitwise Operators. Bit operators work on 32 bits numbers. Any numeric operand in the operation is converted into a 32 bit numbe";
+	// N 197
+	c = c + s + "if (time < 20) {\ngreeting = \"Good day\";\n}";
+	k = k + s + "The if Statement. Use the if statement to specify a block of JavaScript code to be executed if a condition is true.";
+	// N 198
+	c = c + s + "if (time < 20) {\ngreeting = \"Good day\";\n} else {\ngreeting = \"Good evening\";\n}";
+	k = k + s + "The else Statement. Use the else statement to specify a block of code to be executed if the condition is false.";
+	// N 199
+	c = c + s + "if (time < 10) {\ngreeting = \"Good morning\";\n} else if (time < 20) {\ngreeting = \"Good day\";\n} else {\ngreeting = \"Good evening\";\n}";
+	k = k + s + "The else if Statement. Use the else if statement to specify a new condition if the first condition is false.";
+	// N 200
+	c = c + s + "switch (new Date().getDay()) {\ncase 0:\n\tday = \"Sunday\";\n\tbreak;\ncase 1:\n\tday = \"Monday\";\n\tbreak;\ncase 2:\n\tday = \"Tuesday\";\n\tbreak;\ncase 3:\n\tday = \"Wednesday\";\n\tbreak;\ncase 4:\n\tday = \"Thursday\";\n\tbreak;\ncase 5:\n\tday = \"Friday\";\n\tbreak;\ncase 6:\n\tday = \"Saturday\";\n\tbreak;\n}";
+	k = k + s + "The JavaScript Switch Statement. Use the switch statement to select one of many blocks of code to be executed.";
+	// N 201
+	c = c + s + "switch (new Date().getDay()) {\ncase 6:\n\text = \"Today is Saturday\";\n\tbreak;\ncase 0:\n\ttext = \"Today is Sunday\";\n\tbreak;\ndefault:\n\ttext = \"Looking forward to the Weekend\";\n}";
+	k = k + s + "The default Keyword. The default keyword specifies the code to run if there is no case match:";
+	// N 202
+	c = c + s + "switch (new Date().getDay()) {\ncase 1:\ncase 2:\ncase 3:\ndefault:\n\ttext = \"Looking forward to the Weekend\";\n\tbreak;\ncase 4:\ncase 5:\n\ttext = \"Soon it is Weekend\";\n\tbreak;\ncase 0:\ncase 6:\n\ttext = \"It is Weekend\";\n}";
+	k = k + s + "Common Code and Fall-Through. Sometimes, in a switch block, you will want different cases to use the same code, or fall-through to a common default. Note from the next example, that cases can share the same code block, and that the default case does not have to be the last case in a switch block:";
+	// N 203
+	c = c + s + "for (i = 0; i < cars.length; i++) {\n\ttext += cars[i] + \"<br>\";\n}";
+	k = k + s + "JavaScript Loops. Loops are handy, if you want to run the same code over and over again, each time with a different value.";
+	// N 204
+	c = c + s + "for (i = 0; i < 5; i++) {\n\ttext += \"The number is \" + i + \"<br>\";}";
+	k = k + s + "The For Loop. The for loop is often the tool you will use when you want to create a loop. The for loop has the following syntax";
+	// N 205
+	c = c + s + "for (i = 0, len = cars.length, text = \"\"; i < len; i++) {\n\ttext += cars[i] + \"<br>\";}";
+	k = k + s + "Normally you will use statement 1 to initiate the variable used in the loop (var i = 0). This is not always the case, JavaScript doesn't care. Statement 1 is optional.";
+	// N 206
+	c = c + s + "var i = 2;\nvar len = cars.length;\nvar text = \"\";\nfor (; i < len; i++) {\n\ttext += cars[i] + \"<br>\";\n}";
+	k = k + s + "Normally you will use statement 1 to initiate the variable used in the loop (var i = 0). This is not always the case, JavaScript doesn't care. Statement 1 is optional. And you can omit statement 1 (like when your values are set before the loop starts)";
+	// N 207
+	c = c + s + "var i = 0;\nvar len = cars.length;\nfor (; i < len; ) {\n\ttext += cars[i] + \"<br>\";\n\ti++;\n}";
+	k = k + s + "Often statement 3 increases the initial variable. This is not always the case, JavaScript doesn't care, and statement 3 is optional.";
+	// N 208
+	c = c + s + "var person = {fname:\"John\", lname:\"Doe\", age:25};\n\nvar text = \"\";\nvar x;\nfor (x in person) {\n\ttext += person[x];\n}";
+	k = k + s + "The For/In Loop. The JavaScript for/in statement loops through the properties of an object:";
+	// N 209
+	c = c + s + "while (i < 10) {\n\ttext += \"The number is \" + i;\n\ti++;\n}";
+	k = k + s + "The While Loop. The while loop loops through a block of code as long as a specified condition is true.";
+	// N 210
+	c = c + s + "do {\n\ttext += \"The number is \" + i;\n\ti++;\n}\nwhile (i < 10);";
+	k = k + s + "The Do/While Loop. The do/while loop is a variant of the while loop. This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.";
+	// N 211
+	c = c + s + "cars = [\"Volvo\",\"Saab\",\"Ford\"];\nvar i = 0;\nvar text = \"\";\nfor (;cars[i];) {\n\ttext += cars[i] + \"<br>\";\n\ti++;\n}";
+	k = k + s + "Comparing For and While. If you have read the previous chapter, about the for loop, you will discover that a while loop is much the same as a for loop, with statement 1 and statement 3 omitted. The loop in this example uses a for loop to collect the car names from the cars array";
+	// N 212
+	c = c + s + "cars = [\"BMW\",\"Volvo\",\"Ford\"];\nvar i = 0;\nvar text = \"\";\nwhile (cars[i]) {\n\ttext += cars[i] + \"<br>\";\n\ti++;\n}";
+	k = k + s + "Comparing For and While. If you have read the previous chapter, about the for loop, you will discover that a while loop is much the same as a for loop, with statement 1 and statement 3 omitted. The loop in this example uses a while loop to collect the car names from the cars array";
+	// N 213
+	c = c + s + "for (i = 0; i < 10; i++) {\n\tif (i == 3) { break }\n\ttext += \"The number is \" + i + \"<br>\";\n}";
+	k = k + s + "The Break Statement. You have already seen the break statement used in an earlier chapter of this tutorial. It was used to \"jump out\" of a switch() statement. The break statement can also be used to jump out of a loop. The break statement breaks the loop and continues executing the code after the loop (if any)";
+	// N 214
+	c = c + s + "for (i = 0; i < 10; i++) {\n\tif (i == 3) break;\n\ttext += \"The number is \" + i + \"<br>\";\n}";
+	k = k + s + "The Break Statement. You have already seen the break statement used in an earlier chapter of this tutorial. It was used to \"jump out\" of a switch() statement. The break statement can also be used to jump out of a loop. Since the if statement has only one single line of code, the braces can be omitted";
+	// N 215
+	c = c + s + "for (i = 0; i <= 10; i++) {\n\tif (i == 3) continue;\n\ttext += \"The number is \" + i + \"<br>\";\n}";
+	k = k + s + "The Continue Statement. The continue statement breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop. This example skips the value of 3";
+	// N 216
+	c = c + s + "cars = [\"Peugeot\", \"Volvo\", \"Golf\", \"Ford\"];\nlist: {\n\ttext += cars[0] + \"<br>\";\n\ttext += cars[1] + \"<br>\";\n\ttext += cars[2] + \"<br>\";\n\ttext += cars[3] + \"<br>\";\n\tbreak list;\n\ttext += cars[4] + \"<br>\";\n\ttext += cars[5] + \"<br>\";\n}";
+	k = k + s + "JavaScript Labels. As you have already seen, in the chapter about the switch statement, JavaScript statements can be labeled. To label JavaScript statements you precede the statements with a label name and a colon";
+	// N 217
 	c = c + s + "";
 	k = k + s + "";
+	// N 218
+	c = c + s + "";
+	k = k + s + "";
+	// N 219
+	c = c + s + "";
+	k = k + s + "";
+	// N 220
+	c = c + s + "";
+	k = k + s + "";
+	
+	
 	
 	
 	//PRINT IN THE 
