@@ -385,7 +385,7 @@ Dolly!\";";
 	c = c + s + "Math.floor(4.7);// returns 4";
 	k = k + s + "Math.floor(). Math.floor() rounds a number down to the nearest integer";
 	// N 125
-	c = c + s + "Math.floor(Math.random() * 11);//returns a random number between 0 and 10";
+	c = c + s + "Math.floor(Math.random() * 11);\n//returns a random number between 0 and 10";
 	k = k + s + "Math.floor() and Math.random() can be used together to return a random number between 0 and 10";
 	// N 126
 	c = c + s + "Math.E;// returns Euler's number\nMath.PI // returns PI\nMath.SQRT2 // returns the square root of 2\nMath.SQRT1_2 // returns the square root of 1/2\nMath.LN2 // returns the natural logarithm of 2\nMath.LN10 // returns the natural logarithm of 10\nMath.LOG2E // returns base 2 logarithm of E\nMath.LOG10E // returns base 10 logarithm of E";
@@ -574,13 +574,13 @@ Dolly!\";";
 	c = c + s + "var points = [40, 100, 1, 5, 25, 10];\npoints.sort(function(a, b){return a-b});\n// now points[0] contains the lowest value";
 	k = k + s + "Find the Highest (or Lowest) Value. How to find the highest value in an array? The lowest";
 	// N 182
-	c = c + s + "var myGirls = [\"Cecilie\", \"Lone\"];\Nvar myBoys = [\"Emil\", \"Tobias\",\"Linus\"];\Nvar myChildren = myGirls.concat(myBoys);\N// Concatenates (joins) myGirls and myBoys";
+	c = c + s + "var myGirls = [\"Cecilie\", \"Lone\"];\nvar myBoys = [\"Emil\", \"Tobias\",\"Linus\"];\nvar myChildren = myGirls.concat(myBoys);\n// Concatenates (joins) myGirls and myBoys";
 	k = k + s + "Joining Arrays. The concat() method creates a new array by concatenating two arrays";
 	// N 183
-	c = c + s + "var arr1 = [\"Cecilie\", \"Lone\"];\Nvar arr2 = [\"Emil\", \"Tobias\",\"Linus\"];\Nvar arr3 = [\"Robin\", \"Morgan\"];\Nvar myChildren = arr1.concat(arr2, arr3);\N// Concatenates arr1 with arr2 and arr3";
+	c = c + s + "var arr1 = [\"Cecilie\", \"Lone\"];\nvar arr2 = [\"Emil\", \"Tobias\",\"Linus\"];\nvar arr3 = [\"Robin\", \"Morgan\"];\nvar myChildren = arr1.concat(arr2, arr3);\n// Concatenates arr1 with arr2 and arr3";
 	k = k + s + "Joining Arrays. The concat() method creates a new array by concatenating two arrays. The concat() method can take any number of array arguments";
 	// N 184
-	c = c + s + "var fruits = [\"Banana\", \"Orange\", \"Lemon\", \"Apple\", \"Mango\"];\Nvar citrus = fruits.slice(1, 3);";
+	c = c + s + "var fruits = [\"Banana\", \"Orange\", \"Lemon\", \"Apple\", \"Mango\"];\nvar citrus = fruits.slice(1, 3);";
 	k = k + s + "Slicing an Array. The slice() method slices out a piece of an array";
 	// N 185
 	c = c + s + "Boolean(10 > 9) // returns true";
@@ -619,13 +619,13 @@ Dolly!\";";
 	c = c + s + "x = 5 & 1; //The result in x : 1";
 	k = k + s + "JavaScript Bitwise Operators. Bit operators work on 32 bits numbers. Any numeric operand in the operation is converted into a 32 bit numbe";
 	// N 197
-	c = c + s + "if (time < 20) {\ngreeting = \"Good day\";\n}";
+	c = c + s + "if (time < 20) {\n\tgreeting = \"Good day\";\n}";
 	k = k + s + "The if Statement. Use the if statement to specify a block of JavaScript code to be executed if a condition is true.";
 	// N 198
-	c = c + s + "if (time < 20) {\ngreeting = \"Good day\";\n} else {\ngreeting = \"Good evening\";\n}";
+	c = c + s + "if (time < 20) {\n\tgreeting = \"Good day\";\n} else {\n\tgreeting = \"Good evening\";\n}";
 	k = k + s + "The else Statement. Use the else statement to specify a block of code to be executed if the condition is false.";
 	// N 199
-	c = c + s + "if (time < 10) {\ngreeting = \"Good morning\";\n} else if (time < 20) {\ngreeting = \"Good day\";\n} else {\ngreeting = \"Good evening\";\n}";
+	c = c + s + "if (time < 10) {\n\tgreeting = \"Good morning\";\n} else if (time < 20) {\n\tgreeting = \"Good day\";\n} else {\n\tgreeting = \"Good evening\";\n}";
 	k = k + s + "The else if Statement. Use the else if statement to specify a new condition if the first condition is false.";
 	// N 200
 	c = c + s + "switch (new Date().getDay()) {\ncase 0:\n\tday = \"Sunday\";\n\tbreak;\ncase 1:\n\tday = \"Monday\";\n\tbreak;\ncase 2:\n\tday = \"Tuesday\";\n\tbreak;\ncase 3:\n\tday = \"Wednesday\";\n\tbreak;\ncase 4:\n\tday = \"Thursday\";\n\tbreak;\ncase 5:\n\tday = \"Friday\";\n\tbreak;\ncase 6:\n\tday = \"Saturday\";\n\tbreak;\n}";

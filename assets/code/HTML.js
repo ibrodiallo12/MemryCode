@@ -4,9 +4,9 @@ $(function(){
 	//The separator in the ARRAY
 	var s = "¢";
 	// code in the ARRAY
-	var c = "";
+	var c;
 	// know not affecte in same ARRAY to code
-	var k = "";
+	var k;
 	
 	// N 1	
 	c = "<title>This is a title</title>";
@@ -33,7 +33,7 @@ $(function(){
 	c = c + s + "<p>This is my first test.<br /> So please <em>make allowances</em></p>";
 	k = k + s + "Paragraph with emphazing and Line Brand";
 	// N 9
-	c = c + s + "<p>This is my first test so please <strong>make allowances</strong></p>";
+	c = c + s + "<p>This is my first test so <strong>make allowances</strong></p>";
 	k = k + s + "Pharagraph with a strongly emphazing";
 	// N 10
 	c = c + s + "<strong>Strongly emphazing</strong>";
@@ -75,7 +75,7 @@ $(function(){
 	c = c + s + "<link rel=\"stylesheet\" href=\"style.css\" />";
 	k = k + s + "Call a stylesheet in HTML";
 	// N 23
-	c = c + s + "<p>This is my first test so please <mark>make allowances</mark></p>";
+	c = c + s + "<p>This is my first test so <mark>make allowances</mark></p>";
 	k = k + s + "Marking text with mark tag in HTML";
 	// N 24
 	c = c + s + "<ul>\n\t<li>Coffee</li>\n\t<li>Tea</li>\n\t<li>Milk</li>\n</ul>";
@@ -183,10 +183,10 @@ $(function(){
 	c = c + s + "<iframe src=\"demo_iframe.html\" name=\"iframe_a\"></iframe>\n<p><a href=\"http://www.w3schools.com\" target=\"iframe_a\">W3S.com</a></p>";
 	k = k + s + "Use iframe as a Target for a Link. An iframe can be used as the target frame for a link.The target attribute of the link must refer to the name attribute of the iframe";
 	// N 59
-	c = c + s + "<script>\n\tdocument.getElementById(\"demo\").innerHTML = \"Hello JavaScript!\";\n</script>";
+	c = c + s + "<script>\n\tdocument.getElementById(\"demo\").innerHTML = \"Hello World!\";\n</script>";
 	k = k + s + "The HTML <script> Tag. The <script> tag is used to define a client-side script such as a JavaScript. The <script> element either contains scripting statements or it points to an external script file through the src attribute.";
 	// N 60
-	c = c + s + "<script>\n\tdocument.getElementById(\"demo\").innerHTML = \"Hello JavaScript!\";\n</script>\n<noscript>Sorry your browser does not support JavaScript!</noscript>";
+	c = c + s + "<script>\n\tdocument.getElementById(\"demo\").innerHTML = \"Hello World!\";\n</script>\n<noscript>Your browser does not support JavaScript!</noscript>";
 	k = k + s + "The HTML <noscript> Tag. The <noscript> tag is used to provide an alternate content for users that have disabled scripts in their browser or have a browser that doesn't support client-side scripting.";
 	// N 61
 	c = c + s + "<!DOCTYPE html>\n\t<head>\n\t\t<link rel=\"stylesheet\" href=\"mystyle.css\">\n\t\t<title>Page Title</title>\n\t</head>";
@@ -195,7 +195,7 @@ $(function(){
 	c = c + s + "<meta name=\"keywords\" content=\"HTML CSS XML XHTML JavaScript\">";
 	k = k + s + "The HTML <meta> Element. The <meta> element is used to specify page description keywords author and other metadata.";
 	// N 63
-	c = c + s + "<meta name=\"description\" content=\"Free Web tutorials on HTML and CSS\"/>";
+	c = c + s + "<meta name=\"description\" content=\"Tutorials on HTML and CSS\"/>";
 	k = k + s + "Define a description of your web page";
 	// N 64
 	c = c + s + "<meta name=\"author\" content=\"Hege Refsnes\">";
@@ -225,7 +225,7 @@ $(function(){
 	c = c + s + "<form action=\"action_page.php\">\n\t<fieldset>\n\t\t<legend>Personal information:</legend>\n\t\tFirst name:<br>\n\t\t<input type=\"text\" name=\"firstname\" value=\"Mickey\">\n\t\t<br>\n\t\tLast name:<br>\n\t\t<input type=\"text\" name=\"lastname\" value=\"Mouse\">\n\t\t<br><br>\n\t\t<input type=\"submit\" value=\"Submit\">\n\t</fieldset>\n</form>";
 	k = k + s + "Grouping Form Data with <fieldset>. The <fieldset> element groups related data in a form. The <legend> element defines a caption for the <fieldset> element.";
 	// N 73
-	c = c + s + "<form action=\"action_page.php\" method=\"GET\" target=\"_blank\" accept-charset=\"UTF-8\"\nenctype=\"application/x-www-form-urlencoded\" autocomplete=\"off\" novalidate>\n.\nform elements\n.\n</form>";
+	c = c + s + "<form action=\"action_page.php\" method=\"GET\" target=\"_blank\"\naccept-charset=\"UTF-8\n\"enctype=\"application/x-www-form-urlencoded\n\" autocomplete=\"off\" novalidate>\n\t.\n\tform elements\n\t.\n</form>";
 	k = k + s + "HTML Form Attributes. An HTML <form> element, with all possible attributes set, will look like this example";
 	// N 74
 	c = c + s + "<select name=\"cars\">\n\t<option value=\"volvo\">Volvo</option>\n\t<option value=\"saab\">Saab</option>\n\t<option value=\"fiat\">Fiat</option>\n\t<option value=\"audi\">Audi</option>\n</select>";
@@ -253,10 +253,10 @@ $(function(){
 	k = k + s + "HTML <p> Tag.  The <p> tag defines a paragraph. Browsers automatically add some space (margin) before and after each <p> element. The margins can be modified with CSS (with the margin properties).";
 	// N 82
 	c = c + s + "<object data=\"horse.wav\">\n\t<param name=\"autoplay\" value=\"true\">\n</object>";
-	k = k + s + "HTML <param> Tag.  The <param> tag is used to define parameters for plugins embedded with an <object> element. Tip: HTML 5 also includes two new elements for playing audio or video: The <audio> and <video> tags. ";
+	k = k + s + "HTML <param> Tag.  The <param> tag is used to define parameters for plugins embedded with an <object> element. Tip: HTML 5 also includes two new elements for playing audio or video: The <audio> and <video> tags.";
 	// N 83
 	c = c + s + "param {\n\tdisplay: none;\n}";
-	k = k + s + "HTML <param> Tag. Default CSS Settings, Most browsers will display the <param> element with the following default values: ";
+	k = k + s + "HTML <param> Tag. Default CSS Settings, Most browsers will display the <param> element with the following default values";
 	// N 84
 	c = c + s + "<pre>\nText in a pre element\nis displayed in a fixed-width\nfont, and it preserves\nboth paces and\nline breaks\n</pre>";
 	k = k + s + "HTML <pre> Tag.  The <pre> tag defines preformatted text. Text in a <pre> element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks.";
@@ -265,7 +265,7 @@ $(function(){
 	k = k + s + "HTML <pre> Tag. Default CSS Settings. Most browsers will display the <pre> element with the following default value";
 	// N 86
 	c = c + s + "<progress value=\"22\" max=\"100\"></progress>";
-	k = k + s + "HTML <progress> Tag. Definition and Usage, The <progress> tag represents the progress of a task. ";
+	k = k + s + "HTML <progress> Tag. Definition and Usage, The <progress> tag represents the progress of a task.";
 	// N 87
 	c = c + s + "<p>WWF's goal is to:\n<q>Build a future where people live in harmony with nature.</q>\nWe hope they succeed.</p>";
 	k = k + s + "HTML <q> Tag.  The <q> tag defines a short quotation. Browsers normally insert quotation marks around the quotation.";
@@ -282,7 +282,7 @@ $(function(){
 	c = c + s + "<p>W3Schools.com - the world's largest web development site.</p>\n<p><small>Copyright 1999-2050 by Refsnes Data</small></p>";
 	k = k + s + "HTML <small> Tag.  The <small> tag defines smaller text (and other side comments).";
 	// N 92
-	c = c + s + "<audio controls>\n\t<source src=\"horse.ogg\" type=\"audio/ogg\">\n\t<source src=\"horse.mp3\" type=\"audio/mpeg\">\n\tYour browser does not support the audio element.\n</audio> ";
+	c = c + s + "<audio controls>\n\t<source src=\"horse.ogg\" type=\"audio/ogg\">\n\t<source src=\"horse.mp3\" type=\"audio/mpeg\">\n\tYour browser does not support the audio element.\n</audio>";
 	k = k + s + "HTML <source> Tag.  The <source> tag is used to specify multiple media resources for media elements, such as <video> and <audio>. The <source> tag allows you to specify alternative video/audio files which the browser may choose from, based on its media type or codec support.";
 	// N 93
 	c = c + s + "<p>My mother has <span style=\"color:blue\">blue</span> eyes.</p>";
@@ -294,10 +294,10 @@ $(function(){
 	c = c + s + "<strong>Strong text</strong>";
 	k = k + s + "HTML <strong> Tag. The <strong> tag is a phrase tag. It defines important text. Tip: This tag is not deprecated, but it is possible to achieve richer effect with CSS.";
 	// N 96
-	c = c + s + "<details>\n\t<summary>Copyright 2014-2015.</summary>\n\t<p> - by MemryCode. All Rights Reserved.</p>\n</details> ";
+	c = c + s + "<details>\n\t<summary>Copyright 2014-2015.</summary>\n\t<p> - by MemryCode. All Rights Reserved.</p>\n</details>";
 	k = k + s + "HTML <summary> Tag.  The <summary> tag defines a visible heading for the <details> element. The heading can be clicked to view/hide the details.";
 	// N 97
-	c = c + s + "<table>\n\t<tr>\n\t\t<th>Month</th>\n\t\t<th>Savings</th>\n\t</tr>\n\t<tr>\n\t\t<td>January</td>\n\t\t<td>$100</td>\n\t</tr>\n</table> ";
+	c = c + s + "<table>\n\t<tr>\n\t\t<th>Month</th>\n\t\t<th>Savings</th>\n\t</tr>\n\t<tr>\n\t\t<td>January</td>\n\t\t<td>$100</td>\n\t</tr>\n</table>";
 	k = k + s + "HTML <th> Tag. The <th> tag defines a header cell in an HTML table. An HTML table has two kinds of cells:-Header cells - contains header information (created with the <th> element). -Standard cells - contains data (created with the <td> element)";
 	// N 98
 	c = c + s + "<head>\n\t<title>HTML Reference</title>\n</head>";
@@ -316,5 +316,5 @@ $(function(){
 	$("#lang").text(c);
 	$("#know").text(k);
 	$("#separator").text(s);
-	#("#choiceLang").text("HTML");
+	$("#choiceLang").text("HTML");
 });
