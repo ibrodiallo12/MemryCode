@@ -316,4 +316,5 @@ $(function(){
 	$("#lang").text(c);
 	$("#know").text(k);
 	$("#separator").text(s);
+	#("#choiceLang").text("HTML");
 });

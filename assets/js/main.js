@@ -23,6 +23,29 @@ $(function(){
 		function rand(maxNumber, min){
 				return Math.floor(Math.random() * (maxNumber - min + 1) + min);
 		}
+		// FUNCTION if BROWSER HAVE AN ERROR
+		function browserError(c){
+			// if the browser have an error
+			if(!c){
+				// FUNCTION RANDOM
+				randNumber = rand(maxNumber, 0);
+				// CODE IN #CODE PRINTER
+				Codingcode = myArray[randNumber];
+				if(!c){
+					// FUNCTION RANDOM
+					randNumber = rand(maxNumber, 0);
+					// CODE IN #CODE PRINTER
+					Codingcode = myArray[randNumber];
+					if(!c){
+						// FUNCTION RANDOM
+						randNumber = rand(maxNumber, 0);
+						// CODE IN #CODE PRINTER
+						Codingcode = myArray[randNumber];
+					}
+				}
+			}
+	    }
+		// END FUNCTION if BROWSER HAVE AN ERROR
 		
 		randNumber = rand(maxNumber, 0);
 		//alert(myArray[randNumber]);
@@ -30,6 +53,10 @@ $(function(){
 		
 		// CODE IN #CODE PRINTER
 		var Codingcode = myArray[randNumber];
+		
+		//call the function browserError
+		browserError(Codingcode);
+		
 		// TEXT IN #CODE PRINTER
 		editorCode.setValue(Codingcode);
 		
@@ -78,6 +105,8 @@ $(function(){
 						randNumber = rand(maxNumber, 0);
 						// CODE IN #CODE PRINTER
 						Codingcode = myArray[randNumber];
+						//call the function browserError
+						browserError(Codingcode);
 						// TEXT IN #CODE PRINTER
 						editorCode.setValue(Codingcode);
 						// MAXIMUM OF SECOND FOR CODE
@@ -136,6 +165,8 @@ $(function(){
 				randNumber = rand(maxNumber, 0);
 				// CODE IN #CODE PRINTER
 				Codingcode = myArray[randNumber];
+				//call the function browserError
+				browserError(Codingcode);
 				// TEXT IN #CODE PRINTER
 				editorCode.setValue(Codingcode);
 				// MAXIMUM OF SECOND FOR CODE
@@ -168,8 +199,13 @@ $(function(){
 					}
 				}
 			}, 2000);
-	}));
-
+		}));
+		// RESET THE COUNTER SECOND IN A SECOND
+		setInterval(function(){
+			if($("#TsecLine").text() == "R"){
+				$("#TsecLine").text("0");
+			}
+		}, 1000);
 		
 ////{//////////////////////////////////////////////////////////////////////////////////////////////////////////////////}////
 ///{/////////////////////////////////.................IT IS DONE.. THANK...............................///////////////}///
