@@ -84,7 +84,7 @@ if(isset($_GET['lang'])){
 	<div class="container" style="margin-top: 60px;">
 		<!-- MAX SECOND -->
 		<div class="hidden-xs col-lg-2 btn-success" style="position: absolute; left: 10px; top: 200px; width: 80px; padding: 5px;">
-			<em>:::Max:::</em><br /><strong id="maxSecond" style="font-size: 35px;">0</strong><br /><em>seconds</em>
+			<em>:::Min:::</em><br /><strong id="maxSecond" style="font-size: 35px;">0</strong><br /><em>seconds</em>
 		</div>
 		<!-- jumbotron MORE KNOW -->
 		<div class="jumbotron hidden-md hidden-sm hidden-xs col-lg-4" style="position: absolute; right: 20px; top: 60px;">
@@ -101,10 +101,10 @@ if(isset($_GET['lang'])){
 				<pre class="errorCoding"><textarea id="codingTextarea"></textarea></pre>
 				
 				<div class="btn-primary col-md-5 col-sm-5 col-xs-5 col-lg-5" style="margin-left: 40px; margin-right: 20px;">
-					<h5><span class="glyphicon glyphicon-pencil"></span>COUNTER: <em id="TsecLine">0</em> seconds</h5>
+					<h5><span class="glyphicon glyphicon-pencil"></span>COUNTER: <strong id="TsecLine">0</strong> seconds</h5>
 				</div>
 				<div class="btn-danger col-md-4 col-sm-4 col-xs-4 col-lg-4">
-					<h5><span class="glyphicon glyphicon-tags"></span> ERROR: <em  id="error">0</em></h5>
+					<h5><span class="glyphicon glyphicon-tags"></span> ERROR: <strong id="error">0</strong></h5>
 				</div>
 				<div class="btn-info col-md-1 col-sm-1 col-xs-1 col-lg-1" style="margin-left: 10px;"  id="next">
 					<h5><span class="glyphicon glyphicon-fast-forward"></span></h5>

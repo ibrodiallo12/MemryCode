@@ -61,7 +61,7 @@ $(function(){
 		editorCode.setValue(Codingcode);
 		
 		// MAXIMUM OF SECOND FOR CODE
-		var maxSecond = Math.ceil(Codingcode.length / 9);
+		var maxSecond = Math.ceil(Codingcode.length / 7);
 		$("#maxSecond").text(maxSecond);
 		
 		// CODE IN #KNOW PRINTER
@@ -110,7 +110,7 @@ $(function(){
 						// TEXT IN #CODE PRINTER
 						editorCode.setValue(Codingcode);
 						// MAXIMUM OF SECOND FOR CODE
-						var maxSecond = Math.ceil(Codingcode.length / 9);
+						var maxSecond = Math.ceil(Codingcode.length / 7);
 						$("#maxSecond").text(maxSecond);
 						// CODE IN #KNOW PRINTER
 						textKnow = myArrayKnow[randNumber];
@@ -170,7 +170,7 @@ $(function(){
 				// TEXT IN #CODE PRINTER
 				editorCode.setValue(Codingcode);
 				// MAXIMUM OF SECOND FOR CODE
-				var maxSecond = Math.ceil(Codingcode.length / 9);
+				var maxSecond = Math.ceil(Codingcode.length / 7);
 				$("#maxSecond").text(maxSecond);
 				// CODE IN #KNOW PRINTER
 				textKnow = myArrayKnow[randNumber];
