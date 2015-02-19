@@ -316,7 +316,7 @@ Dolly!\";";
 	c = c + s + "var myNumber = 2;\nwhile (myNumber != Infinity) { // Execute until Infinity\n\tmyNumber = myNumber * myNumber;\n}";
 	k = k + s + "Infinity. Infinity (or -Infinity) is the value JavaScript will return if you calculate a number outside the largest possible number.";
 	// N 103
-	c = c + s + "var x =  2 / 0;// x will be Infinity\nvar y = -2 / 0;// y will be -Infinity";
+	c = c + s + "var x = 2 / 0;// x will be Infinity\nvar y = -2 / 0;// y will be -Infinity";
 	k = k + s + "Infinity. Division by 0 (zero) also generates Infinity.";
 	// N 104
 	c = c + s + "typeof Infinity;// returns \"number\"";
@@ -371,19 +371,19 @@ Dolly!\";";
 	k = k + s + "Math.min() and Math.max(). Math.min() and Math.max() can be used to find the lowest or highest value in a list of arguments";
 	// N 120
 	c = c + s + "Math.max(0, 150, 30, 20, -8);// returns 150";
-	k = k + s + "Math.min() and Math.max(). Math.min() and Math.max() can be used to find the lowest or highest value in a list of arguments";
+	k = k + s + "Math.min() and Math.max() can be used to find the lowest or highest value in a list of arguments";
 	// N 121
 	c = c + s + "Math.random();// returns a random number";
 	k = k + s + "Math.random(). Math.random() returns a random number between 0 and 1";
 	// N 122
 	c = c + s + "Math.round(4.7);// returns 5\nMath.round(4.4);// returns 4";
-	k = k + s + "Math.round(). Math.round() rounds a number to the nearest integer:";
+	k = k + s + "Math.round() rounds a number to the nearest integer:";
 	// N 123
 	c = c + s + "Math.ceil(4.4);// returns 5";
 	k = k + s + "Math.ceil() rounds a number up to the nearest integer";
 	// N 124
 	c = c + s + "Math.floor(4.7);// returns 4";
-	k = k + s + "Math.floor(). Math.floor() rounds a number down to the nearest integer";
+	k = k + s + "Math.floor() rounds a number down to the nearest integer";
 	// N 125
 	c = c + s + "Math.floor(Math.random() * 11);\n//returns a random number between 0 and 10";
 	k = k + s + "Math.floor() and Math.random() can be used together to return a random number between 0 and 10";

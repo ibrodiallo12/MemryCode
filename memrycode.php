@@ -1,18 +1,48 @@
-<?php // BEGIN THE PHP 
+<?php 
+// BEGIN THE PHP 
 if(isset($_GET['lang'])){
 	// FUNCTION FOR CREATE A COOKIE
 	function createCookie($cookie){
 		setcookie('lang', $cookie, time() + 365*24*3600, null, null, false, true);
 	}
 	// THE GET FOR MAKE CHOICE LANGUAGE
-	if($_GET['lang'] == 'HTML'){$lang = 'HTML'; createCookie('HTML');}
-	elseif($_GET['lang'] == 'CSS'){$lang = 'CSS'; createCookie('CSS');}
-	elseif($_GET['lang'] == 'PHP'){$lang = 'PHP'; createCookie('PHP');}
-	elseif($_GET['lang'] == 'JavaScript'){$lang = 'JavaScript'; createCookie('JavaScript');}
-	elseif($_GET['lang'] == 'Python'){$lang = 'Python'; createCookie('Python');}
-	else{$lang = 'HTML';}
+	if($_GET['lang'] == 'HTML'){
+		$lang = 'HTML'; 
+		$mode = 'xml'; 
+		createCookie($lang);
+	}
+	elseif($_GET['lang'] == 'CSS'){
+		$lang = 'CSS'; 
+		$mode = 'css'; 
+		createCookie($lang);
+	}
+	elseif($_GET['lang'] == 'PHP'){
+		$lang = 'PHP'; 
+		$mode = 'php'; 
+		createCookie($lang);
+	}
+	elseif($_GET['lang'] == 'JavaScript'){
+		$lang = 'JavaScript'; 
+		$mode = 'javascript'; 
+		createCookie($lang);
+	}
+	elseif($_GET['lang'] == 'Python'){
+		$lang = 'Python'; 
+		$mode = 'python'; 
+		createCookie($lang);
+	}
+	else{
+		$lang = 'HTML'; 
+		$mode = 'xml';
+	}
 }else{
-	if(isset($_COOKIE['lang'])){$lang = $_COOKIE['lang'];}
+	if(isset($_COOKIE['lang'])){
+		$lang = $_COOKIE['lang'];
+	}
+	else{
+		$lang = 'HTML'; 
+		$mode = 'xml';
+	}
 }?>
 <!DOCTYPE html>
 <html lang="en">
@@ -32,7 +62,7 @@ if(isset($_GET['lang'])){
 	<script src="assets/codemirror/lib/codemirror.js"></script>
 	<link rel="stylesheet" href="assets/codemirror/lib/codemirror.css">
 	<link rel="stylesheet" href="assets/codemirror/theme/ambiance.css">
-	<script src="assets/codemirror/mode/xml/xml.js"></script>
+	<script src="assets/codemirror/mode/<?php if (!empty($mode)){ echo $mode."/".$mode.".js";} else { echo "xml/xml.js";}?>"></script>
 	<script src="assets/js/jquery.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
 	<script src="assets/code/<?php if (!empty($lang)){ echo $lang.".js";} else { echo 'HTML.js';}?>"></script>
@@ -123,7 +153,7 @@ if(isset($_GET['lang'])){
 				
 				 var editorCode = CodeMirror.fromTextArea(document.getElementById("code"), {
 					lineNumbers: true,
-					mode: "xml",
+					mode: "<?php if (!empty($mode)){ echo $mode;} else { echo "xml/xml.js";}?>",
 					theme: "ambiance",
 					indentWithTabs: false,
 					tabSize: 4,
@@ -138,7 +168,7 @@ if(isset($_GET['lang'])){
 				  
 				var editorCoding = CodeMirror.fromTextArea(document.getElementById("codingTextarea"), {
 					lineNumbers: true,
-					mode: "xml",
+					mode: "<?php if (!empty($mode)){ echo $mode;} else { echo "xml/xml.js";}?>",
 					theme: "ambiance",
 					indentWithTabs: false,
 					tabSize: 4,
