@@ -21,7 +21,7 @@ $(function(){
 		var maxNumber = myArray.length;
 		// FUNCTION RANDOM
 		function rand(maxNumber, min){
-				return Math.floor(Math.random() * (maxNumber - min + 1) + min);
+				return Math.floor(Math.random() * maxNumber);
 		}
 		// FUNCTION if BROWSER HAVE AN ERROR
 		function browserError(c){

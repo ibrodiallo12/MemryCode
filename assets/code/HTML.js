@@ -30,7 +30,7 @@ $(function(){
 	c = c + s + "<em>Emphazing text</em>";
 	k = k + s + "Format text with a em tag in HTML";
 	// N 8
-	c = c + s + "<p>This is my first test.<br /> So please <em>make allowances</em></p>";
+	c = c + s + "<p>This is my first test.<br /> So <em>make allowances</em></p>";
 	k = k + s + "Paragraph with emphazing and Line Brand";
 	// N 9
 	c = c + s + "<p>This is my first test so <strong>make allowances</strong></p>";
@@ -180,7 +180,7 @@ $(function(){
 	c = c + s + "<iframe src=\"demo_iframe.html\" frameborder=\"0\"></iframe>";
 	k = k + s + "Iframe - Remove the Border. The frameborder attribute specifies whether or not to display a border around the iframe.";
 	// N 58
-	c = c + s + "<iframe src=\"demo_iframe.html\" name=\"iframe_a\"></iframe>\n<p><a href=\"http://www.w3schools.com\" target=\"iframe_a\">W3S.com</a></p>";
+	c = c + s + "<iframe src=\"demo_iframe.html\" name=\"iframe_a\"></iframe>\n<p>\n\t<a href=\"http://www.w3schools.com\" target=\"iframe_a\">W3S.com</a>\n</p>";
 	k = k + s + "Use iframe as a Target for a Link. An iframe can be used as the target frame for a link.The target attribute of the link must refer to the name attribute of the iframe";
 	// N 59
 	c = c + s + "<script>\n\tdocument.getElementById(\"demo\").innerHTML = \"Hello World!\";\n</script>";
@@ -225,7 +225,7 @@ $(function(){
 	c = c + s + "<form action=\"action_page.php\">\n\t<fieldset>\n\t\t<legend>Personal information:</legend>\n\t\tFirst name:<br>\n\t\t<input type=\"text\" name=\"firstname\" value=\"Mickey\">\n\t\t<br>\n\t\tLast name:<br>\n\t\t<input type=\"text\" name=\"lastname\" value=\"Mouse\">\n\t\t<br><br>\n\t\t<input type=\"submit\" value=\"Submit\">\n\t</fieldset>\n</form>";
 	k = k + s + "Grouping Form Data with <fieldset>. The <fieldset> element groups related data in a form. The <legend> element defines a caption for the <fieldset> element.";
 	// N 73
-	c = c + s + "<form action=\"action_page.php\" method=\"GET\" target=\"_blank\"\naccept-charset=\"UTF-8\n\"enctype=\"application/x-www-form-urlencoded\n\" autocomplete=\"off\" novalidate>\n\t.\n\tform elements\n\t.\n</form>";
+	c = c + s + "<form action=\"action_page.php\" method=\"GET\" target=\"_blank\"\naccept-charset=\"UTF-8\"\nenctype=\"application/x-www-form-urlencoded\"\n autocomplete=\"off\" novalidate>\n\t.\n\tform elements\n\t.\n</form>";
 	k = k + s + "HTML Form Attributes. An HTML <form> element, with all possible attributes set, will look like this example";
 	// N 74
 	c = c + s + "<select name=\"cars\">\n\t<option value=\"volvo\">Volvo</option>\n\t<option value=\"saab\">Saab</option>\n\t<option value=\"fiat\">Fiat</option>\n\t<option value=\"audi\">Audi</option>\n</select>";
@@ -265,7 +265,7 @@ $(function(){
 	k = k + s + "HTML <pre> Tag. Default CSS Settings. Most browsers will display the <pre> element with the following default value";
 	// N 86
 	c = c + s + "<progress value=\"22\" max=\"100\"></progress>";
-	k = k + s + "HTML <progress> Tag. Definition and Usage, The <progress> tag represents the progress of a task.";
+	k = k + s + "HTML <progress> Tag. The <progress> tag represents the progress of a task.";
 	// N 87
 	c = c + s + "<p>WWF's goal is to:\n<q>Build a future where people live in harmony with nature.</q>\nWe hope they succeed.</p>";
 	k = k + s + "HTML <q> Tag.  The <q> tag defines a short quotation. Browsers normally insert quotation marks around the quotation.";
@@ -288,8 +288,8 @@ $(function(){
 	c = c + s + "<p>My mother has <span style=\"color:blue\">blue</span> eyes.</p>";
 	k = k + s + "HTML <span> Tag.  The <span> tag is used to group inline-elements in a document. The <span> tag provides no visual change by itself. The <span> tag provides a way to add a hook to a part of a text or a part of a document.";
 	// N 94
-	c = c + s + "<p>Version 2.0 is <strike>not yet available!</strike> now available!</p>";
-	k = k + s + " The <strike> tag is not supported in HTML5. Use the <del> or <s> tag instead. The <strike> tag defines strikethrough text.";
+	c = c + s + "<p>Version 1 is <strike>not yet available</strike> now available</p>";
+	k = k + s + "The <strike> tag is not supported in HTML5. Use the <del> or <s> tag instead. The <strike> tag defines strikethrough text.";
 	// N 95
 	c = c + s + "<strong>Strong text</strong>";
 	k = k + s + "HTML <strong> Tag. The <strong> tag is a phrase tag. It defines important text. Tip: This tag is not deprecated, but it is possible to achieve richer effect with CSS.";
@@ -308,6 +308,63 @@ $(function(){
 	// N 100
 	c = c + s + "<p>This is a <u>parragraph</u>.</p>";
 	k = k + s + "The <u> tag represents some text that should be stylistically different from normal text, such as misspelled words or proper nouns in Chinese.";
+	// N 101
+	c = c + s + "<var>Variable</var>";
+	k = k + s + "The <var> tag is a phrase tag. It defines a variable.";
+	// N 102
+	c = c + s + "<video width=\"320\" height=\"240\" controls>\n\t<source src=\"movie.mp4\" type=\"video/mp4\">\n\t<source src=\"movie.ogg\" type=\"video/ogg\">\n\tYour browser does not support the video tag\n</video> ";
+	k = k + s + "The <video> tag specifies video, such as a movie clip or other video streams. Currently, there are 3 supported video formats for the <video> element: MP4, WebM, and Ogg";
+	// N 103
+	c = c + s + "<p>To learn AJAX, you must be familiar with\nthe XML<wbr>Http<wbr>Request Object.</p>";
+	k = k + s + "The <wbr> (Word Break Opportunity) tag specifies where in a text it would be ok to add a line-break.";
+	// N 104
+	c = c + s + "<!--This is a comment.\nComments are not displayed in the browser-->\n<p>This is a paragraph.</p>";
+	k = k + s + "The comment tag is used to insert comments in the source code. Comments are not displayed in the browsers. You can use comments to explain your code, which can help you when you edit the source code at a later date. This is especially useful if you have a lot of code.";
+	// N 105
+	c = c + s + "<!DOCTYPE html>\n<html>\n\t<head>\n\t\t<title>Title of the document</title>\n\t</head>\n\n\t<body>\n\t\tThe content of the document\n\t</body>\n\n</html>";
+	k = k + s + "The <!DOCTYPE> declaration must be the very first thing in your HTML document, before the <html> tag. The <!DOCTYPE> declaration is not an HTML tag; it is an instruction to the web browser about what version of HTML the page is written in.";
+	// N 106
+	c = c + s + "Can I get this\n<acronym title=\"as soon as possible\">ASAP</acronym>?";
+	k = k + s + "The <acronym> tag is not supported in HTML5. Use the <abbr> tag instead. The <acronym> tag defines an acronym.";
+	// N 107
+	c = c + s + "<applet code=\"Bubbles.class\" width=\"350\" height=\"350\">\n\tJava applet that draws animated bubbles.\n</applet>";
+	k = k + s + "The <applet> tag is not supported in HTML5. Use the <object> tag instead. The <applet> tag defines an embedded applet.";
+	// N 109
+	c = c + s + "<img src=\"planets.gif\" width=\"145\" height=\"126\"\nalt=\"Planets\"usemap=\"#planetmap\">\n\n<map name=\"planetmap\">\n\t<area shape=\"rect\" coords=\"0,0,82,126\" href=\"sun.html\" alt=\"Sun\">\n\t<area shape=\"circle\" coords=\"90,58,3\" href=\"mercur.html\" alt=\"Mercury\">\n\t<area shape=\"circle\" coords=\"124,58,8\" href=\"venus.html\" alt=\"Venus\">\n</map>";
+	k = k + s + "The <area> tag defines an area inside an image-map (an image-map is an image with clickable areas). The <area> element is always nested inside a <map> tag.";
+	// N 110
+	c = c + s + "<article>\n\t<h1>Google Chrome</h1>\n\t<p>Google Chrome is a free, open-source web browser\ndeveloped by Google, released in 2008.</p>\n</article>";
+	k = k + s + "The <article> tag specifies independent, self-contained content. An article should make sense on its own and it should be possible to distribute it independently from the rest of the site.";
+	// N 111
+	c = c + s + "<p>My family and I visited The Epcot center</p>\n\n<aside>\n\t<h4>Epcot Center</h4>\n\t<p>The EC is a theme park in Disney World, Florida.</p>\n</aside> ";
+	k = k + s + "The <aside> tag defines some content aside from the content it is placed in. The aside content should be related to the surrounding content.";
+	// N 112
+	c = c + s + "<footer>\n\t<p>Posted by: Hege Refsnes</p>\n\t<p>Contact: <a href=\"mailto:someone@example.com\">\n\tsomeone@example.com</a>.</p>\n</footer>";
+	k = k + s + "The <footer> tag defines a footer for a document or section. A <footer> element should contain information about its containing element.";
+	// N 113
+	c = c + s + "<form action=\"demo_form.asp\" method=\"get\">\n\tFirst name: <input type=\"text\" name=\"fname\"><br>\n\tLast name: <input type=\"text\" name=\"lname\"><br>\n\t<input type=\"submit\" value=\"Submit\">\n</form>";
+	k = k + s + "The <form> tag is used to create an HTML form for user input. The <form> element can contain one or more of the following form elements";
+	// N 114
+	c = c + s + "<textarea rows=\"4\" cols=\"50\">\n\tAt MeMRyCoDe you will coding to the beat of your thinking!\n</textarea>";
+	k = k + s + "The <textarea> tag defines a multi-line text input control. A text area can hold an unlimited number of characters, and the text renders in a fixed-width font (usually Courier).";
+	// N 115
+	c = c + s + "<button type=\"button\">Click Me!</button>";
+	k = k + s + "The <button> tag defines a clickable button. Inside a <button> element you can put content, like text or images. This is the difference between this element and buttons created with the <input> element.";
+	// N 116
+	c = c + s + "<select>\n\t<optgroup label=\"Swedish Cars\">\n\t\t<option value=\"volvo\">Volvo</option>\n\t\t<option value=\"saab\">Saab</option>\n\t</optgroup>\n\t<optgroup label=\"German Cars\">\n\t\t<option value=\"mercedes\">Mercedes</option>\n\t\t<option value=\"audi\">Audi</option>\n\t</optgroup>\n</select> ";
+	k = k + s + "The <optgroup> is used to group related options in a drop-down list. If you have a long list of options, groups of related options are easier to handle for a user.";
+	// N 117
+	c = c + s + "<form>\n\t<fieldset>\n\t\\t<legend>Personalia:</legend>\n\t\tName: <input type=\"text\"><br>\n\t\tEmail: <input type=\"text\"><br>\n\t\tDate of birth: <input type=\"text\">\n\t</fieldset>\n</form>";
+	k = k + s + "";
+	// N 118
+	c = c + s + "";
+	k = k + s + "";
+	// N 119
+	c = c + s + "";
+	k = k + s + "";
+	// N 120
+	c = c + s + "";
+	k = k + s + "";
 	
 	
 		

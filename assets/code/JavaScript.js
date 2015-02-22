@@ -150,7 +150,7 @@ $(function(){
 	c = c + s + "var cars = [\"Saab\", \"Volvo\", \"BMW\"];";
 	k = k + s + "JavaScript Arrays. JavaScript arrays are written with square brackets. Array items are separated by commas. The following code declares (creates) an array called cars, containing three items (car names)";
 	// N 48
-	c = c + s + "var person = {firstName:\"John\", lastName:\"Doe\", age:50, eyeColor:\"blue\"};";
+	c = c + s + "var person = {firstName:\"John\", lastName:\"Doe\", age:50};";
 	k = k + s + "JavaScript Objects. JavaScript objects are written with curly braces. Object properties are written as name:value pairs, separated by commas.";
 	// N 49
 	c = c + s + "typeof \"John\" // Returns string\ntypeof 3.14 // Returns number\ntypeof false // Returns boolean\ntypeof [1,2,3,4] // Returns object\ntypeof {name:'John', age:34} // Returns object";
@@ -177,7 +177,7 @@ $(function(){
 	c = c + s + "// Convert Fahrenheit to Celsius:\nfunction toCelsius(fahrenheit){\n\treturn (5/9) * (fahrenheit-32);\n}\ndocument.getElementById(\"demo\").innerHTML = toCelsius(32);";
 	k = k + s + "Why Functions? You can reuse code: Define the code once, and use it many times.You can use the same code many times with different arguments, to produce different results.";
 	// N 57
-	c = c + s + "//Accessing a function without () will return the function definition:\nfunction toCelsius(fahrenheit){\n\treturn (5/9) * (fahrenheit-32);\n}\ndocument.getElementById(\"demo\").innerHTML = toCelsius;";
+	c = c + s + "//Accessing a function without ()\n//Will return the function definition:\nfunction toCelsius(fahrenheit){\n\treturn (5/9) * (fahrenheit-32);\n}\ndocument.getElementById(\"demo\").innerHTML = toCelsius;";
 	k = k + s + "The () Operator Invokes the Function. Using the example, toCelsius refers to the function object, and toCelcius() refers to the function result.";
 	// N 58
 	c = c + s + "// Instead of:\ntemp = toCelsius(32);\ntext = \"The temperature is \" + temp + \" Centigrade\";\n// You can use:\ntext = \"The temperature is \" + toCelsius(32) + \" Centigrade\";";
@@ -186,7 +186,7 @@ $(function(){
 	c = c + s + "var person = {firstName:\"John\",lastName:\"Doe\",age:50,eye:\"blue\"};";
 	k = k + s + "Object Definition. You define (and create) a JavaScript object with an object literal";
 	// N 60
-	c = c + s + "var person = {\n\tfirstName:\"John\",\n\tlastName:\"Doe\",\n\tage:50,\n\teyeColor:\"blue\"\n};";
+	c = c + s + "var person = {\n\tfirstName:\"John\",\n\tlastName:\"Doe\",\n\tage:50\n};";
 	k = k + s + "Object Definition. You define (and create) a JavaScript object with an object literal. Spaces and line breaks are not important. An object definition can span multiple lines";
 	// N 61
 	c = c + s + "objectName.propertyName\n// OR\nobjectName[propertyName];";
@@ -520,7 +520,7 @@ Dolly!\";";
 	c = c + s + "var fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\ndocument.getElementById(\"demo\").innerHTML = fruits.valueOf();";
 	k = k + s + "Converting Arrays to Strings. In JavaScript, all objects have the valueOf() and toString() methods. The valueOf() method is the default behavior for an array. It returns an array as a string";
 	// N 164
-	c = c + s + "var fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\ndocument.getElementById(\"demo\").innerHTML = fruits.toString(); ";
+	c = c + s + "var fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\ndocument.getElementById(\"demo\").innerHTML = fruits.toString();";
 	k = k + s + "Converting Arrays to Strings. For JavaScript arrays, valueOf() and toString() are equal.";
 	// N 165
 	c = c + s + "<p id=\"demo\"></p>\n<script>\nvar fruits = [\"Banana\", \"Orange\",\"Apple\", \"Mango\"];\ndocument.getElementById(\"demo\").innerHTML = fruits.join(\"*\");\n</script>";
@@ -577,7 +577,7 @@ Dolly!\";";
 	c = c + s + "var myGirls = [\"Cecilie\", \"Lone\"];\nvar myBoys = [\"Emil\", \"Tobias\",\"Linus\"];\nvar myChildren = myGirls.concat(myBoys);\n// Concatenates (joins) myGirls and myBoys";
 	k = k + s + "Joining Arrays. The concat() method creates a new array by concatenating two arrays";
 	// N 183
-	c = c + s + "var arr1 = [\"Cecilie\", \"Lone\"];\nvar arr2 = [\"Emil\", \"Tobias\",\"Linus\"];\nvar arr3 = [\"Robin\", \"Morgan\"];\nvar myChildren = arr1.concat(arr2, arr3);\n// Concatenates arr1 with arr2 and arr3";
+	c = c + s + "var arr1 = [\"Cecilie\", \"Lone\"];\nvar arr2 = [\"Emil\", \"Tobias\", \"Linus\"];\nvar arr3 = [\"Robin\", \"Morgan\"];\nvar myChildren = arr1.concat(arr2, arr3);\n// Concatenates arr1 with arr2 and arr3";
 	k = k + s + "Joining Arrays. The concat() method creates a new array by concatenating two arrays. The concat() method can take any number of array arguments";
 	// N 184
 	c = c + s + "var fruits = [\"Banana\", \"Orange\", \"Lemon\", \"Apple\", \"Mango\"];\nvar citrus = fruits.slice(1, 3);";
@@ -586,7 +586,7 @@ Dolly!\";";
 	c = c + s + "Boolean(10 > 9) // returns true";
 	k = k + s + "The Boolean() Function. You can use the Boolean() function to find out if an expression (or a variable) is true";
 	// N 186
-	c = c + s + "100\n3.14\n-15\n\"Hello\"\n\"false\"\n7 + 1 + 3.14\n5 < 6 ";
+	c = c + s + "100\n3.14\n-15\n\"Hello\"\n\"false\"\n7 + 1 + 3.14\n5 < 6";
 	k = k + s + "The Boolean() Function. Everything With a Real Value is True";
 	// N 187
 	c = c + s + "var x = 0;\nBoolean(x); // returns false";
@@ -640,7 +640,7 @@ Dolly!\";";
 	c = c + s + "for (i = 0; i < cars.length; i++) {\n\ttext += cars[i] + \"<br>\";\n}";
 	k = k + s + "JavaScript Loops. Loops are handy, if you want to run the same code over and over again, each time with a different value.";
 	// N 204
-	c = c + s + "for (i = 0; i < 5; i++) {\n\ttext += \"The number is \" + i + \"<br>\";}";
+	c = c + s + "for (i = 0; i < 5; i++) {\n\ttext += \"The number is \" + i + \"<br>\";\n}";
 	k = k + s + "The For Loop. The for loop is often the tool you will use when you want to create a loop. The for loop has the following syntax";
 	// N 205
 	c = c + s + "for (i = 0, len = cars.length, text = \"\"; i < len; i++) {\n\ttext += cars[i] + \"<br>\";}";
