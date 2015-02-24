@@ -180,7 +180,7 @@ $(function(){
 	c = c + s + "<iframe src=\"demo_iframe.html\" frameborder=\"0\"></iframe>";
 	k = k + s + "Iframe - Remove the Border. The frameborder attribute specifies whether or not to display a border around the iframe.";
 	// N 58
-	c = c + s + "<iframe src=\"demo_iframe.html\" name=\"iframe_a\"></iframe>\n<p>\n\t<a href=\"http://www.w3schools.com\" target=\"iframe_a\">W3S.com</a>\n</p>";
+	c = c + s + "<iframe src=\"demo_iframe.html\" name=\"iframe_a\"></iframe>\n<p>\n\t<a href=\"http://www.w3schools.com\" target=\"iframe_a\">W3S</a>\n</p>";
 	k = k + s + "Use iframe as a Target for a Link. An iframe can be used as the target frame for a link.The target attribute of the link must refer to the name attribute of the iframe";
 	// N 59
 	c = c + s + "<script>\n\tdocument.getElementById(\"demo\").innerHTML = \"Hello World!\";\n</script>";
@@ -237,7 +237,7 @@ $(function(){
 	c = c + s + "<textarea name=\"message\" rows=\"10\" cols=\"30\">\n\tThe cat was playing in the garden.\n</textarea>";
 	k = k + s + "The <textarea> Element. The <textarea> element defines a multi-line input field (a text area)";
 	// N 77
-	c = c + s + "<button type=\"button\" onclick=\"alert('Hello World!')\">Click Me!</button>";
+	c = c + s + "<button type=\"button\" onclick=\"alert('Hello World')\">Click</button>";
 	k = k + s + "The <button> Element. The <button> element defines a a clickable button";
 	// N 78
 	c = c + s + "<form action=\"action_page.php\">\n<input list=\"browsers\">\n<datalist id=\"browsers\">\n\t<option value=\"Internet Explorer\">\n\t<option value=\"Firefox\">\n\t<option value=\"Chrome\">\n\t<option value=\"Opera\">\n\t<option value=\"Safari\">\n</datalist>\n</form>";
@@ -288,7 +288,7 @@ $(function(){
 	c = c + s + "<p>My mother has <span style=\"color:blue\">blue</span> eyes.</p>";
 	k = k + s + "HTML <span> Tag.  The <span> tag is used to group inline-elements in a document. The <span> tag provides no visual change by itself. The <span> tag provides a way to add a hook to a part of a text or a part of a document.";
 	// N 94
-	c = c + s + "<p>Version 1 is <strike>not yet available</strike> now available</p>";
+	c = c + s + "<p>Version 1 is <strike>not yet available</strike>now available</p>";
 	k = k + s + "The <strike> tag is not supported in HTML5. Use the <del> or <s> tag instead. The <strike> tag defines strikethrough text.";
 	// N 95
 	c = c + s + "<strong>Strong text</strong>";
@@ -354,17 +354,47 @@ $(function(){
 	c = c + s + "<select>\n\t<optgroup label=\"Swedish Cars\">\n\t\t<option value=\"volvo\">Volvo</option>\n\t\t<option value=\"saab\">Saab</option>\n\t</optgroup>\n\t<optgroup label=\"German Cars\">\n\t\t<option value=\"mercedes\">Mercedes</option>\n\t\t<option value=\"audi\">Audi</option>\n\t</optgroup>\n</select> ";
 	k = k + s + "The <optgroup> is used to group related options in a drop-down list. If you have a long list of options, groups of related options are easier to handle for a user.";
 	// N 117
-	c = c + s + "<form>\n\t<fieldset>\n\t\\t<legend>Personalia:</legend>\n\t\tName: <input type=\"text\"><br>\n\t\tEmail: <input type=\"text\"><br>\n\t\tDate of birth: <input type=\"text\">\n\t</fieldset>\n</form>";
-	k = k + s + "";
+	c = c + s + "<form>\n\t<fieldset>\n\t\<legend>Personalia:</legend>\n\t\tName: <input type=\"text\"><br>\n\t\tEmail: <input type=\"text\"><br>\n\t\tDate of birth: <input type=\"text\">\n\t</fieldset>\n</form>";
+	k = k + s + "The <fieldset> tag is used to group related elements in a form. The <fieldset> tag draws a box around the related elements.";
 	// N 118
-	c = c + s + "";
-	k = k + s + "";
+	c = c + s + "<figure>\n\t<img src=\"pulpit.jpg\" alt=\"Pulpit\" width=\"304\" height=\"228\">\n\t<figcaption>Fig1. - A view of the P.R in Norway.</figcaption>\n</figure>";
+	k = k + s + "The <figcaption> tag defines a caption for a <figure> element. The <figcaption> element can be placed as the first or last child of the <figure> element.";
 	// N 119
-	c = c + s + "";
-	k = k + s + "";
+	c = c + s + "<figure>\n\t<img src=\"pulpit.jpg\" alt=\"Pulpit\" width=\"304\" height=\"228\">\n</figure>";
+	k = k + s + "The <figure> tag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc. While the content of the <figure> element is related to the main flow, its position is independent of the main flow, and if removed it should not affect the flow of the document.";
 	// N 120
-	c = c + s + "";
-	k = k + s + "";
+	c = c + s + "<footer>\n\t<p>Posted by: MemryCode</p>\n\t<p>Contact information: <a href=\"mailto:someone@example.com\">\n\tsomeone@example.com</a>.</p>\n</footer>";
+	k = k + s + "The <footer> tag defines a footer for a document or section. A <footer> element should contain information about its containing element.";
+	// N 121
+	c = c + s + "<article>\n\t<header>\n\t\t<h1>Most important heading here</h1>\n\t\t<h3>Less important heading here</h3>\n\t\t<p>Some additional information here</p>\n\t</header>\n\t<p>Building with HTML</p>\n</article>";
+	k = k + s + "The <header> element represents a container for introductory content or a set of navigational links. A <header> element typically contains: one or more heading elements (<h1> - <h6> and <hgroup>) :logo or icon :authorship information";
+	// N 122
+	c = c + s + "<hgroup>\n\t<h1>Welcome to my WWF</h1>\n\t<h2>For a living planet</h2>\n</hgroup>\n<p>The rest of the content...</p> ";
+	k = k + s + "The <hgroup> tag is used to group heading elements. The <hgroup> element is used to group a set of <h1> to <h6> elements, when a heading has multiple levels (subheadings).";
+	// N 123
+	c = c + s + "<h1>HTML</h1>\n<p>HTML is a language for describing web pages</p>\n\n<hr>\n\n<h1>CSS</h1>\n<p>CSS defines how to display HTML elements</p>";
+	k = k + s + "The <hr> tag defines a thematic break in an HTML page (e.g. a shift of topic). The <hr> element is used to separate content (or define a change) in an HTML page.";
+	// N 124
+	c = c + s + "<body>\n\t<img src=\"jix/w2t.png\" width=\"380\" height=\"70\" />\n\t<!--Image File-->\n</body>";
+	k = k + s + "HTML <comment> tag is use for insert a comment in the source code. It's important to easy code readability and understand. You can also write specifiy information inside comments. In this case they will not be display on web document and not visible for the user.";
+	// N 125
+	c = c + s + "Click Here to open\n<a href=\"http://www.way2tutorial.com\" \n target=\"_blank\">Way2Tutorial Web Development Tutorials</a>";
+	k = k + s + "HTML <a> tag defines an anchor link. An anchor to create or set link either internally or externally. A link is a connection from one Web resource to another. Another way link is primary concept to drive one page to another page into a web.";
+	// N 126
+	c = c + s + "<!DOCTYPE html>\n<html>\n\t<head>\n\t\t<title>Nested Elements Example</title>\n\t</head>\n\t<body>\n\t\t<h1>This is <i>italic</i> heading</h1>\n\t\t<p>This is <u>underlined</u> paragraph</p>\n\t</body>\n</html>";
+	k = k + s + "HTML Tag vs. Element. An HTML element is defined by a starting tag. If the element contains other content, it ends with a closing tag. For example <p> is starting tag of a paragraph and </p> is closing tag of the same paragraph but <p>This is paragraph</p> is a paragraph element.";
+	// N 127
+	c = c + s + "<!DOCTYPE html>\n<html>\n\t<head>\n\t\t<title>The title Attribute Example</title>\n\t</head>\n\t<body>\n\t\t<h3 title=\"Hello HTML!\">Titled Heading Tag Example</h3>\n\t</body>\n</html>";
+	k = k + s + "The title Attribute. The title attribute gives a suggested title for the element. They syntax for the title attribute is similar as explained for id attribute:";
+	// N 128
+	c = c + s + "<p class=\"className1 className2 className3\">My paragraph</p>";
+	k = k + s + "The class attribute is used to associate an element with a style sheet, and specifies the class of element. You will learn more about the use of the class attribute when you will learn Cascading Style Sheet (CSS). So for now you can avoid it. ";
+	// N 129
+	c = c + s + "<body>\n\t<p>The following word uses a <b>bold</b> typeface.</p>\n</body>";
+	k = k + s + "Bold Text. Anything that appears within <b>...</b> element, is displayed in bold as shown below";
+	// N 130
+	c = c + s + "<body>\n\t<p>The following word uses a <i>italicized</i> typeface.</p>\n</body>";
+	k = k + s + "Italic Text. Anything that appears within <i>...</i> element is displayed in italicized as shown below";
 	
 	
 		
