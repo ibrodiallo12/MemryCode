@@ -312,7 +312,7 @@ $(function(){
 	c = c + s + "<var>Variable</var>";
 	k = k + s + "The <var> tag is a phrase tag. It defines a variable.";
 	// N 102
-	c = c + s + "<video width=\"320\" height=\"240\" controls>\n\t<source src=\"movie.mp4\" type=\"video/mp4\">\n\t<source src=\"movie.ogg\" type=\"video/ogg\">\n\tYour browser does not support the video tag\n</video> ";
+	c = c + s + "<video width=\"320\" height=\"240\" controls>\n\t<source src=\"movie.mp4\" type=\"video/mp4\">\n\t<source src=\"movie.ogg\" type=\"video/ogg\">\n\tYour browser does not support the video tag\n</video>";
 	k = k + s + "The <video> tag specifies video, such as a movie clip or other video streams. Currently, there are 3 supported video formats for the <video> element: MP4, WebM, and Ogg";
 	// N 103
 	c = c + s + "<p>To learn AJAX, you must be familiar with\nthe XML<wbr>Http<wbr>Request Object.</p>";
@@ -336,7 +336,7 @@ $(function(){
 	c = c + s + "<article>\n\t<h1>Google Chrome</h1>\n\t<p>Google Chrome is a free, open-source web browser\ndeveloped by Google, released in 2008.</p>\n</article>";
 	k = k + s + "The <article> tag specifies independent, self-contained content. An article should make sense on its own and it should be possible to distribute it independently from the rest of the site.";
 	// N 111
-	c = c + s + "<p>My family and I visited The Epcot center</p>\n\n<aside>\n\t<h4>Epcot Center</h4>\n\t<p>The EC is a theme park in Disney World, Florida.</p>\n</aside> ";
+	c = c + s + "<p>My family and I visited The Epcot center</p>\n\n<aside>\n\t<h4>Epcot Center</h4>\n\t<p>The EC is a theme park in Disney World, Florida.</p>\n</aside>";
 	k = k + s + "The <aside> tag defines some content aside from the content it is placed in. The aside content should be related to the surrounding content.";
 	// N 112
 	c = c + s + "<footer>\n\t<p>Posted by: Hege Refsnes</p>\n\t<p>Contact: <a href=\"mailto:someone@example.com\">\n\tsomeone@example.com</a>.</p>\n</footer>";
@@ -351,7 +351,7 @@ $(function(){
 	c = c + s + "<button type=\"button\">Click Me!</button>";
 	k = k + s + "The <button> tag defines a clickable button. Inside a <button> element you can put content, like text or images. This is the difference between this element and buttons created with the <input> element.";
 	// N 116
-	c = c + s + "<select>\n\t<optgroup label=\"Swedish Cars\">\n\t\t<option value=\"volvo\">Volvo</option>\n\t\t<option value=\"saab\">Saab</option>\n\t</optgroup>\n\t<optgroup label=\"German Cars\">\n\t\t<option value=\"mercedes\">Mercedes</option>\n\t\t<option value=\"audi\">Audi</option>\n\t</optgroup>\n</select> ";
+	c = c + s + "<select>\n\t<optgroup label=\"Swedish Cars\">\n\t\t<option value=\"volvo\">Volvo</option>\n\t\t<option value=\"saab\">Saab</option>\n\t</optgroup>\n\t<optgroup label=\"German Cars\">\n\t\t<option value=\"mercedes\">Mercedes</option>\n\t\t<option value=\"audi\">Audi</option>\n\t</optgroup>\n</select>";
 	k = k + s + "The <optgroup> is used to group related options in a drop-down list. If you have a long list of options, groups of related options are easier to handle for a user.";
 	// N 117
 	c = c + s + "<form>\n\t<fieldset>\n\t\<legend>Personalia:</legend>\n\t\tName: <input type=\"text\"><br>\n\t\tEmail: <input type=\"text\"><br>\n\t\tDate of birth: <input type=\"text\">\n\t</fieldset>\n</form>";
@@ -369,7 +369,7 @@ $(function(){
 	c = c + s + "<article>\n\t<header>\n\t\t<h1>Most important heading here</h1>\n\t\t<h3>Less important heading here</h3>\n\t\t<p>Some additional information here</p>\n\t</header>\n\t<p>Building with HTML</p>\n</article>";
 	k = k + s + "The <header> element represents a container for introductory content or a set of navigational links. A <header> element typically contains: one or more heading elements (<h1> - <h6> and <hgroup>) :logo or icon :authorship information";
 	// N 122
-	c = c + s + "<hgroup>\n\t<h1>Welcome to my WWF</h1>\n\t<h2>For a living planet</h2>\n</hgroup>\n<p>The rest of the content...</p> ";
+	c = c + s + "<hgroup>\n\t<h1>Welcome to my WWF</h1>\n\t<h2>For a living planet</h2>\n</hgroup>\n<p>The rest of the content...</p>";
 	k = k + s + "The <hgroup> tag is used to group heading elements. The <hgroup> element is used to group a set of <h1> to <h6> elements, when a heading has multiple levels (subheadings).";
 	// N 123
 	c = c + s + "<h1>HTML</h1>\n<p>HTML is a language for describing web pages</p>\n\n<hr>\n\n<h1>CSS</h1>\n<p>CSS defines how to display HTML elements</p>";
@@ -388,7 +388,7 @@ $(function(){
 	k = k + s + "The title Attribute. The title attribute gives a suggested title for the element. They syntax for the title attribute is similar as explained for id attribute:";
 	// N 128
 	c = c + s + "<p class=\"className1 className2 className3\">My paragraph</p>";
-	k = k + s + "The class attribute is used to associate an element with a style sheet, and specifies the class of element. You will learn more about the use of the class attribute when you will learn Cascading Style Sheet (CSS). So for now you can avoid it. ";
+	k = k + s + "The class attribute is used to associate an element with a style sheet, and specifies the class of element. You will learn more about the use of the class attribute when you will learn Cascading Style Sheet (CSS). So for now you can avoid it.";
 	// N 129
 	c = c + s + "<body>\n\t<p>The following word uses a <b>bold</b> typeface.</p>\n</body>";
 	k = k + s + "Bold Text. Anything that appears within <b>...</b> element, is displayed in bold as shown below";

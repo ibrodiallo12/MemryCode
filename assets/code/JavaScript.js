@@ -493,7 +493,7 @@ Dolly!\";";
 	c = c + s + "var index;\nvar fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\nfor (index = 0; index < fruits.length; index++) {\n\ttext += fruits[index];\n}";
 	k = k + s + "Looping Array Elements. The best way to loop through an array is using a standard for loop";
 	// N 155
-	c = c + s + "var person = []\nperson[0] = \"John\";\nperson[1] = \"Doe\";\nperson[2] = 46;\nvar x = person.length; // person.length will return 3\nvar y = person[0]; // person[0] will return \"John\"";
+	c = c + s + "var person = []\nperson[0]; = \"John\";\nperson[1] = \"Doe\";\nperson[2] = 46;\nvar x = person.length; // person.length will return 3\nvar y = person[0]; // person[0] will return \"John\"";
 	k = k + s + "Associative Arrays?. Many programming languages support arrays with named indexes. Arrays with named indexes are called associative arrays (or hashes). JavaScript does not support arrays with named indexes. In JavaScript, arrays use numbered indexes.";
 	// N 156
 	c = c + s + "var person = [];\nperson[\"firstName\"] = \"John\";\nperson[\"lastName\"] = \"Doe\";\nperson[\"age\"] = 46;\nvar x = person.length;// person.length will return 0\nvar y = person[0];// person[0] will return undefined";
@@ -677,17 +677,77 @@ Dolly!\";";
 	k = k + s + "The Continue Statement. The continue statement breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop. This example skips the value of 3";
 	// N 216
 	c = c + s + "cars = [\"Peugeot\", \"Volvo\", \"Golf\", \"Ford\"];\nlist: {\n\ttext += cars[0] + \"<br>\";\n\ttext += cars[1] + \"<br>\";\n\ttext += cars[2] + \"<br>\";\n\ttext += cars[3] + \"<br>\";\n\tbreak list;\n\ttext += cars[4] + \"<br>\";\n\ttext += cars[5] + \"<br>\";\n}";
-	k = k + s + "JavaScript Labels. As you have already seen, in the chapter about the switch statement, JavaScript statements can be labeled. To label JavaScript statements you precede the statements with a label name and a colon";
+	k = k + s + "JavaScript Labels. JavaScript statements can be labeled. To label JavaScript statements you precede the statements with a label name and a colon";
 	// N 217
-	c = c + s + "";
-	k = k + s + "";
+	c = c + s + "var person = null;// Value is null, but type is still an object";
+	k = k + s + "Null. In JavaScript null is \"nothing\". It is supposed to be something that doesn't exist. Unfortunately, in JavaScript, the data type of null is an object. You can empty an object by setting it to null";
 	// N 218
-	c = c + s + "";
-	k = k + s + "";
+	c = c + s + "var person = undefined;// Value is undefined, type is undefined";
+	k = k + s + "In javascript. You can also empty an object by setting it to undefined";
 	// N 219
+	c = c + s + "typeof undefined // undefined\ntypeof null // object\nnull === undefined // false\nnull == undefined // true";
+	k = k + s + "Difference Between Undefined and Null";
+	// N 220
+	c = c + s + "typeof \"John\" // Returns string\ntypeof 3.14 // Returns number\ntypeof NaN // Returns number\ntypeof false // Returns boolean\ntypeof [1,2,3,4] // Returns object\ntypeof {name:'John', age:34} // Returns object\ntypeof new Date() // Returns object\ntypeof function () {} // Returns function\ntypeof myCar // Returns undefined (if myCar is not declared)\ntypeof null // Returns object";
+	k = k + s + "The typeof Operator. You can use the typeof operator to find the data type of a JavaScript variable.";
+	// N 221
+	c = c + s + "\"John\".constructor // Returns function String() {[native code]}\n(3.14).constructor // Returns function Number(){[native code]}\nfalse.constructor // Returns function Boolean() {[native code]}\n[1,2,3,4].constructor // Returns function Array() {[native code]}\n{name:'John', age:34}.constructor // Returns function Object() {[native code]}\nnew Date().constructor // Returns function Date() {[native code]}\nfunction () {}.constructor // Returns function Function() {[native code]}";
+	k = k + s + "The constructor Property. The constructor property returns the constructor function for all JavaScript variables.";
+	// N 222
+	c = c + s + "String(x)\n// returns a string from a number variable x\nString(123)\n// returns a string from a number literal 123\nString(100 + 23)\n// returns a string from a number from an expression";
+	k = k + s + "Converting Numbers to Strings. The global method String() can convert numbers to strings. It can be used on any type of numbers, literals, variables, or expressions";
+	// N 223
+	c = c + s + "String(false) // returns \"false\"\nString(true) // returns \"true\"";
+	k = k + s + "Converting Booleans to Strings. The global method String() can convert booleans to strings.";
+	// N 224
+	c = c + s + "false.toString() // returns \"false\"\ntrue.toString() // returns \"true\"";
+	k = k + s + "Converting Booleans to Strings. The method toString() can convert booleans to strings.";
+	// N 225
+	c = c + s + "String(Date())\n// returns example (Thu Jul 17 2014 15:38:19 GMT+0200)";
+	k = k + s + "Converting Dates to Strings. The global method String() can convert dates to strings.";
+	// N 226
+	c = c + s + "Date().toString()\n// returns example (Thu Jul 17 2014 15:38:19 GMT+0200)";
+	k = k + s + "Converting Dates to Strings. The method toString() can convert dates to strings.";
+	// N 227
+	c = c + s + "Number(\"3.14\") // returns 3.14\nNumber(\" \") // returns 0\nNumber(\"\") // returns 0\nNumber(\"99 88\") // returns NaN";
+	k = k + s + "Converting Strings to Numbers. The global method Number() can convert strings to numbers. Strings containing numbers (like \"3.14\") convert to numbers (like 3.14). Empty strings convert to 0. Anything else converts to NaN (Not a number).";
+	// N 228
+	c = c + s + "var y = \"5\"; // y is a string\nvar x = + y; // x is a number";
+	k = k + s + "The Unary + Operator. The unary + operator can be used to convert a variable to a number";
+	// N 229
+	c = c + s + "var y = \"John\"; // y is a string\nvar x = + y; // x is a number (NaN)";
+	k = k + s + "The Unary + Operator. The unary + operator can be used to convert a variable to a number. If the variable cannot be converted, it will still become a number, but with the value NaN (Not a number)";
+	// N 230
+	c = c + s + "Number(false) // returns 0\nNumber(true) // returns 1";
+	k = k + s + "Converting Booleans to Numbers. The global method Number() can also convert booleans to numbers.";
+	// N 231
+	c = c + s + "d = new Date();\nNumber(d) // returns 1404568027739";
+	k = k + s + "Converting Dates to Numbers. The global method Number() can be used to convert dates to numbers.";
+	// N 232
+	c = c + s + "d = new Date();\nd.getTime() // returns 1404568027739";
+	k = k + s + "Converting Dates to Numbers. The date method getTime() can be used to convert dates to numbers.";
+	// N 233
+	c = c + s + "5 + null // returns 5 because null is converted to 0\n\"5\" + null // returns \"5null\" because null is converted to \"null\"\n\"5\" + 1 // returns \"51\" because 1 is converted to \"1\"\n\"5\" - 1 // returns 4 because \"5\" is converted to 5";
+	k = k + s + "Automatic Type Conversion. When JavaScript tries to operate on a \"wrong\" data type, it will try to convert the value to a \"right\" type.";
+	// N 234
+	c = c + s + "var str = \"Visit MemryCode\";\nvar n = str.search(/memrycode/i);";
+	k = k + s + "Using String search() With a Regular Expression. Use a regular expression to do a case-insensitive search for \"memrycode\" in a string";
+	// N 235
+	c = c + s + "var str = \"Visit MemryCode!\";\nvar n = str.search(\"MemryCode\");";
+	k = k + s + "Using String search() With String. The search method will also accept a string as search argument. The string argument will be converted to a regular expression. Use a string to do a search for \"memrycode\" in a string";
+	// N 236
+	c = c + s + "var str = \"Visit Microsoft!\";\nvar res = str.replace(/microsoft/i, \"MemryCode\");\n// The result in res will be: Visit MemryCode";
+	k = k + s + "Use String replace() With a Regular Expression. Use a case insensitive regular expression to replace Microsoft with W3Schools in a string";
+	// N 237
+	c = c + s + "var str = \"Visit Microsoft!\";\nvar res = str.replace(\"Microsoft\", \"W3Schools\");";
+	k = k + s + "Using String replace() With a String. The replace() method will also accept a string as search argument";
+	// N 238
 	c = c + s + "";
 	k = k + s + "";
-	// N 220
+	// N 239
+	c = c + s + "";
+	k = k + s + "";
+	// N 240
 	c = c + s + "";
 	k = k + s + "";
 	
