@@ -31,6 +31,31 @@ if(isset($_GET['lang'])){
 		$mode = 'python'; 
 		createCookie($lang);
 	}
+	elseif($_GET['lang'] == 'SQL'){
+		$lang = 'SQL'; 
+		$mode = 'sql'; 
+		createCookie($lang);
+	}
+	elseif($_GET['lang'] == 'Java'){
+		$lang = 'Java'; 
+		$mode = 'clike'; 
+		createCookie($lang);
+	}
+	elseif($_GET['lang'] == 'C-plus'){
+		$lang = 'C++'; 
+		$mode = 'clike'; 
+		createCookie($lang);
+	}
+	elseif($_GET['lang'] == 'C'){
+		$lang = 'C'; 
+		$mode = 'clike'; 
+		createCookie($lang);
+	}
+	elseif($_GET['lang'] == 'Shell'){
+		$lang = 'Shell'; 
+		$mode = 'shell'; 
+		createCookie($lang);
+	}
 	else{
 		$lang = 'HTML'; 
 		$mode = 'xml';
@@ -101,8 +126,13 @@ if(isset($_GET['lang'])){
 							<option>HTML</option>
 							<option>CSS</option>
 							<option>JavaScript</option>
+							<option>Shell</option>
 							<option>PHP</option>
+							<option>SQL</option>
 							<option>Python</option>
+							<option>Java</option>
+							<option>C-plus</option>
+							<option>C</option>
 						  </select>
 						</form>
 					   </div>

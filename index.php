@@ -1,11 +1,6 @@
 <?php
 if(isset($_COOKIE['lang'])){
-	if($_COOKIE['lang'] == 'HTML'){$lang = 'HTML';}
-	elseif($_COOKIE['lang'] == 'CSS'){$lang = 'CSS';}
-	elseif($_COOKIE['lang'] == 'PHP'){$lang = 'PHP';}
-	elseif($_COOKIE['lang'] == 'JavaScript'){$lang = 'JavaScript';}
-	elseif($_COOKIE['lang'] == 'Python'){$lang = 'Python';}
-	else{$lang = 'HTML';}
+	$lang = $_COOKIE['lang'];
 }else{$lang = 'HTML';}
 ?>
 <!DOCTYPE html>
