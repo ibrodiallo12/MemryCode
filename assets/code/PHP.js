@@ -1,6 +1,6 @@
 $(function(){
 	//INTRDUCTION WORD
-	var w = "Memrize your keyboard, php code and be fast to make a dynamic website!";
+	var w = "Memorize your keyboard, php code and be fast to make a dynamic website";
 	//The separator in the ARRAY
 	var s = "¢";
 	// code in the ARRAY
@@ -30,7 +30,7 @@ $(function(){
 	c = c + s + "<?php\n\t$color = \"red\";\n\techo \"My car is \" . $color . \"<br>\";\n\techo \"My house is \" . $COLOR . \"<br>\";\n\techo \"My boat is \" . $coLOR . \"<br>\";\n?>";
 	k = k + s + "In the example below, only the first statement will display the value of the $color variable (this is because $color, $COLOR, and $coLOR are treated as three different variables)";
 	// N 8
-	c = c + s + "<?php\n\t$txt = \"Hello world!\";\n\t$x = 5;\n\t$y = 10.5;\n?> ";
+	c = c + s + "<?php\n\t$txt = \"Hello world!\";\n\t$x = 5;\n\t$y = 10.5;\n?>";
 	k = k + s + "Creating (Declaring) PHP Variables. In PHP, a variable starts with the $ sign, followed by the name of the variable:";
 	// N 9
 	c = c + s + "<?php\n\t$txt = \"PHP\";\n\techo \"I love $txt!\";\n?>";
@@ -42,13 +42,13 @@ $(function(){
 	c = c + s + "<?php\n\t$x = 5;\n\t$y = 4;\n\techo $x + $y;\n?>";
 	k = k + s + "The example will output the sum of two variables";
 	// N 12
-	c = c + s + "<?php\n$x = 5; // global scope\nfunction myTest() {\n\t// using x inside this function will generate an error\n\techo \"<p>Variable x inside function is: $x</p>\";\n}\nmyTest();\necho \"<p>Variable x outside function is: $x</p>\";\n\t?>";
+	c = c + s + "<?php\n$x = 5; // global scope\nfunction myTest() {\n\t// using x inside this function will generate an error\n\techo \"<p>Variable x inside function is: $x</p>\";\n}\nmyTest();\necho \"<p>Variable x outside function is: $x</p>\";\n?>";
 	k = k + s + "Global and Local Scope. A variable declared outside a function has a GLOBAL SCOPE and can only be accessed outside a function";
 	// N 13
 	c = c + s + "<?php\nfunction myTest() {\n\t$x = 5; // local scope\n\techo \"<p>Variable x inside function is: $x</p>\";\n}\nmyTest();\n\n// using x outside the function will generate an error\necho \"<p>Variable x outside function is: $x</p>\";\n?>";
 	k = k + s + "A variable declared within a function has a LOCAL SCOPE and can only be accessed within that function";
 	// N 14
-	c = c + s + " <?php\n$x = 5;\n$y = 10;\n\nfunction myTest() {\n\tglobal $x, $y;\n\t$y = $x + $y;\n}\nmyTest();\necho $y; // outputs 15\n?>";
+	c = c + s + "<?php\n$x = 5;\n$y = 10;\n\nfunction myTest() {\n\tglobal $x, $y;\n\t$y = $x + $y;\n}\nmyTest();\necho $y; // outputs 15\n?>";
 	k = k + s + "PHP The global Keyword. The global keyword is used to access a global variable from within a function. To do this, use the global keyword before the variables (inside the function)";
 	// N 15
 	c = c + s + "<?php\n$x = 5;\n$y = 10;\nfunction myTest() {\n\t$GLOBALS['y'] = $GLOBALS['x'] + $GLOBALS['y'];\n}\nmyTest();\necho $y; // outputs 15\n?>";

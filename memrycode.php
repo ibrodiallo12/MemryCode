@@ -18,7 +18,7 @@ if(isset($_GET['lang'])){
 	}
 	elseif($_GET['lang'] == 'PHP'){
 		$lang = 'PHP'; 
-		$mode = 'php'; 
+		$mode = 'clike'; 
 		createCookie($lang);
 	}
 	elseif($_GET['lang'] == 'JavaScript'){
