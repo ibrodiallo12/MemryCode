@@ -29,7 +29,7 @@ $(function(){
 	c = c + s + "byte a = 68;\n\tchar a = 'A'";
 	k = k + s + "Java Literals: A literal is a source code representation of a fixed value. They are represented directly in the code without any computation.";
 	// N 8
-	c = c + s + "int decimal = 100;\n\tint octal = 0144;\n\tint hexa =  0x64;";
+	c = c + s + "int decimal = 100;\n\tint octal = 0144;\n\tint hexa = 0x64;";
 	k = k + s + "Prefix 0 is used to indicate octal and prefix 0x indicates hexadecimal when using these number systems for literals.";
 	// N 9
 	c = c + s + "\"Hello World\"\n\"two\nlines\"\n\"\"This is in quotes\"\"";
@@ -41,7 +41,7 @@ $(function(){
 	c = c + s + "public class Test{\n\tpublic void custAge(){\n\t\tint age = 0;\n\t\tage = age + 17;\n\t\tSystem.out.println(\"Customer age is : \" + age);\n\t}\n\tpublic static void main(String args[]){\n\t\tTest test = new Test();\n\t\ttest.custAge();\n\t}\n}";
 	k = k + s + "Local variables are declared in methods, constructors, or blocks. Local variables are created when the method, constructor or block is entered and the variable will be destroyed once it exits the method, constructor or block.";
 	// N 12
-	c = c + s + "import java.io.*;\n\npublic class Employee{\n\t// salary  variable is a private static variable\n\tprivate static double salary;\n\n\t// DEPARTMENT is a constant\n\tpublic static final String DEPARTMENT = \"Development \";\n\t\tpublic static void main(String args[]){\n\t\t\tsalary = 1000;\n\t\t\tSystem.out.println(DEPARTMENT+\"average salary:\"+salary);\n\t}\n}";
+	c = c + s + "import java.io.*;\n\npublic class Employee{\n\t// salary variable is a private static variable\n\tprivate static double salary;\n\n\t// DEPARTMENT is a constant\n\tpublic static final String DEPARTMENT = \"Development \";\n\t\tpublic static void main(String args[]){\n\t\t\tsalary = 1000;\n\t\t\tSystem.out.println(DEPARTMENT+\"average salary:\"+salary);\n\t}\n}";
 	k = k + s + "Class/static variables. Class variables also known as static variables are declared with the static keyword in a class, but outside a method, constructor or a block. There would only be one copy of each class variable per class, regardless of how many objects are created from it. Static variables are rarely used other than being declared as constants. Constants are variables that are declared as public/private, final and static. Constant variables never change from their initial value.";
 	// N 13
 	c = c + s + "";
