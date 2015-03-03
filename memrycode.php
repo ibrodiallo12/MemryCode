@@ -115,7 +115,9 @@ if(isset($_GET['lang'])){
 						</div>
 						 <div  class="pull-left" style="margin-top: 5px; margin-left: 50px;"">
 							 <h4 class="hidden-xs hidden-sm" style="display: inline-block;">As fast, Memorize code... </h4>
-						 	 <h4 class="hidden-xs text-muted"  style="display: inline-block;"> &lt;{&gt; HTML/CSS/JavaScript/PHP/Python &lt;}&gt;</h4>
+						 	 <h4 class="hidden-xs hidden-md hidden-sm text-muted"  style="display: inline-block;"> &lt;{&gt; HTML/CSS/JavaScript/PHP/Python/Shell/Java/SQL/C++/C.. &lt;}&gt;</h4>
+						 	  <h5 class="hidden-xs hidden-lg text-muted"  style="display: inline-block;"> &lt;{&gt; HTML/CSS/JavaScript/PHP/Python/Shell/Java/SQL/C++/C.. &lt;}&gt;</h5>
+					
 						 </div>
 					    <div class="col-sm-2 col-md-2 language" style="position: absolute; right: 0px; top: -10px;">
 					    <form class="pull-right" action="memrycode.php" method="post" id="formChoiceLang" style="margin-top: 10px;">

@@ -113,7 +113,7 @@ $(function(){
 	c = c + s + "bzip2 test.csv > test.csv.bz2";
 	k = k + s + "Compress the file test.csv, keep the uncompressed version and create the new file by redirecting standard out";
 	// N 36
-	c = c + s + "tar -cf music.tar miles.mp3 chet.mp3 charlie.mp3\n bzip2 music.tar";
+	c = c + s + "tar -cf music.tar miles.mp3 ben.mp3 howard.mp3\nbzip2 music.tar";
 	k = k + s + "Combine a set of mp3 music files into one file with tar and then zip the result with bzip2	";
 	// N 37
 	c = c + s + "tar -cjf music.tar.bz2 miles.mp3 ben.mp3 howard.mp3";
@@ -187,6 +187,129 @@ $(function(){
 	// N 60
 	c = c + s + "whoami";
 	k = k + s + "Print the current user id and name.";
+	// N 61
+	c = c + s + "echo $SHELL";
+	k = k + s + "If you would like to know which shell you are using you may use a command called echo to display a system variable stating your current shell. echo is a command which is used to display messages.";
+	// N 62
+	c = c + s + "pwd";
+	k = k + s + "The first command we are going to learn is pwd which stands for Present Working Directory. (You'll find that a lof of commands in linux are named as an abbreviation of a word or words describing them. This makes it easier to remember them.) The command does just that. It tells you what your current or present working directory is. ";
+	// N 63
+	c = c + s + "ls";
+	k = k + s + "It's one thing to know where we are. Next we'll want to know what is there. The command for this task is ls. It's short for list.";
+	// N 64
+	c = c + s + "ls -l";
+	k = k + s + "We ran ls with a single command line option ( -l ) which indicates we are going to do a long listing. A long listing has the following:-First character indicates whether it is a normal file ( - ) or directory ( d ) -Next 9 characters are permissions for the file or directory (we'll learn more about them in section 6). -The next file is the number of blocks (don't worry too much about this). -The next field is the owner of the file or directory (ryan in this case). -The next field is the group the file or directory belongs to (users in this case). -Following this is the file size. -Next up is the file modification time. -Finally we have the actual name of the file or directory.";
+	// N 65
+	c = c + s + "ls /etc";
+	k = k + s + "We ran ls with a command line argument ( /etc ). When we do this it tells ls not to list our current directory but instead to list that directories contents.";
+	// N 66
+	c = c + s + "ls -l /etc";
+	k = k + s + "We ran ls with both a command line option and argument. As such it did a long listing of the directory /etc. Lines 12 and 18 just indicate that I have cut out some of the commands normal output for brevities sake. When you run the commands you will see a longer listing of files and directories.";
+	// N 67
+	c = c + s + "ls Documents";
+	k = k + s + "We ran ls providing it with a relative path. Documents is a directory in our current location. This command could produce different results depending on where we are. If we had another user on the system, bob, and we ran the command when in their home directory then we would list the contents of their Documents directory instead";
+	// N 68
+	c = c + s + "ls ../../";
+	k = k + s + "We ran ls with a command line argument ( ../../ ). When we do this it tells ls not to list our current directory but instead to list that directories contents";
+	// N 69
+	c = c + s + "cd 'Holiday Photos'";
+	k = k + s + "Quotes. The first approach involves using quotes around the entire item. You may use either single or double quotes (later on we will see that there is a subtle difference between the two but for now that difference is not a problem). Anything inside quotes is considered a single item.";
+	// N 70
+	c = c + s + "cd Holiday\ Photos";
+	k = k + s + "Escape Characters. Another method is to use what is called an escape character, which is a backslash ( \ ). What the backslash does is escape (or nullify) the special meaning of the next character.";
+	// N 71
+	c = c + s + "ls -a Documents";
+	k = k + s + " We may modify it by including the command line option -a so that it does show hidden files and directories.";
+	// N 72
+	c = c + s + "file test.txt";
+	k = k + s + "obtain information about what type of file a file or directory is.";
+	// N 73
+	c = c + s + "man ls";
+	k = k + s + "The manual pages are a set of pages that explain every command available on your system including what they do, the specifics of how you run them and what command line arguments they accept.";
+	// N 74
+	c = c + s + "ls -a";
+	k = k + s + "A lot of being proficient at Linux is knowing which command line options we should use to modify the behaviour of our commands to suit out needs. A lot of these have both a long hand and short hand version. eg. Above you will notice that to list all directory entries (including hidden files) we can use the option -a or --all (remember from last section what files and directories beginning with a . ";
+	// N 75
+	c = c + s + "ls --all";
+	k = k + s + "A lot of being proficient at Linux is knowing which command line options we should use to modify the behaviour of our commands to suit out needs. A lot of these have both a long hand and short hand version. eg. Above you will notice that to list all directory entries (including hidden files) we can use the option -a or --all (remember from last section what files and directories beginning with a . ";
+	// N 76
+	c = c + s + "ls -alh";
+	k = k + s + "A lot of being proficient at Linux is knowing which command line options we should use to modify the behaviour of our commands to suit out needs. A lot of these have both a long hand and short hand version. eg. Above you will notice that to list all directory entries (including hidden files) we can use the option -a or --all (remember from last section what files and directories beginning with a . ";
+	// N 77
+	c = c + s + "mkdir linuxtutorialwork";
+	k = k + s + "Creating a directory is pretty easy. The command we are after is mkdir which is short for Make Directory.";
+	// N 78
+	c = c + s + "mkdir /home/ryan/foo";
+	k = k + s + "Creating a directory is pretty easy. The command we are after is mkdir which is short for Make Directory.";
+	// N 79
+	c = c + s + "mkdir ~/linuxtutorialwork/dir2";
+	k = k + s + "Creating a directory is pretty easy. The command we are after is mkdir which is short for Make Directory.";
+	// N 80
+	c = c + s + "mkdir -pv linuxtutorialwork/foo/bar\n#result: mkdir: created directory 'linuxtutorialwork/foo'";
+	k = k + s + "The first one is -p which tells mkdir to make parent directories as needed (demonstration of what that actually means below). The second one is -v which makes mkdir tell us what it is doing (as you saw in the example above, it normally does not)";
+	// N 81
+	c = c + s + "rmdir linuxtutorialwork/foo/bar";
+	k = k + s + "Creating a directory is pretty easy. Removing or deleting a directory is easy too. One thing to note, however, is that there is no undo when it comes to the command line on Linux (Linux GUI desktop environments typically do provide an undo feature but the command line does not). Just be careful with what you do. The command to remove a directory is rmdir, short for remove directory.";
+	// N 82
+	c = c + s + "touch example1";
+	k = k + s + "A lot of commands that involve manipulating data within a file have the nice feature that they will create a file automatically if we refer to it and it does not exist. In fact we can make use of this very characteristic to create blank files using the command touch.";
+	// N 83
+	c = c + s + "cp example1 barney";
+	k = k + s + "There are many reasons why we may want to make a duplicate of a file or directory. Often before changing something, we may wish to create a duplicate so that if something goes wrong we can easily revert back to the original. The command we use for this is cp which stands for copy.";
+	// N 84
+	c = c + s + "cp example2 ../../backups";
+	k = k + s + "There are many reasons why we may want to make a duplicate of a file or directory. Often before changing something, we may wish to create a duplicate so that if something goes wrong we can easily revert back to the original. The command we use for this is cp which stands for copy.";
+	// N 85
+	c = c + s + "mv foo2 backups/foo3";
+	k = k + s + "To move a file we use the command mv which is short for move. It operates in a similar way to cp. One slight advantage is that we can move directories without having to provide the -r option.";
+	// N 86
+	c = c + s + "mv linuxtutorialwork/testdir /home/ryan/linuxtutorialwork/fred";
+	k = k + s + "Now just as above with the command touch, we can use the basic behaviour of the command mv in a creative way to achieve a slighly different outcome. Normally mv will be used to move a file or directory into a new directory. As we saw on line 4 above, we may provide a new name for the file or directory and as part of the move it will also rename it. Now if we specify the destination to be the same directory as the source, but with a different name, then we have effectively used mv to rename a file or directory.";
+	// N 87
+	c = c + s + "rm example1";
+	k = k + s + "As with rmdir, removing a file is an action that may not be undone so be careful. The command to remove or delete a file is rm which stands for remove.";
+	// N 88
+	c = c + s + "rm -r backups";
+	k = k + s + "Like several other commands introduced in this section, rm has several options that alter it's behaviour. I'll leave it up to you to look at the man page to see what they are but I will introduce one particularly useful option which is -r. Similar to cp it stands for recursive. When rm is run with the -r option it allows us to remove directories and all files and directories contained within.";
+	// N 89
+	c = c + s + "mkdir test/";
+	k = k + s + "Make Directory - ie. Create a directory.";
+	// N 90
+	c = c + s + "rmdir dir/";
+	k = k + s + "Remove Directory - ie. Delete a directory.";
+	// N 91
+	c = c + s + "touch test.txt";
+	k = k + s + "Create a blank file";
+	// N 92
+	c = c + s + "rm test.txt";
+	k = k + s + "Remove - ie. Delete a file.";
+	// N 93
+	c = c + s + "ls /home/ryan/linuxtutorialwork/*.txt\n#result: barry.txt blah.txt";
+	k = k + s + "Every file with an extension of txt at the end. In this example we have used an absolute path. Wildcards work just the same if the path is absolute or relative.";
+	// N 94
+	c = c + s + "ls ?i*\n#result: firstfile video.mpeg";
+	k = k + s + "Now let's introduce the ? operator. In this example we are looking for each file whose second letter is i. As you can see, the pattern can be built up using several wildcards.";
+	// N 95
+	c = c + s + "ls *.???\n#result: barry.txt blah.txt example.png frog.png";
+	k = k + s + "How about every file with a three letter extension. Note that video.mpeg is not matched as the path name must match the given pattern exactly.";
+	// N 96
+	c = c + s + "ls [sv]*\n#result: secondfile video.mpeg";
+	k = k + s + "The range operator ( [ ] ). Unlike the previous 2 wildcards which specified any character, the range operator allows you to limit to a subset of characters. In this example we are looking for every file whose name either begins with a s or v";
+	// N 97
+	c = c + s + "ls *[0-9]\n#result: foo1 foo2 foo3";
+	k = k + s + "With ranges we may also include a set by using a hyphen.";
+	// N 98
+	c = c + s + "ls [^a-k]*\n#result: secondfile thirdfile video.mpeg";
+	k = k + s + "We may also reverse a range using the caret ( ^ ) which means look for any character which is not one of the following.";
+	// N 99
+	c = c + s + "file /home/user/*";
+	k = k + s + "Find the file type of every file in a directory.";
+	// N 100
+	c = c + s + "mv public_html/*.??g public_html/images/";
+	k = k + s + "Move all files of type either jpg or png (image files) into another directory.";
+	// N 101
+	c = c + s + "ls -lh /home/*/.bash_history";
+	k = k + s + "Find out the size and modification time of the .bash_history file in every users home directory. (.bash_history is a file in a typical users home directory that keeps a history of commands the user has entered on the command line";
 	
 	
 	
