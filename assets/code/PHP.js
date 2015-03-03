@@ -24,7 +24,7 @@ $(function(){
 	c = c + s + "<?php\n// This is a single-line comment\n\n# This is also a single-line comment\n\n/*\nThis is a multiple-lines comment block\nthat spans over multiple\nlines\n*/\n\n// You can also use comments to leave out parts of a code line\n$x = 5 /* + 15 */ + 5;\necho $x;\n?>";
 	k = k + s + "Comments in PHP. A comment in PHP code is a line that is not read/executed as part of the program. Its only purpose is to be read by someone who is looking at the code.";
 	// N 6
-	c = c + s + "<?php\n\tECHO \"Hello World!<br>\";\necho \"Hello World!<br>\";\nEcHo \"Hello World!<br>\";\n?>";
+	c = c + s + "<?php\n\tECHO \"Hello World!<br>\";\n\techo \"Hello World!<br>\";\n\tEcHo \"Hello World!<br>\";\n?>";
 	k = k + s + "PHP Case Sensitivity. In PHP, all keywords (e.g. if, else, while, echo, etc.), classes, functions, and user-defined functions are NOT case-sensitive. In the example below, all three echo statements below are legal (and equal)";
 	// N 7
 	c = c + s + "<?php\n\t$color = \"red\";\n\techo \"My car is \" . $color . \"<br>\";\n\techo \"My house is \" . $COLOR . \"<br>\";\n\techo \"My boat is \" . $coLOR . \"<br>\";\n?>";

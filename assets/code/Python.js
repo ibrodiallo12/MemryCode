@@ -15,7 +15,7 @@ $(function(){
 	c = c + s + "my_variable = 5";
 	k = k + s + "create a variable and sign value 5";
 	// N 3
-	c = c + s + "#!/usr/bin/python\n\n# First comment\nprint \"Hello, Python!\";  # second comment";
+	c = c + s + "#!/usr/bin/python\n\n# First comment\nprint \"Hello, Python!\"; # second comment";
 	k = k + s + "Comments in Python: A hash sign (#) that is not inside a string literal begins a comment. All characters after the # and up to the physical line end are part of the comment and the Python interpreter ignores them.";
 	// N 4
 	c = c + s + "myint = 7";
