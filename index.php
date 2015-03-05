@@ -34,7 +34,7 @@ if(isset($_COOKIE['lang'])){
       <!-- Jumbotron -->
       <div class="jumbotron" style="padding-bottom: 20px;">
         <h1>&lt;{&gt; MeMRyCoDe &lt;}&gt;</h1>
-        <p class="lead"><br />" Memorize your favorite language, being fast to coding and more productif. "<br />" Quickly and Easily, tap to the beat of your thinking with these languages: "<br />"<b> HTML / CSS / JavaScript / PHP / Python / SQL "</b></p>
+        <p class="lead"><br />" Memorize your favorite language, being fast to coding and more productif. "<br />" Quickly and Easily, tap to the beat of your thinking with these languages: "<br />"<b> HTML / CSS / JavaScript / PHP / Python / SQL / Java / C / C++ / Shell "</b></p>
         <p style="margin: 60px;"><a class="btn btn-lg btn-success col-lg-12" href="memrycode.php?lang=<?php echo $lang;?>" role="button">Get started</a></p>
       </div>
 

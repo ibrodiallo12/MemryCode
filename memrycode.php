@@ -97,6 +97,7 @@ if(isset($_GET['lang'])){
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <link rel="icon" href="assets/icon/favicon.ico">
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -180,7 +181,7 @@ if(isset($_GET['lang'])){
 		 
       <!-- FOOTER -->
       <footer class="col-lg-12">
-        <p style="position: absolute; bottom: -80px;">&copy; 2014 Memry code, Inc. &middot; <a href="#">Help</a> &middot; <a href="#">Terms</a></p>
+        <p style="position: absolute; bottom: -80px;">&copy; 2014 MemryCode, Inc. &middot; <a href="#">Help</a> &middot; <a href="#">Terms</a></p>
 			<script>
 				
 				 var editorCode = CodeMirror.fromTextArea(document.getElementById("code"), {

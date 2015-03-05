@@ -368,13 +368,13 @@ Dolly!\";";
 	k = k + s + "The Math Object. The Math object allows you to perform mathematical tasks. The Math object includes several mathematical methods.";
 	// N 120
 	c = c + s + "Math.min(0, 150, 30, 20, -8);// returns -8";
-	k = k + s + "Math.min() and Math.max(). Math.min() and Math.max() can be used to find the lowest or highest value in a list of arguments";
+	k = k + s + "Math.min() and Math.max() can be used to find the lowest or highest value in a list of arguments";
 	// N 120
 	c = c + s + "Math.max(0, 150, 30, 20, -8);// returns 150";
 	k = k + s + "Math.min() and Math.max() can be used to find the lowest or highest value in a list of arguments";
 	// N 121
 	c = c + s + "Math.random();// returns a random number";
-	k = k + s + "Math.random(). Math.random() returns a random number between 0 and 1";
+	k = k + s + "Math.random() returns a random number between 0 and 1";
 	// N 122
 	c = c + s + "Math.round(4.7);// returns 5\nMath.round(4.4);// returns 4";
 	k = k + s + "Math.round() rounds a number to the nearest integer:";
@@ -493,7 +493,7 @@ Dolly!\";";
 	c = c + s + "var index;\nvar fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\nfor (index = 0; index < fruits.length; index++) {\n\ttext += fruits[index];\n}";
 	k = k + s + "Looping Array Elements. The best way to loop through an array is using a standard for loop";
 	// N 155
-	c = c + s + "var person = []\nperson[0]; = \"John\";\nperson[1] = \"Doe\";\nperson[2] = 46;\nvar x = person.length; // person.length will return 3\nvar y = person[0]; // person[0] will return \"John\"";
+	c = c + s + "var person = []\nperson[0] = \"John\";\nperson[1] = \"Doe\";\nperson[2] = 46;\nvar x = person.length; // person.length will return 3\nvar y = person[0]; // person[0] will return \"John\"";
 	k = k + s + "Associative Arrays?. Many programming languages support arrays with named indexes. Arrays with named indexes are called associative arrays (or hashes). JavaScript does not support arrays with named indexes. In JavaScript, arrays use numbered indexes.";
 	// N 156
 	c = c + s + "var person = [];\nperson[\"firstName\"] = \"John\";\nperson[\"lastName\"] = \"Doe\";\nperson[\"age\"] = 46;\nvar x = person.length;// person.length will return 0\nvar y = person[0];// person[0] will return undefined";
@@ -691,7 +691,7 @@ Dolly!\";";
 	c = c + s + "typeof \"John\" // Returns string\ntypeof 3.14 // Returns number\ntypeof NaN // Returns number\ntypeof false // Returns boolean\ntypeof [1,2,3,4] // Returns object\ntypeof {name:'John', age:34} // Returns object\ntypeof new Date() // Returns object\ntypeof function () {} // Returns function\ntypeof myCar // Returns undefined (if myCar is not declared)\ntypeof null // Returns object";
 	k = k + s + "The typeof Operator. You can use the typeof operator to find the data type of a JavaScript variable.";
 	// N 221
-	c = c + s + "\"John\".constructor // Returns function String() {[native code]}\n(3.14).constructor // Returns function Number(){[native code]}\nfalse.constructor // Returns function Boolean() {[native code]}\n[1,2,3,4].constructor // Returns function Array() {[native code]}\n{name:'John', age:34}.constructor // Returns function Object() {[native code]}\nnew Date().constructor // Returns function Date() {[native code]}\nfunction () {}.constructor // Returns function Function() {[native code]}";
+	c = c + s + "\"John\".constructor // Returns function String()\n(3.14).constructor // Returns function Number()\nfalse.constructor // Returns function Boolean()\n[1,2,3,4].constructor // Returns function Array()\n{name:'John', age:34}.constructor // Returns function Object()\nnew Date().constructor // Returns function Date()\nfunction () {}.constructor // Returns function Function()";
 	k = k + s + "The constructor Property. The constructor property returns the constructor function for all JavaScript variables.";
 	// N 222
 	c = c + s + "String(x)\n// returns a string from a number variable x\nString(123)\n// returns a string from a number literal 123\nString(100 + 23)\n// returns a string from a number from an expression";
