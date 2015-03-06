@@ -131,10 +131,10 @@ $(function(){
 	c = c + s + "my_variable=`cat File3.txt`";
 	k = k + s + "Put the contents of a file into a variable";
 	// N 42
-	c = c + s + "cd /usr/local/sybase\npwd\n#result: /usr/local/sybase";
+	c = c + s + "cd /usr/local/sybase\npwd";
 	k = k + s + "Move to the sybase folder";
 	// N 43
-	c = c + s + "cd /var/log\npwd\n#result: /var/log";
+	c = c + s + "cd /var/log\npwd";
 	k = k + s + "Change to another folder";
 	// N 44
 	c = c + s + "cd -";
@@ -164,7 +164,7 @@ $(function(){
 	c = c + s + "sudo chkconfig --list | sort | less";
 	k = k + s + "List all the startup services, and sort alphabetically";
 	// N 53
-	c = c + s + "tail -85 file,txt";
+	c = c + s + "tail -85 file.txt";
 	k = k + s + "Extract the last 85 lines from a file";
 	// N 54
 	c = c + s + "head -50 file.txt | tail -10";
@@ -245,7 +245,7 @@ $(function(){
 	c = c + s + "mkdir ~/linuxtutorialwork/dir2";
 	k = k + s + "Creating a directory is pretty easy. The command we are after is mkdir which is short for Make Directory.";
 	// N 80
-	c = c + s + "mkdir -pv linuxtutorialwork/foo/bar\n#result: mkdir: created directory 'linuxtutorialwork/foo'";
+	c = c + s + "mkdir -pv linuxtutorialwork/foo/bar";
 	k = k + s + "The first one is -p which tells mkdir to make parent directories as needed (demonstration of what that actually means below). The second one is -v which makes mkdir tell us what it is doing (as you saw in the example above, it normally does not)";
 	// N 81
 	c = c + s + "rmdir linuxtutorialwork/foo/bar";
@@ -270,7 +270,7 @@ $(function(){
 	k = k + s + "As with rmdir, removing a file is an action that may not be undone so be careful. The command to remove or delete a file is rm which stands for remove.";
 	// N 88
 	c = c + s + "rm -r backups";
-	k = k + s + "Like several other commands introduced in this section, rm has several options that alter it's behaviour. I'll leave it up to you to look at the man page to see what they are but I will introduce one particularly useful option which is -r. Similar to cp it stands for recursive. When rm is run with the -r option it allows us to remove directories and all files and directories contained within.";
+	k = k + s + "When rm is run with the -r option it allows us to remove directories and all files and directories contained within.";
 	// N 89
 	c = c + s + "mkdir test/";
 	k = k + s + "Make Directory - ie. Create a directory.";
@@ -284,22 +284,22 @@ $(function(){
 	c = c + s + "rm test.txt";
 	k = k + s + "Remove - ie. Delete a file.";
 	// N 93
-	c = c + s + "ls /home/ryan/linuxtutorialwork/*.txt\n#result: barry.txt blah.txt";
+	c = c + s + "ls /home/ryan/linuxtutorialwork/*.txt";
 	k = k + s + "Every file with an extension of txt at the end. In this example we have used an absolute path. Wildcards work just the same if the path is absolute or relative.";
 	// N 94
-	c = c + s + "ls ?i*\n#result: firstfile video.mpeg";
+	c = c + s + "ls ?i*";
 	k = k + s + "Now let's introduce the ? operator. In this example we are looking for each file whose second letter is i. As you can see, the pattern can be built up using several wildcards.";
 	// N 95
-	c = c + s + "ls *.???\n#result: barry.txt blah.txt example.png frog.png";
+	c = c + s + "ls *.???";
 	k = k + s + "How about every file with a three letter extension. Note that video.mpeg is not matched as the path name must match the given pattern exactly.";
 	// N 96
-	c = c + s + "ls [sv]*\n#result: secondfile video.mpeg";
+	c = c + s + "ls [sv]*";
 	k = k + s + "The range operator ( [ ] ). Unlike the previous 2 wildcards which specified any character, the range operator allows you to limit to a subset of characters. In this example we are looking for every file whose name either begins with a s or v";
 	// N 97
-	c = c + s + "ls *[0-9]\n#result: foo1 foo2 foo3";
+	c = c + s + "ls *[0-9]";
 	k = k + s + "With ranges we may also include a set by using a hyphen.";
 	// N 98
-	c = c + s + "ls [^a-k]*\n#result: secondfile thirdfile video.mpeg";
+	c = c + s + "ls [^a-k]*";
 	k = k + s + "We may also reverse a range using the caret ( ^ ) which means look for any character which is not one of the following.";
 	// N 99
 	c = c + s + "file /home/user/*";

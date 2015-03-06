@@ -11,9 +11,9 @@ if(isset($_COOKIE['lang'])){
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+    <link rel="icon" href="assets/icon/favicon.ico">
 
-    <title>Tap to beat of your thinking</title>
+    <title>Code to the rhythm of your Thinking</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -28,13 +28,13 @@ if(isset($_COOKIE['lang'])){
 
     <div class="container">
       <div class="masthead">
-        <h3 class="text-muted" style="text-align: center;">... Quickly and Easily, Tap to the Beat of your Thinking ...</h3>
+        <h3 class="text-muted" style="text-align: center;">... Quickly and Easily, Code to the rhythm of your Thinking ...</h3>
       </div>
 
       <!-- Jumbotron -->
       <div class="jumbotron" style="padding-bottom: 20px;">
         <h1>&lt;{&gt; MeMRyCoDe &lt;}&gt;</h1>
-        <p class="lead"><br />" Memorize your favorite language, being fast to coding and more productif. "<br />" Quickly and Easily, tap to the beat of your thinking with these languages: "<br />"<b> HTML / CSS / JavaScript / PHP / Python / SQL / Java / C / C++ / Shell "</b></p>
+        <p class="lead"><br />" Memorize your favorite language, being fast to coding and more productif. "<br />" Quickly and Easily, be a best programmer with these languages: "<br />"<b> HTML / CSS / JavaScript / PHP / Python / SQL / Java / C / C++ / Shell "</b></p>
         <p style="margin: 60px;"><a class="btn btn-lg btn-success col-lg-12" href="memrycode.php?lang=<?php echo $lang;?>" role="button">Get started</a></p>
       </div>
 
@@ -57,7 +57,7 @@ if(isset($_COOKIE['lang'])){
 
       <!-- Site footer -->
       <footer class="footer">
-        <p>&copy; MemryCode 2015</p>
+        <p style="margin-top: 50px;">&copy; 2014 MemryCode, Inc. &middot; <a href="#">Help</a> &middot; <a href="#">About</a></p>
       </footer>
 
     </div> <!-- /container -->

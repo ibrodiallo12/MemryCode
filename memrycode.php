@@ -77,9 +77,9 @@ if(isset($_GET['lang'])){
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+    <link rel="icon" href="assets/icon/favicon.ico">
 
-    <title>MemryCode{BETA}: | Tap to the beat of your thinking |</title>
+    <title>MemryCode: | Code to the rhythm of your Thinking |</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -97,7 +97,6 @@ if(isset($_GET['lang'])){
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <link rel="icon" href="assets/icon/favicon.ico">
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -181,7 +180,7 @@ if(isset($_GET['lang'])){
 		 
       <!-- FOOTER -->
       <footer class="col-lg-12">
-        <p style="position: absolute; bottom: -80px;">&copy; 2014 MemryCode, Inc. &middot; <a href="#">Help</a> &middot; <a href="#">Terms</a></p>
+        <p style="position: absolute; bottom: -80px;">&copy; 2014 MemryCode, Inc. &middot; <a href="#">Help</a> &middot; <a href="#">About</a></p>
 			<script>
 				
 				 var editorCode = CodeMirror.fromTextArea(document.getElementById("code"), {
