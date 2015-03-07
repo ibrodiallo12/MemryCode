@@ -34,24 +34,26 @@ if(isset($_COOKIE['lang'])){
       <!-- Jumbotron -->
       <div class="jumbotron" style="padding-bottom: 20px;">
         <h1>&lt;{&gt; MeMRyCoDe &lt;}&gt;</h1>
-        <p class="lead"><br />" Memorize your favorite language, being fast to coding and more productif. "<br />" Quickly and Easily, be a best programmer with these languages: "<br />"<b> HTML / CSS / JavaScript / PHP / Python / SQL / Java / C / C++ / Shell "</b></p>
+        <p class="lead"><br />" Memorize your favorite language, being fast to coding and more productive. "<br />" Quickly and Easily, be a best programmer with these languages: "<br /><b>" HTML / CSS / JavaScript / PHP / Python / SQL / Java / C / C++ / Shell "</b></p>
         <p style="margin: 60px;"><a class="btn btn-lg btn-success col-lg-12" href="memrycode.php?lang=<?php echo $lang;?>" role="button">Get started</a></p>
       </div>
 
       <!-- Example row of columns -->
       <div class="row" style="margin-top: 70px;">
         <div class="col-lg-4">
-          <h2>Memorize Programming Language!</h2>
-          <p class="text-danger">Make small wrongs.</p>
-          <p>The memorize a programming language. You just need to the typing more code in that programming language and coding more because your head just need that.</p>
+          <h2>Memorize a Programming Language!</h2>
+          <p class="text-danger">Read the codes prior to code!</p>
+          <p>Store a programming language in your head is easy with this rule used in MemryCode tap the keywords (variables, conditions, functions, methods, arrays ...) coding more code and the success of the mastery of your favorite language is guaranteed. <b><a href="memrycode.php?lang=<?php echo $lang;?>" title="Try it!">Try it yourself !!!.</a></b></p>
         </div>
         <div class="col-lg-4">
-          <h2>Coding Fast!</h2>
-          <p>If you got the code of a programming language in your head you will coding fast because your don't need to find the code</p>
+          <h2>Coding Fast, Being Productive!</h2>
+          <p class="text-success">Observe your progress!</p>
+          <p>If you master a programming language, you code faster because you don't seek to know how to use a particular function, method, loop... or how to create an array, a variable,... with these conditions you will be more productive in your projects.</p>
        </div>
         <div class="col-lg-4">
-          <h2>Memorize The Keyboard</h2>
-          <p>Tap more and more on the buttons on your keyboard with all character who used on your programming language</p>
+          <h2>Mastering Your Keyboard!</h2>
+          <p class="text-info">Tap more and more caracteres!</p>
+          <p>On MemryCode you do not just hit some letters but rather of the characters used in programming languages such as (} "<> @ # _ + _ ~` |? + + - % ^ & ()''/\ ! ....). And numbers you become faster with your keyboard because you hit all possible characters.</p>
         </div>
       </div>
 
