@@ -180,7 +180,7 @@ if(isset($_GET['lang'])){
 		 
       <!-- FOOTER -->
       <footer class="col-lg-12">
-        <p style="position: absolute; bottom: -80px;">&copy; 2014 MemryCode, Inc. &middot; <a href="#">Help</a> &middot; <a href="#">About</a></p>
+        <p style="position: absolute; bottom: -80px;">&copy; 2014 MemryCode, Inc. &middot; <a href="help.php">Help</a> &middot; <a href="about.php">About</a></p>
 			<script>
 				
 				 var editorCode = CodeMirror.fromTextArea(document.getElementById("code"), {

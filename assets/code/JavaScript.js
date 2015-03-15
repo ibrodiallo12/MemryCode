@@ -225,8 +225,7 @@ $(function(){
 	c = c + s + "var x = 'It\\'s alright';\nvar y = \"We are the so-called \\\"Vikings\\\" from the north.\";";
 	k = k + s + "Special Characters. Because strings must be written within quotes, JavaScript will understand this string. Use the \ escape character.";
 	// N 73
-	c = c + s + "document.getElementById(\"demo\").innerHTML = \"Hello \\\
-Dolly!\";";
+	c = c + s + "document.getElementById(\"demo\").innerHTML = \"Hello \\\nDolly!\";";
 	k = k + s + "Breaking Long Code Lines. For best readability, programmers often like to avoid code lines longer than 80 characters. You can also break up a code line within a text string with a single backslash.";
 	// N 74
 	c = c + s + "var x = \"John\";\nvar y = new String(\"John\");\n// type of x will return String\n// type of y will return Object";
@@ -430,7 +429,7 @@ Dolly!\";";
 	c = c + s + "<script>\nvar d = new Date();\ndocument.getElementById(\"demo\").innerHTML = d.getDay();\n</script>";
 	k = k + s + "The getDay() Method. getDay() returns the weekday as a number (0-6)";
 	// N 134
-	c = c + s + "<script>\nvar d = new Date();\nvar days = [\n\t\"Sunday\",\n\t\"Monday\",\n\t\"Tuesday\",\n\t\"Wednesday\",\n\t\"Thursday\",\n\t\"Friday\"\n\t,\"Saturday\"\n];\ndocument.getElementById(\"demo\").innerHTML = days[d.getDay()];\n</script>";
+	c = c + s + "<script>\nvar d = new Date();\nvar days = [\n\t\"Sunday\",\n\t\"Monday\",\n\t\"Tuesday\",\n\t\"Wednesday\",\n\t\"Thursday\",\n\t\"Friday\",\n\t\"Saturday\"\n];\ndocument.getElementById(\"demo\").innerHTML = days[d.getDay()];\n</script>";
 	k = k + s + "The getDay() Method. getDay() returns the weekday as a number (0-6). You can use an array of names, and getDay() to return the weekday as a name";
 	// N 135
 	c = c + s + "<script>\nvar d = new Date();\nd.setFullYear(2020, 0, 14);\ndocument.getElementById(\"demo\").innerHTML = d;\n</script>";
@@ -643,7 +642,7 @@ Dolly!\";";
 	c = c + s + "for (i = 0; i < 5; i++) {\n\ttext += \"The number is \" + i + \"<br>\";\n}";
 	k = k + s + "The For Loop. The for loop is often the tool you will use when you want to create a loop. The for loop has the following syntax";
 	// N 205
-	c = c + s + "for (i = 0, len = cars.length, text = \"\"; i < len; i++) {\n\ttext += cars[i] + \"<br>\";}";
+	c = c + s + "for (i = 0, len = cars.length, text = \"\"; i < len; i++) {\n\ttext += cars[i] + \"<br>\";\n}";
 	k = k + s + "Normally you will use statement 1 to initiate the variable used in the loop (var i = 0). This is not always the case, JavaScript doesn't care. Statement 1 is optional.";
 	// N 206
 	c = c + s + "var i = 2;\nvar len = cars.length;\nvar text = \"\";\nfor (; i < len; i++) {\n\ttext += cars[i] + \"<br>\";\n}";

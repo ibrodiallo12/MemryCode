@@ -13,7 +13,7 @@ if(isset($_COOKIE['lang'])){
     <meta name="author" content="">
     <link rel="icon" href="assets/icon/favicon.ico">
 
-    <title>Code to the rhythm of your Thinking</title>
+    <title>MemryCode: Code to the rhythm of your Thinking |FAST|QUICK|</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -59,7 +59,7 @@ if(isset($_COOKIE['lang'])){
 
       <!-- Site footer -->
       <footer class="footer">
-        <p style="margin-top: 50px;">&copy; 2014 MemryCode, Inc. &middot; <a href="#">Help</a> &middot; <a href="#">About</a></p>
+        <p style="margin-top: 50px;">&copy; 2014 MemryCode, Inc. &middot; <a href="help.php">Help</a> &middot; <a href="about.php">About</a></p>
       </footer>
 
     </div> <!-- /container -->

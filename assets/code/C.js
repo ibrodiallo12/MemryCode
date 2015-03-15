@@ -95,7 +95,7 @@ $(function(){
 	c = c + s + "printf(\"Hello, World!\");";
 	k = k + s + "Tokens in C. A C program consists of various tokens and a token is either a keyword, an identifier, a constant, a string literal, or a symbol.";
 	// N 30
-	c = c + s + "printf(\"Hello, World! \n\");\nreturn 0;";
+	c = c + s + "printf(\"Hello, World!\");\nreturn 0;";
 	k = k + s + "Semicolons. In C program, the semicolon is a statement terminator. That is, each individual statement must be ended with a semicolon. It indicates the end of one logical entity.";
 	// N 31
 	c = c + s + "//This is a comment Single line Comment\n/*This is a long\nand valid comment*/";
