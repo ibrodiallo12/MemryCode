@@ -53,9 +53,9 @@
       <br /><br />
       
       <span class="jumbotron pull-right">About Copyright</span>
-      <p><h2>Copyright Information</h2>All pages and graphics on this <code>web site are the property of MemryCode</code>.<br />Pages, code or other content from MemryCode may not be redistributed or reproduced in any way, shape, or form without the written permission of MemryCode.<br />Failure to do so is a violation of copyright</p>
+      <p><h2>Copyright Information</h2>All pages and graphics on this <code>website are the property of MemryCode</code>.<br />Pages, code or other content from MemryCode may not be redistributed or reproduced in any way, shape, or form without the written permission of MemryCode.<br />Failure to do so is a violation of copyright</p>
       <h2>Intellectual property</h2>
-      <p>We see this website as a new idea so we think it is our right to protect, because <strong>the idea to use code instead text is new.</strong><br />So the idea used here is an intellectual property.</p>
+      <p>We see this website as a new idea so we think it is our right to protect the idea used in this website, because <strong>the idea to use source code instead text is new.</strong><br />So the idea used here is an intellectual property.</p>
       
       <br /><br />
       
@@ -68,7 +68,7 @@
       <p>If your browser is adjusted to accept cookies we use this, and your continued use of our website, to mean that you are fine with our cookies.</p>
        <h3>Link to US</h3>
       <p>If you want others to discover MemryCode, please add a link to us.<br />To add a simple text link, insert this HTML code on your site:
-<br /><code><a href="memrycode.com">memrycode.com/</a></code></p>
+<br /><code><a href="memrycode.com">&lt;a href="memrycode.com"&gt;memrycode&lt;/a&gt;</a></code></p>
 
     </div> <!-- /container -->
 
