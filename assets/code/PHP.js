@@ -1,6 +1,6 @@
 $(function(){
 	//INTRDUCTION WORD
-	var w = "Memorize your keyboard, php code and be fast to make a dynamic website";
+	var w = "<? Memorize PHP code, being fast and Impose your Dynamic Website ?>";
 	//The separator in the ARRAY
 	var s = "¢";
 	// code in the ARRAY
@@ -57,15 +57,75 @@ $(function(){
 	c = c + s + "<?php\nfunction myTest() {\n\tstatic $x = 0;\n\techo $x;\n\t$x++;\n}\n\nmyTest();\nmyTest();\nmyTest();\n?>";
 	k = k + s + "PHP The static Keyword. Normally, when a function is completed/executed, all of its variables are deleted. However, sometimes we want a local variable NOT to be deleted. We need it for a further job.";
 	// N 17
-	c = c + s + "";
-	k = k + s + "";
+	c = c + s + "<?php\necho \"<h2>PHP is Fun!</h2>\";\necho \"Hello world!<br>\";\necho \"I'm about to learn PHP!<br>\";\necho \"This \", \"string \", \"in \", \"PHP \";\n?>";
+	k = k + s + "The PHP echo Statement. The echo statement can be used with or without parentheses: echo or echo(). This example shows how to output text with the echo command (notice that the text can contain HTML markup):";
 	// N 18
-	c = c + s + "";
-	k = k + s + "";
+	c = c + s + "<?php\n$txt1 = \"Learn PHP\";\n$txt2 = \"memrycode.com\";\n$x = 5;\n$y = 4;\n\necho \"<h2>$txt1</h2>\";\necho \"Study PHP at $txt2<br>\";\necho $x + $y;\n?>";
+	k = k + s + "Display Variables. This example shows how to output text and variables with the echo statement";
 	// N 19
+	c = c + s + "<?php\nprint \"<h2>PHP is Fun!</h2>\";\nprint \"Hello world!<br>\";\nprint \"I'm about to learn PHP!\";\n?>";
+	k = k + s + "Display Text. This example shows how to output text with the print command (notice that the text can contain HTML markup):";
+	// N 20
+	c = c + s + "<?php\n$txt1 = \"Learn PHP\";\n$txt2 = \"memrycode.com\";\n$x = 5;\n$y = 4;\n\nprint \"<h2>$txt1</h2>\";\nprint \"Study PHP at $txt2<br>\";\nprint $x + $y;\n?>";
+	k = k + s + "Display Variables. This example shows how to output text and variables with the print statement";
+	// N 21
+	c = c + s + "<?php\n$x = \"Hello world!\";\n$y = 'Hello world!';\n\necho $x;\necho \"<br>\";\necho $y;\n?>";
+	k = k + s + "PHP String. A string is a sequence of characters, like \"Hello world!\". A string can be any text inside quotes. You can use single or double quotes:";
+	// N 22
+	c = c + s + "<?php\n$x = 5985;\nvar_dump($x);\n?>";
+	k = k + s + "PHP Integer. An integer is a whole number (without decimals).  It is a number between -2,147,483,648 and +2,147,483,647.";
+	// N 23
+	c = c + s + "<?php\n$x = 10.365;\nvar_dump($x);\n?>";
+	k = k + s + "PHP Float. A float (floating point number) is a number with a decimal point or a number in exponential form. In this example $x is a float. The PHP var_dump() function returns the data type and value:";
+	// N 24
+	c = c + s + "$x = true;\n$y = false;";
+	k = k + s + "PHP Boolean. A Boolean represents two possible states: TRUE or FALSE.";
+	// N 25
+	c = c + s + "<?php\n$cars = array(\"Volvo\",\"BMW\",\"Toyota\");\nvar_dump($cars);\n?>";
+	k = k + s + "PHP Array. An array stores multiple values in one single variable. In this example $cars is an array. The PHP var_dump() function returns the data type and value";
+	// N 26
+	c = c + s + "<?php\nclass Car {\n\tfunction Car() {\n\t\t$this->model = \"VW\";\n\t}\n}\n\n// create an object\n$herbie = new Car();\n// show object properties\necho $herbie->model;\n?>";
+	k = k + s + "PHP Object. An object is a data type which stores data and information on how to process that data. In PHP, an object must be explicitly declared. First we must declare a class of object. For this, we use the class keyword. A class is a structure that can contain properties and methods:";
+	// N 27
+	c = c + s + "<?php\n$x = \"Hello world!\";\n$x = null;\nvar_dump($x);\n?>";
+	k = k + s + "PHP NULL Value. Null is a special data type which can have only one value: NULL. A variable of data type NULL is a variable that has no value assigned to it.";
+	// N 28
+	c = c + s + "<?php\necho strlen(\"Hello world!\"); //outputs 12\n?>";
+	k = k + s + "Get The Length of a String. The PHP strlen() function returns the length of a string (number of characters). This below returns the length of the string \"Hello world!\"";
+	// N 29
+	c = c + s + "<?php\necho str_word_count(\"Hello world!\"); //outputs 2\n?>";
+	k = k + s + "Count The Number of Words in a String. The PHP str_word_count() function counts the number of words in a string";
+	// N 30
+	c = c + s + "<?php\necho strrev(\"Hello world!\"); //outputs !dlrow olleH\n?>";
+	k = k + s + "Reverse a String. The PHP strrev() function reverses a string";
+	// N 31
+	c = c + s + "<?php\necho strpos(\"Hello world!\", \"world\"); //outputs 6\n?>";
+	k = k + s + "Search For a Specific Text Within a String. The PHP strpos() function searches for a specific text within a string. If a match is found, the function returns the character position of the first match. If no match is found, it will return FALSE. This example searches for the text \"world\" in the string \"Hello world!\"";
+	// N 32
+	c = c + s + "<?php\necho str_replace(\"world\", \"Dolly\", \"Hello world!\");\n// outputs Hello Dolly!\n?>";
+	k = k + s + "Replace Text Within a String. The PHP str_replace() function replaces some characters with some other characters in a string. This example replaces the text \"world\" with \"Dolly\"";
+	// N 33
+	c = c + s + "<?php\ndefine(\"GREETING\", \"Welcome to memrycode.com!\");\necho GREETING;\n?>";
+	k = k + s + "Create a PHP Constant. To create a constant, use the define() function.";
+	// N 34
+	c = c + s + "<?php\ndefine(\"GREETING\", \"Welcome to memrycode.com!\", true);\necho greeting;\n?>";
+	k = k + s + "This example creates a constant with a case-insensitive name";
+	// N 35
+	c = c + s + "<?php\ndefine(\"GREETING\", \"Welcome to memrycode.com!\");\nfunction myTest() {\necho GREETING;\n}\n\nmyTest();\n?>";
+	k = k + s + "Constants are Global. Constants are automatically global and can be used across the entire script.this example uses a constant inside a function, even if it is defined outside the function:";
+	// N 36
+	c = c + s + "<?php\n$t = date(\"H\");\n\nif ($t < \"20\") {\n\techo \"Have a good day!\";\n}";
+	k = k + s + "This example will output \"Have a good day!\" if the current time (HOUR) is less than 20";
+	// N 37
+	c = c + s + "<?php\n$t = date(\"H\");\nif ($t < \"20\") {\n\techo \"Have a good day!\";\n} else {\n\techo \"Have a good night!\";\n}\n?>";
+	k = k + s + "PHP - The if...else Statement. Use the if....else statement to execute some code if a condition is true and another code if the condition is false.";
+	// N 38
+	c = c + s + " ?php\n$t = date(\"H\");\nif ($t < \"10\") {\n\techo \"Have a good morning!\";\n} elseif ($t < \"20\") {\n\techo \"Have a good day!\";\n} else {\n\techo \"Have a good night!\";\n}\n?>";
+	k = k + s + "PHP - The if...elseif....else Statement. Use the if....elseif...else statement to specify a new condition to test, if the first condition is false.";
+	// N 39
 	c = c + s + "";
 	k = k + s + "";
-	// N 20
+	// N 40
 	c = c + s + "";
 	k = k + s + "";
 	
