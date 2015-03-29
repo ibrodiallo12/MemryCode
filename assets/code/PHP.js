@@ -111,7 +111,7 @@ $(function(){
 	c = c + s + "<?php\ndefine(\"GREETING\", \"Welcome to memrycode.com!\", true);\necho greeting;\n?>";
 	k = k + s + "This example creates a constant with a case-insensitive name";
 	// N 35
-	c = c + s + "<?php\ndefine(\"GREETING\", \"Welcome to memrycode.com!\");\nfunction myTest() {\necho GREETING;\n}\n\nmyTest();\n?>";
+	c = c + s + "<?php\ndefine(\"GREETING\", \"Welcome to memrycode.com!\");\nfunction myTest() {\n\techo GREETING;\n}\n\nmyTest();\n?>";
 	k = k + s + "Constants are Global. Constants are automatically global and can be used across the entire script.this example uses a constant inside a function, even if it is defined outside the function:";
 	// N 36
 	c = c + s + "<?php\n$t = date(\"H\");\n\nif ($t < \"20\") {\n\techo \"Have a good day!\";\n}";
@@ -120,12 +120,72 @@ $(function(){
 	c = c + s + "<?php\n$t = date(\"H\");\nif ($t < \"20\") {\n\techo \"Have a good day!\";\n} else {\n\techo \"Have a good night!\";\n}\n?>";
 	k = k + s + "PHP - The if...else Statement. Use the if....else statement to execute some code if a condition is true and another code if the condition is false.";
 	// N 38
-	c = c + s + " ?php\n$t = date(\"H\");\nif ($t < \"10\") {\n\techo \"Have a good morning!\";\n} elseif ($t < \"20\") {\n\techo \"Have a good day!\";\n} else {\n\techo \"Have a good night!\";\n}\n?>";
+	c = c + s + "<?php\n$t = date(\"H\");\nif ($t < \"10\") {\n\techo \"Have a good morning!\";\n} elseif ($t < \"20\") {\n\techo \"Have a good day!\";\n} else {\n\techo \"Have a good night!\";\n}\n?>";
 	k = k + s + "PHP - The if...elseif....else Statement. Use the if....elseif...else statement to specify a new condition to test, if the first condition is false.";
 	// N 39
+	c = c + s + "<?php\n$favcolor = \"red\";\nswitch ($favcolor) {\n\tcase \"red\":\n\t\techo \"Your favorite color is red!\";\n\t\tbreak;\n\tcase \"blue\":\n\t\techo \"Your favorite color is blue!\";\n\t\tbreak;\n\t\tdefault:\n\techo \"Your favorite color is neither red or blue!\";\n}\n?>";
+	k = k + s + "The PHP switch Statement. Use the switch statement to select one of many blocks of code to be executed.";
+	// N 40
+	c = c + s + "<?php\n$x = 1;\n\nwhile($x <= 5) {\n\techo \"The number is: $x <br>\";\n\t$x++;\n}\n?>";
+	k = k + s + "The while loop executes a block of code as long as the specified condition is true.";
+	// N 41
+	c = c + s + "<?php\n$x = 1;\n\ndo {\n\techo \"The number is: $x <br>\";\n\t$x++;\n} while ($x <= 5);\n?>";
+	k = k + s + "The do...while loop will always execute the block of code once, it will then check the condition, and repeat the loop while the specified condition is true.";
+	// N 42
+	c = c + s + "<?php\n$x = 6;\n\ndo {\n\techo \"The number is: $x <br>\";\n\t$x++;\n} while ($x <= 5);\n?>";
+	k = k + s + "This example sets the $x variable to 6, then it runs the loop, and then the condition is checked";
+	// N 43
+	c = c + s + "<?php\nfor ($x = 0; $x <= 10; $x++) {\n\techo \"The number is: $x <br>\";\n}\n?>";
+	k = k + s + "The for loop is used when you know in advance how many times the script should run.";
+	// N 44
+	c = c + s + "<?php\n$colors = array(\"red\", \"green\", \"blue\", \"yellow\");\n\nforeach ($colors as $value) {\n\techo \"$value <br>\";\n}\n?>";
+	k = k + s + "The foreach loop works only on arrays, and is used to loop through each key/value pair in an array.";
+	// N 45
+	c = c + s + "<?php\nfunction writeMsg() {\n\techo \"Hello world!\";\n}\nwriteMsg(); // call the function\n?>";
+	k = k + s + "Create a User Defined Function in PHP. A user defined function declaration starts with the word \"function\"";
+	// N 46
+	c = c + s + "<?php\nfunction familyName($fname) {\n\techo \"$fname Gates<br>\";\n}\n\nfamilyName(\"Jani\");\nfamilyName(\"Hege\");\nfamilyName(\"Stale\");\n?>";
+	k = k + s + "PHP Function Arguments. Information can be passed to functions through arguments. An argument is just like a variable. Arguments are specified after the function name, inside the parentheses. You can add as many arguments as you want, just seperate them with a comma.";
+	// N 47
+	c = c + s + "<?php\nfunction familyName($fname, $year) {\n\techo \"$fname Gates. Born in $year <br>\";\n}\n\nfamilyName(\"Hege\", \"1975\");\nfamilyName(\"Stale\", \"1978\");\nfamilyName(\"Bill\", \"1965\");\n?>";
+	k = k + s + "This example has a function with two arguments ($fname and $year)";
+	// N 48
+	c = c + s + "<?php\nfunction setHeight($minheight = 50) {\n\techo \"The height is : $minheight <br>\";\n}\n\nsetHeight(350);\nsetHeight(); // will use the default value of 50\nsetHeight(135);\nsetHeight(80);\n?>";
+	k = k + s + "PHP Default Argument Value. This example shows how to use a default parameter. If we call the function setHeight() without arguments it takes the default value as argument";
+	// N 49
+	c = c + s + "<?php\nfunction sum($x, $y) {\n\t$z = $x + $y;\n\treturn $z;\n}\n\necho \"5 + 10 = \" . sum(5, 10) . \"<br>\";\necho \"7 + 13 = \" . sum(7, 13) . \"<br>\";\necho \"2 + 4 = \" . sum(2, 4);\n?>";
+	k = k + s + "PHP Functions - Returning values. To let a function return a value, use the return statement";
+	// N 50
+	c = c + s + "<?php\n$cars = array(\"Volvo\", \"BMW\", \"Toyota\");\necho \"I like \".$cars[0].\",\".$cars[1].\" and \".$cars[2].\".\";\n?>";
+	k = k + s + "An array stores multiple values in one single variable";
+	// N 51
+	c = c + s + "<?php\n$cars = array(\"Volvo\", \"BMW\", \"Toyota\");\n?>";
+	k = k + s + "PHP Indexed Arrays. There are two ways to create indexed arrays. The index can be assigned automatically (index always starts at 0)";
+	// N 52
+	c = c + s + "<?php\n$cars[0] = \"Volvo\";\n$cars[1] = \"BMW\";\n$cars[2] = \"Toyota\";\n?>";
+	k = k + s + "PHP Indexed Arrays. There are two ways to create indexed arrays. The index can be assigned automatically (index always starts at 0)";
+	// N 53
+	c = c + s + "<?php\n$cars = array(\"Volvo\", \"BMW\", \"Toyota\");\necho count($cars);\n?>";
+	k = k + s + "Get The Length of an Array - The count() Function. The count() function is used to return the length (the number of elements) of an array";
+	// N 54
+	c = c + s + "<?php\n$cars = array(\"Volvo\", \"BMW\", \"Toyota\");\n$arrlength = count($cars);\n\nfor($x = 0; $x < $arrlength; $x++) {\n\techo $cars[$x];\n\techo \"<br>\";\n}\n?>";
+	k = k + s + "Loop Through an Indexed Array. To loop through and print all the values of an indexed array, you could use a for loop";
+	// N 55
+	c = c + s + "<?php\n$age = array(\"Peter\"=> \"35\", \"Ben\" => \"37\", \"Joe\" => \"43\");\n?>";
+	k = k + s + "PHP Associative Arrays. Associative arrays are arrays that use named keys that you assign to them.";
+	// N 56
+	c = c + s + "<?php\n$age['Peter'] = \"35\";\n$age['Ben'] = \"37\";\n$age['Joe'] = \"43\";\n?>";
+	k = k + s + "PHP Associative Arrays. Associative arrays are arrays that use named keys that you assign to them.";
+	// N 57
+	c = c + s + "<?php\n$age = array(\"Peter\" => \"35\", \"Ben\" => \"37\", \"Joe\" => \"43\");\necho \"Peter is \" . $age['Peter'] . \" years old.\";\n?>";
+	k = k + s + "PHP Associative Arrays. The named keys can then be used in a script";
+	// N 58
+	c = c + s + "<?php\n$age = array(\"Peter\" => \"35\", \"Ben\" => \"37\", \"Joe\" => \"43\");\nforeach($age as $x => $x_value) {\n\techo \"Key=\" . $x . \", Value=\" . $x_value;\n\techo \"<br>\";\n}\n?>";
+	k = k + s + "Loop Through an Associative Array. To loop through and print all the values of an associative array, you could use a foreach loop";
+	// N 59
 	c = c + s + "";
 	k = k + s + "";
-	// N 40
+	// N 60
 	c = c + s + "";
 	k = k + s + "";
 	
