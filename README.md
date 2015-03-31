@@ -5,12 +5,14 @@
 
 Memorize code of programming language!
 --------------------------------------
-___________________MEAN_______________
+______________________________MEAN_____________________________
 Memorize A programming language!
 --------------------------------
 
 " Memorize your favorite language, being fast to coding and more productive. "
+
 " Quickly and Easily, be a best programmer with these languages: "
+
 " HTML / CSS / JavaScript / PHP / Python / SQL / Java / C / C++ / Shell "
 
 
