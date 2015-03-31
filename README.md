@@ -1,6 +1,6 @@
 ===============================================================
 
-<{>--------------------<h1>MeMRyCoDe</h1>-------------------<}>
+<{>------------<h1>MeMRyCoDe</h1>-------------<}>
 
 ===============================================================
 
@@ -17,7 +17,7 @@ programming Language EASILY and QUICKLY on MeMRyCoDe.</h4>
 " Quickly and Easily, be a best programmer with these languages: "
 " HTML / CSS / JavaScript / PHP / Python / SQL / Java / C / C++ / Shell "
 
-1 ``````````````````````````````
+1 ```````````````````````````````````````
 <h1>Memorize a Programming Language!</h1>
 
 <em>Read the codes prior to code!</em>
@@ -25,9 +25,9 @@ programming Language EASILY and QUICKLY on MeMRyCoDe.</h4>
 Store a programming language in your head is easy with this rule used in MemryCode 
 tap the keywords (variables, conditions, functions, methods, arrays ...) 
 coding more code and the success of the mastery of your favorite language is guaranteed.
-`````````````````````````````````````````````````````````````````````````````````````````````````````````````
+````````````````````````````````````````````````````````````````````````````````````````
 
-2 ````````````````````````````
+2 `````````````````````````````````````
 <h1>Coding Fast, Being Productive!</h1>
 
 <em>Observe your progress!</em>
@@ -35,9 +35,9 @@ coding more code and the success of the mastery of your favorite language is gua
 If you master a programming language, you code faster because you don't seek to know how to use a particular 
 function, method, loop... or how to create an array, a variable,... 
 with these conditions you will be more productive in your projects.
-`````````````````````````````````````````````````````````````````````````````````````````````````````````````
+```````````````````````````````````````````````````````````````````
 
-3 ``````````````````````
+3 ```````````````````````````````
 <h1>Mastering Your Keyboard!</h1>
 
 <em>Tap more and more caracteres!</em>
@@ -45,7 +45,7 @@ with these conditions you will be more productive in your projects.
 On MemryCode you do not just hit some letters but rather of the characters used in programming languages such as
 (} "<> @ # _ + _ ~` |? + + - % ^ & ()''/\ ! ....). And 
 numbers you become faster with your keyboard because you hit all possible characters.
-`````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+`````````````````````````````````````````````````````````````````````````````````````
 
 
 
