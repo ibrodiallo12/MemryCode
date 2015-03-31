@@ -3,12 +3,11 @@
 ===============================================================
 
 
-Memorize code of programming language
--------------------------------------
+Memorize code of programming language!
+--------------------------------------
+___________________MEAN_______________
 Memorize A programming language!
 --------------------------------
-
-Being FAST, BEST, MORE PRODUCTIVE to Programming in your favorite programming Language EASILY and QUICKLY on MeMRyCoDe.
 
 " Memorize your favorite language, being fast to coding and more productive. "
 " Quickly and Easily, be a best programmer with these languages: "
@@ -40,8 +39,6 @@ Tap more and more caracteres!
 On MemryCode you do not just hit some letters but rather of the characters used in programming languages such as
 (} "<> @ # _ + _ ~` |? + + - % ^ & ()''/\ ! ....). And 
 numbers you become faster with your keyboard because you hit all possible characters.
-
-
 
 
 
