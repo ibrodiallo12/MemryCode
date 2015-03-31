@@ -1,14 +1,12 @@
 ===============================================================
-
 <{>-------------------------MeMRyCoDe------------------------<}>
-
 ===============================================================
 
 
 Memorize code of programming language
------------ MEAN --------------------
+-------------------------------------
 Memorize A programming language!
------------ MEAN ---------------
+--------------------------------
 
 Being FAST, BEST, MORE PRODUCTIVE to Programming in your favorite programming Language EASILY and QUICKLY on MeMRyCoDe.
 
@@ -18,7 +16,7 @@ Being FAST, BEST, MORE PRODUCTIVE to Programming in your favorite programming La
 
 
 Memorize a Programming Language!
-
+===============================
 Read the codes prior to code!
 
 Store a programming language in your head is easy with this rule used in MemryCode 
@@ -27,7 +25,7 @@ coding more code and the success of the mastery of your favorite language is gua
 
 
 Coding Fast, Being Productive!
-
+=============================
 Observe your progress!
 
 If you master a programming language, you code faster because you don't seek to know how to use a particular 
@@ -36,7 +34,7 @@ with these conditions you will be more productive in your projects.
 
 
 Mastering Your Keyboard!
-
+========================
 Tap more and more caracteres!
 
 On MemryCode you do not just hit some letters but rather of the characters used in programming languages such as
