@@ -35,6 +35,7 @@ if(isset($_COOKIE['lang'])){
 
       <!-- Jumbotron -->
       <div class="jumbotron" style="padding-bottom: 20px;">
+      	<a href="#myCarousel"  title="how to use" class="pull-right" style="margin-top: -20px; margin-right: -20px; font-size: 20px;">How to use MeMRyCoDe ?</a>
         <h1>&lt;{&gt; MeMRyCoDe &lt;}&gt;</h1>
         <p class="lead"><br />" Memorize your favorite language, being fast to coding and more productive. "<br />" Quickly and Easily, be a best programmer with these languages: "<br /><b>" HTML / CSS / JavaScript / PHP / Python / SQL / Java / C / C++ / Shell "</b></p>
         <p style="margin: 60px;"><a class="btn btn-lg btn-success col-lg-12" href="memrycode.php?lang=<?php echo $lang;?>" role="button">Get started</a></p>
@@ -72,20 +73,31 @@ if(isset($_COOKIE['lang'])){
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="item active">
           <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
-              <img src="assets/icon/quickuse.png" />
-              <p>Type the code of the first block to the second block. Try to make fewer mistakes and try to reach the same number of second MIN of the right.</p>
+              <img src="assets/icon/quickhome.png" />
+              <p>Welcome<br />To begin, You just have to click the button [Get started]</p>
               <p><a class="btn btn-lg btn-primary" href="memrycode.php?lang=<?php echo $lang;?>" title="Try it!" role="button">Try by yourself</a></p>
             </div>
           </div>
         </div>
         <div class="item">
           <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <img src="assets/icon/quickuse.png" />
+              <p>Type the code of the first block to the second block. Try to make fewer mistakes and try to reach the same number of [second MIN] of the right.</p>
+              <p><a class="btn btn-lg btn-primary" href="memrycode.php?lang=<?php echo $lang;?>" title="Try it!" role="button">Try by yourself</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
           <div class="container">
             <div class="carousel-caption">
               <img src="assets/icon/quicklang.png" />
@@ -95,11 +107,11 @@ if(isset($_COOKIE['lang'])){
           </div>
         </div>
         <div class="item">
-          <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+          <img class="fourth-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="fourth slide">
           <div class="container">
             <div class="carousel-caption">
               <img src="assets/icon/quickknow.png" />
-              <p>the KNOW section allows to understand the code you typing. Click the button view details for more information.</p>
+              <p>the KNOW section allows to understand the code you typing. Click the button [view details] for more information.</p>
               <p><a class="btn btn-lg btn-primary" href="help.php" role="button">Know more</a></p>
             </div>
           </div>

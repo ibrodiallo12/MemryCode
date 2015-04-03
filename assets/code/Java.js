@@ -167,7 +167,7 @@ $(function(){
 	c = c + s + "class mythread implements Runnable{\n\tpublic void run(){\n\t\tSystem.out.println(\"thread is running...\");\n\t}\n\tpublic static void main(String args[]){\n\t\tmythread m1 = new mythread();\n\t\tThread t1 = new Thread(m1);\n\t\tt1.start();\n\t}\n}";
 	k = k + s + "Implementing the Runnable Interface. The easiest way to create a thread is to create a class that implements the runnable interface. After implementing runnable interface , the class needs to implement the run() method, which is of form,";
 	// N 54
-	c = c + s + "class MyThread extends Thread{\n\tpublic void run(){\n\t\tSystem.out.println(\"Concurrent thread started running..\");\n\t}\n}\nclassMyThreadDemo{\n\tpublic static void main( String args[] ){\n\t\tMyThread fl = new MyThread();\n\t\tfl.start();\n\t}\n}";
+	c = c + s + "class MyThread extends Thread{\n\tpublic void run(){\n\t\tSystem.out.println(\"Concurrent thread started running..\");\n\t}\n}\nclass MyThreadDemo{\n\tpublic static void main( String args[] ){\n\t\tMyThread fl = new MyThread();\n\t\tfl.start();\n\t}\n}";
 	k = k + s + "Extending Thread class. This is another way to create a thread by a new class that extends Thread class and create an instance of that class. The extending class must override run() method which is the entry point of new thread.";
 	// N 55
 	c = c + s + "synchronized (object){\n\t//statement to be synchronized\n}";
