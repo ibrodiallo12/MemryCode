@@ -42,7 +42,7 @@ if(isset($_GET['lang'])){
 		createCookie($lang);
 	}
 	elseif($_GET['lang'] == 'C-plus'){
-		$lang = 'C++'; 
+		$lang = 'C-plus'; 
 		$mode = 'clike'; 
 		createCookie($lang);
 	}
